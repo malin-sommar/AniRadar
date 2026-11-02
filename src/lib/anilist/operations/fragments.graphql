@@ -1,0 +1,27 @@
+# Fields every anime card needs. Keep this lean: it's fetched for every grid.
+fragment MediaCard on Media {
+  id
+  title {
+    romaji
+    english
+    native
+  }
+  coverImage {
+    medium
+    large
+    extraLarge
+    color
+  }
+  format
+  status
+  episodes
+  season
+  seasonYear
+  averageScore
+  genres
+  isAdult
+  nextAiringEpisode {
+    airingAt
+    episode
+  }
+}

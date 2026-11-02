@@ -1,0 +1,8 @@
+# pnpm blocks dependency install scripts by default. These packages ship
+# prebuilt platform binaries through optional dependencies, so their scripts
+# aren't needed.
+ignoredBuiltDependencies:
+  - "@swc/core"
+  - esbuild
+  - sharp
+  - unrs-resolver
