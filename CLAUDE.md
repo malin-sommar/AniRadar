@@ -27,10 +27,10 @@ A mobile-first PWA companion for AniList: find anime, track it in your AniList a
 | `pnpm typecheck`                                  | `next typegen` + `tsc --noEmit`                                                                                            |
 | `pnpm test` · `pnpm test:watch`                   | Vitest unit and component tests                                                                                            |
 | `pnpm test:e2e`                                   | Playwright on a phone and a desktop profile. Builds into `.next-e2e` against a mock AniList (`tests/e2e/mock-anilist.mjs`) |
-| `pnpm test:live`                                  | One real AniList request to catch schema changes. Manual only, never in CI                                                 |
+| `pnpm test:live`                                  | One real AniList and one Kitsu request to catch API changes. Manual only, never in CI                                      |
 | `pnpm codegen`                                    | Regenerates `src/lib/anilist/gql/` from `operations/*.graphql`                                                             |
 | `pnpm schema:fetch`                               | Re-downloads AniList's schema (1 request); run `pnpm codegen` after                                                        |
-| `pnpm fixtures:record`                            | Re-records `tests/fixtures/anilist/` (1 request per operation)                                                             |
+| `pnpm fixtures:record [Operation]`                | Re-records `tests/fixtures/anilist/` (1 request per operation; name operations to record only those)                       |
 | `pnpm icons`                                      | Regenerates the app icons (`scripts/generate-icons.mjs`)                                                                   |
 | `pnpm check:bundle`                               | Scans the client build for secrets (after `pnpm build`)                                                                    |
 
@@ -42,14 +42,16 @@ First-time setup: `corepack install --global pnpm@10.34.9`, `pnpm install`, `pnp
 src/
   app/          routes, layouts, route handlers, manifest.ts, sw.ts (service worker)
     api/anilist/[op]/   the browser's proxy to AniList (allowlisted, CDN-cached)
+    api/title-matches/  partial-word title search (Kitsu → AniList IDs)
     img/[...path]/      same-origin image proxy for AniList's CDN
     serwist/[path]/     serves the bundled service worker
   components/   shared UI (ui/ = shadcn), app shell, theme
-  features/     feature modules (home, later browse, detail, list, ...)
+  features/     feature modules (home, browse, settings, later detail, list, ...)
   domain/       pure logic with unit tests (titles, formats, countdowns, later smart status)
   hooks/        shared client hooks
   lib/
     anilist/    core/ (limiter, client, errors), registry, cache policy, server + browser entry points, gql/ (generated)
+    kitsu/      partial-word title lookup (server only) and its response parser
     env/        Zod-validated env (client, server)
     query/      TanStack Query client and IndexedDB persister
   server/       server-only code from Phase 3 on (secrets, tokens, jobs)
@@ -63,13 +65,15 @@ scripts/        schema, fixtures, icons, bundle check
   1. Write `src/lib/anilist/operations/<name>.graphql`, reusing fragments from `fragments.graphql`.
   2. Run `pnpm codegen`.
   3. Register it in `src/lib/anilist/registry.ts` with a strict Zod schema for its variables and a cache class.
-  4. Run `pnpm fixtures:record` and commit the fixture.
+  4. Run `pnpm fixtures:record <Name>` and commit the fixture.
+  5. `$isAdult` has no default: send `false` to hide adult entries, leave it out to show them. An explicit `null` makes AniList return nothing.
 - **Server components:** call `getAniList(name, variables)` from `@/lib/anilist/server`. It's cached with `'use cache'` for as long as the operation's cache policy says.
   - To prefetch for the client, use a `'use cache'` component that makes exactly one `cacheLife` call: `cacheLifeProfile(policy)` on success, `FAILURE_CACHE_LIFE` when AniList failed, so the section renders at request time instead. Then hand the data over with `aniListQueryKey` and `HydrationBoundary`.
   - `src/features/home/trending-section.tsx` is the reference.
 - **Client components:** call `useAniListQuery(name, variables)` from `@/lib/anilist/hooks`. It goes through `/api/anilist/[op]`.
 - **Freshness** for every layer (TanStack, CDN, Next cache) lives in one table: `src/lib/anilist/cache-policy.ts`.
-- Nothing calls `graphql.anilist.co` outside `src/lib/anilist`. Images from new hosts need a proxy route, because CSP blocks other origins.
+- **Search:** AniList's `search` only matches whole words. Text search goes through `src/features/browse/fetch-browse-page.ts`, which adds partial-word matches from `/api/title-matches` (Kitsu → AniList IDs, `src/lib/kitsu`). Use it rather than calling `BrowseAnime` with `search` directly.
+- Nothing calls `graphql.anilist.co` outside `src/lib/anilist`, or Kitsu outside `src/lib/kitsu`. Images from new hosts need a proxy route, because CSP blocks other origins.
 - AniList's terms (PLAN.md §1, §6): AniRadar is a complementary AniList client.
   - No crawling, bulk prefetching or hoarding.
   - Never store anime data in our database (AniList IDs only).

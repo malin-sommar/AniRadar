@@ -113,7 +113,7 @@ AniRadar is a fast, installable companion for AniList. You can find anime, see e
 
 | Feature | Data from | Stored by AniRadar | Phase |
 |---|---|---|---|
-| Browse & search | AniList | — | 1 |
+| Browse & search | AniList; Kitsu (partial-word title matching) | — | 1 |
 | Detail page | AniList, Jikan (MAL score) | — | 2 |
 | Account | Supabase Auth | email, sign-in identities | 3 |
 | AniList connection | AniList OAuth | encrypted token, AniList user ID and name | 3 |
@@ -161,6 +161,7 @@ flowchart LR
   anilist["AniList GraphQL"]
   cdn["AniList image CDN"]
   jikan["Jikan (MyAnimeList)"]
+  kitsu["Kitsu (title search)"]
   ann["ANN RSS"]
   push["Browser push services"]
 
@@ -169,6 +170,7 @@ flowchart LR
   ui --> auth & db
   rsc & bff & me & cal & cron --> anilist
   rsc --> jikan & ann
+  bff --> kitsu
   img --> cdn
   me & cal & cron --> db
   pgcron -- every 15 min --> cron
@@ -256,7 +258,7 @@ Versions are the npm releases current on 2026-11-02; Phase 0 pins exact versions
   - ✔ No hoarding: no crawling or bulk prefetching; caches fill on demand and expire.
   - ✔ Naming: "AniRadar" contains neither "AniList" nor "AniChart". The OAuth clients will be named "AniRadar" and "AniRadar (dev)".
   - ✔ Complementary: direction A.
-- **Adult content:** off by default. Queries send `isAdult: false` and adult genres and tags are hidden, unless you switch on "Show adult content" in settings (signed-in users only, after an 18+ confirmation). The setting is part of every cache key, so adult results never leak into the default cache. AniList warns that ecchi isn't flagged as adult; that's fine for a web app, but worth knowing if an app store is ever planned.
+- **Adult content:** off by default. Queries send `isAdult: false` and adult genres and tags are hidden, unless you switch on "Show adult content" in settings (after an 18+ confirmation; saved on the device until Phase 3 moves it to the profile). Showing adult content leaves `isAdult` out of the query: an explicit `null` makes AniList return nothing. The setting is part of every cache key, so adult results never leak into the default cache. AniList warns that ecchi isn't flagged as adult; that's fine for a web app, but worth knowing if an app store is ever planned.
 - **OAuth:**
   - We use the authorization code grant, with the client secret kept on the server.
   - Redirect URIs must match exactly, so there's one client for localhost and one for production.
@@ -268,6 +270,13 @@ Versions are the npm releases current on 2026-11-02; Phase 0 pins exact versions
 - **What we use:** MAL score, rank and member count on the detail page; per-anime news (MAL news) in Phase 7.
 - **Limits:** documented as 3 req/s and 60 req/min. Responses are cached upstream, and availability varies, so Jikan data never blocks a page.
 - **Terms:** Jikan is unofficial and works by scraping MyAnimeList. It disclaims any affiliation and leaves respecting MAL's terms to the user. We keep usage light (one call per detail view, cached 24 h), credit MyAnimeList, and link to the MAL page. If Jikan turns out unreliable for scores, the official MAL API (which needs a client ID) can take over, but it has no news endpoint.
+
+### Kitsu (title search helper)
+
+- **Why:** AniList's `search` only matches whole words: "juju" finds "Puka Puka Juju" but not "Jujutsu Kaisen", and "frier" finds nothing. Kitsu's anime search matches partial words and its results carry AniList IDs.
+- **What we use:** only the AniList IDs of the top 20 matches for the typed text (`/api/title-matches`). The shows themselves still come from AniList; nothing from Kitsu is shown or stored.
+- **Limits and failure:** no published limit. Our server limits itself to 60/min, caches each search for 30 minutes and gives up after 3 s. If Kitsu fails, search quietly falls back to AniList alone.
+- **Terms:** I couldn't find published API terms (see Appendix A). It's a public, keyless API that Kitsu documents for third-party apps; usage here is light and read-only. Revisit if the app grows beyond friends.
 
 ### Anime News Network RSS
 
@@ -788,7 +797,7 @@ No copies of anime data, no analytics and no tracking.
 - AniList, through your own account, once you connect it.
 - Browser push services, which receive only encrypted payloads.
 
-AniList, Jikan, ANN and all images go through our server, so your browser talks only to AniRadar's domain.
+AniList, Jikan, Kitsu, ANN and all images go through our server, so your browser talks only to AniRadar's domain.
 
 **Your rights, built into the app:**
 - **Download my data** gives you a JSON file with:
@@ -844,7 +853,7 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 | # | Phase | Size | Status |
 |---|---|---|---|
 | 0 | Foundation: setup, API layer, caching, app shell | M | done, in review |
-| 1 | Browse & search | M | not started |
+| 1 | Browse & search | M | done, in review |
 | 2 | Detail page | L | not started |
 | 3 | Accounts & AniList connection | L | not started |
 | 4 | My list, ratings, smart status, streaming filter | L | not started |
@@ -1000,6 +1009,7 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 | Shared serverless IP addresses trip AniList's limit | medium | log 429s; switch the browser transport to direct calls; a host with a fixed IP if needed |
 | The AniList token lasts a year, can't be refreshed and gives near-full access | medium | encrypted on the server, used minimally, a reminder before expiry, easy disconnect |
 | Jikan downtime or MAL's terms | low–medium | never blocking, cached; the official MAL API for scores as a fallback |
+| Kitsu downtime or a change in its API or terms | low | only used for partial-word search; falls back to AniList's whole-word search; a live test checks its shape |
 | Streaming links aren't per country | medium | labelled as such; TMDB later |
 | iOS PWA limits (separate storage, push only when installed, no install prompt) | medium | sign-in by code, an install guide, device tests in Phases 3, 8 and 9 |
 | Supabase free plan pauses after about a week without activity; the default email allows 2 per hour | medium | regular job traffic; custom SMTP before others join; Pro plan if needed |
@@ -1051,6 +1061,7 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 | 2026-11-02 | Planning | decided | Supabase sign-in + Connect AniList; Android; Nordics (Stockholm / arn1); sequels: only tell me; no Docker; branch + PR per phase. Open: privacy policy contact (Q7). |
 | 2026-11-02 | Planning | decided | Privacy contact: Malin Sommar, malinsommar1997@gmail.com. Assumptions confirmed; adult content gets an opt-in setting (off by default). All questions answered. |
 | 2026-11-02 | 0 Foundation | done, in review | App shell, AniList layer, caching, image proxy, PWA basics, tests and CI. Details below. |
+| 2026-11-03 | 1 Browse & search | done, in review | `/browse` with filters, sort, URL state and infinite scroll; search overlay; final card; title language and adult content settings. Details below. |
 
 ### Phase 0 notes
 
@@ -1097,6 +1108,36 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 - **Navigation needed `<Suspense>`.** With Cache Components, reading the pathname on routes with unknown dynamic params (`/anime/[id]`) needs a `<Suspense>` boundary, so the shell shows the tabs without an active highlight until the URL is known.
 - **Moved to later phases:** the Jikan client to Phase 2, where it's first used; the Supabase CLI to Phase 3.
 - **The service worker precaches about 1.1 MB** (every JS/CSS chunk). Phase 8 tunes what gets precached.
+
+### Phase 1 notes
+
+**What's in place**
+- **`/browse`:**
+  - search text plus filters for genres, tags (searchable, grouped by category, spoiler tags never offered), season, year, format and status
+  - sort by best match (default while searching), popularity (default otherwise), score, trending, newest or title (in your title language)
+  - everything lives in the URL through nuqs (`?q=…&genres=…&season=winter&year=2026&format=tv&sort=score`), so links can be shared; changes replace the history entry, so Back leaves the page and returns to the same filters
+  - removable chips for active filters, "Clear all", skeletons, an empty state that offers to clear filters, and an error state with "Try again"
+  - infinite scroll (loads 800 px early) with a "Load more" button as a fallback; Back from a detail page restores the scroll position
+  - the page shell and the genre and tag lists are prerendered and refreshed weekly; results load in the browser through the CDN-cached proxy
+- **Search overlay:** the header's search (or `/`, Ctrl/⌘ K) opens it from any page. It shows the top 8 matches after a short pause in typing (at least 2 letters), plus "See all results".
+- **Partial-word search** (added after review): "juju" finds Jujutsu Kaisen, "frier" finds Frieren. The first page of a search asks `/api/title-matches` (Kitsu, see §6) for matching AniList IDs, then one `SearchAnime` query fetches those shows (with the same filters) next to AniList's own search results. Partial matches come first in Kitsu's order for "Best match", or in the chosen sort otherwise. Later pages are AniList's own results.
+- **Final anime card:** title in your title language, 18+ badge on adult entries. The list-status badge arrives with the list in Phase 4.
+- **Settings on Me:**
+  - title language: English, romaji or Japanese, with fallbacks
+  - "Show adult content", behind an "I'm 18 or older" confirmation; it also applies to trending on Home
+  - both are saved on the device for now; Phase 3 moves them to the profile
+- **AniList operations:** `BrowseAnime` (also used by the overlay) and `GenresAndTags`, with recorded fixtures. `pnpm fixtures:record <Operation>` now records just the operations named.
+- **Tests:** 130 unit and component tests; 38 e2e tests. The mock AniList now filters and pages the 50-show browse fixture, matches whole words only like the real one, and stands in for Kitsu too. A manual live test checks Kitsu's response shape.
+
+**Deviations and findings**
+- **Adult content is a device setting for now.** The plan said signed-in users only, but accounts arrive in Phase 3; you asked for the toggle now. It still needs the 18+ confirmation.
+- **`isAdult: null` returns nothing.** AniList answers an explicit `null` with an empty page, so the operations no longer default `$isAdult` to `false`. The app sends `false` to hide adult entries and leaves the variable out to show them. The proxy rejects `null`.
+- **Genre and tag filters match all selected values** (AniList's `genre_in`/`tag_in`), so adding filters narrows the results.
+- **AniList's search only matches whole words**, and no query syntax changes that (wildcards are ignored). Partial matching comes from Kitsu instead; see §6.
+- **Title sort in English** falls back to romaji for shows without an English title, which is how AniList orders `TITLE_ENGLISH`.
+- **Tags in the URL that are spoilers stay**, because someone chose them; they're just never offered in the picker. Unknown or hidden (adult) genres and tags in the URL are dropped.
+- **Results aren't prerendered.** They depend on the URL and the device settings, so the page prerenders the shell and genre/tag lists and the browser loads the results. A popular first page could be prerendered later if it feels slow.
+- **Saved settings apply after hydration**, so a non-default title language can show English titles for a moment on first load. This goes away when settings move to the profile and the server knows them.
 
 ---
 

@@ -1,0 +1,56 @@
+# Text search, first page. `matches` holds the shows Kitsu's partial-word
+# search found (AniList IDs, see lib/kitsu); `Page` is AniList's own
+# whole-word search. Both take the same filters. Later pages use
+# BrowseAnime.
+query SearchAnime(
+  $ids: [Int]!
+  $matchSort: [MediaSort] = [POPULARITY_DESC]
+  $page: Int = 1
+  $perPage: Int = 30
+  $search: String!
+  $genres: [String]
+  $tags: [String]
+  $season: MediaSeason
+  $seasonYear: Int
+  $formats: [MediaFormat]
+  $statuses: [MediaStatus]
+  $sort: [MediaSort] = [SEARCH_MATCH]
+  $isAdult: Boolean
+) {
+  matches: Page(page: 1, perPage: 20) {
+    media(
+      type: ANIME
+      id_in: $ids
+      genre_in: $genres
+      tag_in: $tags
+      season: $season
+      seasonYear: $seasonYear
+      format_in: $formats
+      status_in: $statuses
+      sort: $matchSort
+      isAdult: $isAdult
+    ) {
+      ...MediaCard
+    }
+  }
+  Page(page: $page, perPage: $perPage) {
+    pageInfo {
+      hasNextPage
+      currentPage
+    }
+    media(
+      type: ANIME
+      search: $search
+      genre_in: $genres
+      tag_in: $tags
+      season: $season
+      seasonYear: $seasonYear
+      format_in: $formats
+      status_in: $statuses
+      sort: $sort
+      isAdult: $isAdult
+    ) {
+      ...MediaCard
+    }
+  }
+}

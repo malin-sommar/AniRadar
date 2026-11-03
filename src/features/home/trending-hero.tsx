@@ -1,10 +1,13 @@
+"use client"
+
 import { ArrowRightIcon, FlameIcon, StarIcon } from "lucide-react"
 import Link from "next/link"
 import type { CSSProperties } from "react"
 
 import { CoverImage } from "@/components/anime/cover-image"
 import { Button } from "@/components/ui/button"
-import { displayTitle, isPresent, mediaMeta } from "@/domain/media"
+import { isPresent, mediaMeta } from "@/domain/media"
+import { useDisplayTitle } from "@/hooks/use-preferences"
 import type { TrendingAnimeQuery } from "@/lib/anilist/gql/graphql"
 import { imageSrc } from "@/lib/images"
 
@@ -20,7 +23,7 @@ export function TrendingHero({
   media: TrendingMedia
   rank: number
 }) {
-  const title = displayTitle(media.title)
+  const title = useDisplayTitle(media.title)
   const banner = imageSrc(media.bannerImage)
   const genres = (media.genres ?? []).filter(isPresent).slice(0, 3)
   const accent = {

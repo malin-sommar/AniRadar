@@ -14,6 +14,10 @@ const serverOnlyImports = {
       message:
         "Server-only. Use the browser client (@/lib/anilist/browser) or a server component.",
     },
+    {
+      name: "@/lib/kitsu/server",
+      message: "Server-only. Use the /api/title-matches route.",
+    },
   ],
   patterns: [
     {
@@ -34,6 +38,7 @@ const eslintConfig = defineConfig([
       "src/lib/query/**",
       "src/lib/anilist/browser.ts",
       "src/lib/anilist/hooks.ts",
+      "src/features/browse/fetch-browse-page.ts",
     ],
     rules: {
       "no-restricted-imports": ["error", serverOnlyImports],

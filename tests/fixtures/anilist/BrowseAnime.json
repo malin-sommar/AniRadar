@@ -1,0 +1,1434 @@
+{
+  "data": {
+    "Page": {
+      "pageInfo": {
+        "hasNextPage": true,
+        "currentPage": 1
+      },
+      "media": [
+        {
+          "id": 16498,
+          "title": {
+            "romaji": "Shingeki no Kyojin",
+            "english": "Attack on Titan",
+            "native": "進撃の巨人"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx16498-buvcRTBx4NSm.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx16498-buvcRTBx4NSm.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+            "color": "#f1a143"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SPRING",
+          "seasonYear": 2013,
+          "averageScore": 85,
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 101922,
+          "title": {
+            "romaji": "Kimetsu no Yaiba",
+            "english": "Demon Slayer: Kimetsu no Yaiba",
+            "native": "鬼滅の刃"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101922-WBsBl0ClmgYL.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101922-WBsBl0ClmgYL.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg",
+            "color": "#f1c9ae"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 26,
+          "season": "SPRING",
+          "seasonYear": 2019,
+          "averageScore": 82,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 113415,
+          "title": {
+            "romaji": "Jujutsu Kaisen",
+            "english": "JUJUTSU KAISEN",
+            "native": "呪術廻戦"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113415-LHBAeoZDIsnF.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113415-LHBAeoZDIsnF.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg",
+            "color": "#e45d5d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "FALL",
+          "seasonYear": 2020,
+          "averageScore": 84,
+          "genres": [
+            "Action",
+            "Drama",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 1535,
+          "title": {
+            "romaji": "DEATH NOTE",
+            "english": "Death Note",
+            "native": "DEATH NOTE"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1535-kUgkcrfOrkUM.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1535-kUgkcrfOrkUM.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+            "color": null
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 37,
+          "season": "FALL",
+          "seasonYear": 2006,
+          "averageScore": 84,
+          "genres": [
+            "Mystery",
+            "Psychological",
+            "Supernatural",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21459,
+          "title": {
+            "romaji": "Boku no Hero Academia",
+            "english": "My Hero Academia",
+            "native": "僕のヒーローアカデミア"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21459-nYh85uj2Fuwr.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21459-nYh85uj2Fuwr.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21459-nYh85uj2Fuwr.jpg",
+            "color": "#f1d643"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "season": "SPRING",
+          "seasonYear": 2016,
+          "averageScore": 76,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 11061,
+          "title": {
+            "romaji": "HUNTER×HUNTER (2011)",
+            "english": "Hunter x Hunter (2011)",
+            "native": "HUNTER×HUNTER (2011)"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11061-y5gsT1hoHuHw.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+            "color": "#f1d65d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 148,
+          "season": "FALL",
+          "seasonYear": 2011,
+          "averageScore": 89,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21087,
+          "title": {
+            "romaji": "One Punch Man",
+            "english": "One-Punch Man",
+            "native": "ワンパンマン"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21087-B5DHjqZ3kW4b.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21087-B5DHjqZ3kW4b.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21087-B5DHjqZ3kW4b.jpg",
+            "color": "#e4ae5d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "FALL",
+          "seasonYear": 2015,
+          "averageScore": 82,
+          "genres": [
+            "Action",
+            "Comedy",
+            "Sci-Fi",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21,
+          "title": {
+            "romaji": "ONE PIECE",
+            "english": "ONE PIECE",
+            "native": "ONE PIECE"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+            "color": "#e49335"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 1999,
+          "averageScore": 87,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1798985760,
+            "episode": 1181
+          }
+        },
+        {
+          "id": 20605,
+          "title": {
+            "romaji": "Tokyo Ghoul",
+            "english": "Tokyo Ghoul",
+            "native": "東京喰種 トーキョーグール"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b20605-k665mVkSug8D.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
+            "color": "#ff6b35"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SUMMER",
+          "seasonYear": 2014,
+          "averageScore": 76,
+          "genres": [
+            "Action",
+            "Drama",
+            "Horror",
+            "Mystery",
+            "Psychological",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20958,
+          "title": {
+            "romaji": "Shingeki no Kyojin Season 2",
+            "english": "Attack on Titan Season 2",
+            "native": "進撃の巨人 Season２"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20958-HuFJyr54Mmir.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20958-HuFJyr54Mmir.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20958-HuFJyr54Mmir.jpg",
+            "color": "#e47850"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SPRING",
+          "seasonYear": 2017,
+          "averageScore": 85,
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 5114,
+          "title": {
+            "romaji": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST",
+            "english": "Fullmetal Alchemist: Brotherhood",
+            "native": "鋼の錬金術師 FULLMETAL ALCHEMIST"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5114-nSWCgQlmOMtj.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5114-nSWCgQlmOMtj.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg",
+            "color": "#e4c993"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 64,
+          "season": "SPRING",
+          "seasonYear": 2009,
+          "averageScore": 90,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20,
+          "title": {
+            "romaji": "NARUTO",
+            "english": "Naruto",
+            "native": "NARUTO -ナルト-"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20-dE6UHbFFg1A5.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20-dE6UHbFFg1A5.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+            "color": "#e47850"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 220,
+          "season": "FALL",
+          "seasonYear": 2002,
+          "averageScore": 80,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 11757,
+          "title": {
+            "romaji": "Sword Art Online",
+            "english": "Sword Art Online",
+            "native": "ソードアート・オンライン"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11757-SxYDUzdr9rh2.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11757-SxYDUzdr9rh2.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11757-SxYDUzdr9rh2.jpg",
+            "color": "#e4bb5d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SUMMER",
+          "seasonYear": 2012,
+          "averageScore": 70,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Romance"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20954,
+          "title": {
+            "romaji": "Koe no Katachi",
+            "english": "A Silent Voice",
+            "native": "聲の形"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20954-sYRfE5jQRtSB.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20954-sYRfE5jQRtSB.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg",
+            "color": "#5dbbe4"
+          },
+          "format": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "season": "SUMMER",
+          "seasonYear": 2016,
+          "averageScore": 88,
+          "genres": [
+            "Drama",
+            "Romance",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21519,
+          "title": {
+            "romaji": "Kimi no Na wa.",
+            "english": "Your Name.",
+            "native": "君の名は。"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21519-SUo3ZQuCbYhJ.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21519-SUo3ZQuCbYhJ.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21519-SUo3ZQuCbYhJ.png",
+            "color": "#0da1e4"
+          },
+          "format": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "season": "SUMMER",
+          "seasonYear": 2016,
+          "averageScore": 85,
+          "genres": [
+            "Drama",
+            "Romance",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 99147,
+          "title": {
+            "romaji": "Shingeki no Kyojin Season 3",
+            "english": "Attack on Titan Season 3",
+            "native": "進撃の巨人 Season３"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx99147-AiPDD8cwlCfi.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99147-AiPDD8cwlCfi.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99147-AiPDD8cwlCfi.jpg",
+            "color": "#4386e4"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SUMMER",
+          "seasonYear": 2018,
+          "averageScore": 86,
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21856,
+          "title": {
+            "romaji": "Boku no Hero Academia 2",
+            "english": "My Hero Academia Season 2",
+            "native": "僕のヒーローアカデミア２"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21856-gutauxhWAwn6.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21856-gutauxhWAwn6.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21856-gutauxhWAwn6.png",
+            "color": "#e48643"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SPRING",
+          "seasonYear": 2017,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 110277,
+          "title": {
+            "romaji": "Shingeki no Kyojin: The Final Season",
+            "english": "Attack on Titan Final Season",
+            "native": "進撃の巨人 The Final Season"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110277-sKUNXAsWMNFw.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110277-sKUNXAsWMNFw.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110277-sKUNXAsWMNFw.jpg",
+            "color": "#ae6b35"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 16,
+          "season": "WINTER",
+          "seasonYear": 2021,
+          "averageScore": 87,
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 127230,
+          "title": {
+            "romaji": "Chainsaw Man",
+            "english": "Chainsaw Man",
+            "native": "チェンソーマン"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127230-DdP4vAdssLoz.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127230-DdP4vAdssLoz.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+            "color": "#6b1a1a"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "FALL",
+          "seasonYear": 2022,
+          "averageScore": 83,
+          "genres": [
+            "Action",
+            "Drama",
+            "Horror",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 101759,
+          "title": {
+            "romaji": "Yakusoku no Neverland",
+            "english": "The Promised Neverland",
+            "native": "約束のネバーランド"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101759-8UR7r9MNVpz2.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101759-8UR7r9MNVpz2.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101759-8UR7r9MNVpz2.jpg",
+            "color": "#e4ae50"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "WINTER",
+          "seasonYear": 2019,
+          "averageScore": 83,
+          "genres": [
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Mystery",
+            "Psychological",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20755,
+          "title": {
+            "romaji": "Ansatsu Kyoushitsu",
+            "english": "Assassination Classroom",
+            "native": "暗殺教室"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20755-dWrhs569YGUO.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20755-dWrhs569YGUO.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20755-dWrhs569YGUO.jpg",
+            "color": "#f1e45d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 22,
+          "season": "WINTER",
+          "seasonYear": 2015,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21507,
+          "title": {
+            "romaji": "Mob Psycho 100",
+            "english": "Mob Psycho 100",
+            "native": "モブサイコ100"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21507-6YUSbh2m0N1p.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21507-6YUSbh2m0N1p.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21507-6YUSbh2m0N1p.jpg",
+            "color": "#d65d1a"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SUMMER",
+          "seasonYear": 2016,
+          "averageScore": 84,
+          "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Psychological",
+            "Slice of Life",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21355,
+          "title": {
+            "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu",
+            "english": "Re:ZERO -Starting Life in Another World-",
+            "native": "Re:ゼロから始める異世界生活"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21355-wRVUrGxpvIQQ.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21355-wRVUrGxpvIQQ.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21355-wRVUrGxpvIQQ.jpg",
+            "color": "#f150ae"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SPRING",
+          "seasonYear": 2016,
+          "averageScore": 81,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Psychological",
+            "Romance",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20665,
+          "title": {
+            "romaji": "Shigatsu wa Kimi no Uso",
+            "english": "Your lie in April",
+            "native": "四月は君の嘘"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20665-TLgkL8T8IRFd.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20665-TLgkL8T8IRFd.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20665-TLgkL8T8IRFd.png",
+            "color": "#e4bb50"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 22,
+          "season": "FALL",
+          "seasonYear": 2014,
+          "averageScore": 84,
+          "genres": [
+            "Drama",
+            "Music",
+            "Romance",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 104578,
+          "title": {
+            "romaji": "Shingeki no Kyojin Season 3 Part 2",
+            "english": "Attack on Titan Season 3 Part 2",
+            "native": "進撃の巨人 Season３ Part.2"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104578-k61nx3LPjvgd.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104578-k61nx3LPjvgd.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104578-k61nx3LPjvgd.jpg",
+            "color": "#e49350"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "season": "SPRING",
+          "seasonYear": 2019,
+          "averageScore": 89,
+          "genres": [
+            "Action",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 1735,
+          "title": {
+            "romaji": "NARUTO: Shippuuden",
+            "english": "Naruto: Shippuden",
+            "native": "NARUTO -ナルト- 疾風伝"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+            "color": "#e4865d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 500,
+          "season": "WINTER",
+          "seasonYear": 2007,
+          "averageScore": 82,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21234,
+          "title": {
+            "romaji": "Boku dake ga Inai Machi",
+            "english": "ERASED",
+            "native": "僕だけがいない街"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21234-XmqW39aQ9o7O.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21234-XmqW39aQ9o7O.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21234-XmqW39aQ9o7O.jpg",
+            "color": "#f1a150"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "WINTER",
+          "seasonYear": 2016,
+          "averageScore": 81,
+          "genres": [
+            "Drama",
+            "Mystery",
+            "Psychological",
+            "Supernatural",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 100166,
+          "title": {
+            "romaji": "Boku no Hero Academia 3",
+            "english": "My Hero Academia Season 3",
+            "native": "僕のヒーローアカデミア３"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100166-jUCZYbzn2XLw.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100166-jUCZYbzn2XLw.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
+            "color": "#e4935d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SPRING",
+          "seasonYear": 2018,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 9253,
+          "title": {
+            "romaji": "Steins;Gate",
+            "english": "Steins;Gate",
+            "native": "シュタインズ・ゲート"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9253-tIUXF2gfU8Sg.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9253-tIUXF2gfU8Sg.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+            "color": "#ffd6ae"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "SPRING",
+          "seasonYear": 2011,
+          "averageScore": 89,
+          "genres": [
+            "Drama",
+            "Psychological",
+            "Sci-Fi",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 97940,
+          "title": {
+            "romaji": "Black Clover",
+            "english": "Black Clover",
+            "native": "ブラッククローバー"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+            "color": "#d6c96b"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 170,
+          "season": "FALL",
+          "seasonYear": 2017,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20464,
+          "title": {
+            "romaji": "Haikyuu!!",
+            "english": "HAIKYU!!",
+            "native": "ハイキュー!!"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20464-ooZUyBe4ptp9.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20464-ooZUyBe4ptp9.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20464-ooZUyBe4ptp9.png",
+            "color": "#e48635"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "SPRING",
+          "seasonYear": 2014,
+          "averageScore": 83,
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Sports"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 101291,
+          "title": {
+            "romaji": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+            "english": "Rascal Does Not Dream of Bunny Girl Senpai",
+            "native": "青春ブタ野郎はバニーガール先輩の夢を見ない"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101291-wfEdgPqtfU0l.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101291-wfEdgPqtfU0l.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101291-wfEdgPqtfU0l.jpg",
+            "color": "#0d43f1"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "season": "FALL",
+          "seasonYear": 2018,
+          "averageScore": 81,
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Mystery",
+            "Psychological",
+            "Romance",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 140960,
+          "title": {
+            "romaji": "SPY×FAMILY",
+            "english": "SPY x FAMILY",
+            "native": "SPY×FAMILY"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140960-Kb6R5nYQfjmP.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140960-Kb6R5nYQfjmP.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140960-Kb6R5nYQfjmP.jpg",
+            "color": "#c9f1f1"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SPRING",
+          "seasonYear": 2022,
+          "averageScore": 83,
+          "genres": [
+            "Action",
+            "Comedy",
+            "Slice of Life",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 101921,
+          "title": {
+            "romaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+            "english": "Kaguya-sama: Love is War",
+            "native": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101921-ufrjLzhSz7L1.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101921-ufrjLzhSz7L1.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+            "color": "#e45086"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "WINTER",
+          "seasonYear": 2019,
+          "averageScore": 83,
+          "genres": [
+            "Comedy",
+            "Psychological",
+            "Romance",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 105333,
+          "title": {
+            "romaji": "Dr. STONE",
+            "english": "Dr. STONE",
+            "native": "Dr.STONE"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105333-GybuoSoOZfpH.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx105333-GybuoSoOZfpH.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105333-GybuoSoOZfpH.jpg",
+            "color": "#c9d678"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "SUMMER",
+          "seasonYear": 2019,
+          "averageScore": 81,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Sci-Fi"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 101348,
+          "title": {
+            "romaji": "VINLAND SAGA",
+            "english": "Vinland Saga",
+            "native": "ヴィンランド・サガ"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101348-2fhDFPCuMNiz.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101348-2fhDFPCuMNiz.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101348-2fhDFPCuMNiz.jpg",
+            "color": "#f16b5d"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "SUMMER",
+          "seasonYear": 2019,
+          "averageScore": 87,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21827,
+          "title": {
+            "romaji": "Violet Evergarden",
+            "english": "Violet Evergarden",
+            "native": "ヴァイオレット・エヴァーガーデン"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21827-ubzq619ZA2E9.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21827-ubzq619ZA2E9.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21827-ubzq619ZA2E9.png",
+            "color": "#3586e4"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "season": "WINTER",
+          "seasonYear": 2018,
+          "averageScore": 85,
+          "genres": [
+            "Drama",
+            "Fantasy",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 124080,
+          "title": {
+            "romaji": "Horimiya",
+            "english": "Horimiya",
+            "native": "ホリミヤ"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124080-3i22mRVPBS0T.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-3i22mRVPBS0T.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx124080-3i22mRVPBS0T.jpg",
+            "color": "#5dc9f1"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "season": "WINTER",
+          "seasonYear": 2021,
+          "averageScore": 81,
+          "genres": [
+            "Comedy",
+            "Romance",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 4224,
+          "title": {
+            "romaji": "Toradora!",
+            "english": "Toradora!",
+            "native": "とらドラ！"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx4224-PXVMBLNwy2aF.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx4224-PXVMBLNwy2aF.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4224-PXVMBLNwy2aF.jpg",
+            "color": "#e45d78"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "FALL",
+          "seasonYear": 2008,
+          "averageScore": 77,
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Romance",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 19815,
+          "title": {
+            "romaji": "No Game No Life",
+            "english": "No Game, No Life",
+            "native": "ノーゲーム・ノーライフ"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b19815-sEOQ9yQaPKlk.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b19815-sEOQ9yQaPKlk.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b19815-sEOQ9yQaPKlk.jpg",
+            "color": "#f1a135"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "SPRING",
+          "seasonYear": 2014,
+          "averageScore": 77,
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Ecchi",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20613,
+          "title": {
+            "romaji": "Akame ga Kill!",
+            "english": "Akame ga Kill!",
+            "native": "アカメが斬る！"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20613-HXHpec4bemk5.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20613-HXHpec4bemk5.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20613-HXHpec4bemk5.jpg",
+            "color": "#e45d43"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "SUMMER",
+          "seasonYear": 2014,
+          "averageScore": 73,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Psychological",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20447,
+          "title": {
+            "romaji": "Noragami",
+            "english": "Noragami",
+            "native": "ノラガミ"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20447-EoQXeygHaVCK.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20447-EoQXeygHaVCK.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20447-EoQXeygHaVCK.jpg",
+            "color": "#bbe4f1"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "season": "WINTER",
+          "seasonYear": 2014,
+          "averageScore": 78,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 104276,
+          "title": {
+            "romaji": "Boku no Hero Academia 4",
+            "english": "My Hero Academia Season 4",
+            "native": "僕のヒーローアカデミア４"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104276-SnEowMvesWIE.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104276-SnEowMvesWIE.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-SnEowMvesWIE.png",
+            "color": "#fec950"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "FALL",
+          "seasonYear": 2019,
+          "averageScore": 78,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Sci-Fi"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20789,
+          "title": {
+            "romaji": "Nanatsu no Taizai",
+            "english": "The Seven Deadly Sins",
+            "native": "七つの大罪"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20789-Ma5ouSYPkru9.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20789-Ma5ouSYPkru9.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20789-Ma5ouSYPkru9.jpg",
+            "color": "#e4861a"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "FALL",
+          "seasonYear": 2014,
+          "averageScore": 72,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Ecchi",
+            "Fantasy",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 269,
+          "title": {
+            "romaji": "BLEACH",
+            "english": "Bleach",
+            "native": "BLEACH"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+            "color": "#f1a150"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 366,
+          "season": "FALL",
+          "seasonYear": 2004,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 21202,
+          "title": {
+            "romaji": "Kono Subarashii Sekai ni Shukufuku wo!",
+            "english": "KONOSUBA -God's blessing on this wonderful world!",
+            "native": "この素晴らしい世界に祝福を！"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21202-mPOr80AEjUcZ.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21202-mPOr80AEjUcZ.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21202-mPOr80AEjUcZ.png",
+            "color": "#5daee4"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "season": "WINTER",
+          "seasonYear": 2016,
+          "averageScore": 79,
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Ecchi",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 112151,
+          "title": {
+            "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen",
+            "english": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+            "native": "鬼滅の刃 無限列車編"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112151-1qlQwPB1RrJe.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112151-1qlQwPB1RrJe.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112151-1qlQwPB1RrJe.png",
+            "color": "#5dc9f1"
+          },
+          "format": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "season": "FALL",
+          "seasonYear": 2020,
+          "averageScore": 84,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Mystery",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 1575,
+          "title": {
+            "romaji": "Code Geass: Hangyaku no Lelouch",
+            "english": "Code Geass: Lelouch of the Rebellion",
+            "native": "コードギアス 反逆のルルーシュ"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1575-hsmWM2ydNm1m.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1575-hsmWM2ydNm1m.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+            "color": "#c9d678"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "season": "FALL",
+          "seasonYear": 2006,
+          "averageScore": 85,
+          "genres": [
+            "Action",
+            "Drama",
+            "Mecha",
+            "Sci-Fi",
+            "Thriller"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 99423,
+          "title": {
+            "romaji": "Darling in the Franxx",
+            "english": "DARLING in the FRANXX",
+            "native": "ダーリン・イン・ザ・フランキス"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx99423-8MBxtwCeHf8B.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx99423-8MBxtwCeHf8B.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99423-8MBxtwCeHf8B.png",
+            "color": "#f15043"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "WINTER",
+          "seasonYear": 2018,
+          "averageScore": 69,
+          "genres": [
+            "Action",
+            "Drama",
+            "Mecha",
+            "Psychological",
+            "Romance",
+            "Sci-Fi"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        },
+        {
+          "id": 20623,
+          "title": {
+            "romaji": "Kiseijuu: Sei no Kakuritsu",
+            "english": "Parasyte -the maxim-",
+            "native": "寄生獣 セイの格率"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20623-dUARfggnNDOe.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20623-dUARfggnNDOe.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20623-dUARfggnNDOe.jpg",
+            "color": "#285086"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "FALL",
+          "seasonYear": 2014,
+          "averageScore": 81,
+          "genres": [
+            "Action",
+            "Drama",
+            "Horror",
+            "Psychological",
+            "Sci-Fi"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null
+        }
+      ]
+    }
+  }
+}

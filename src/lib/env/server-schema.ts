@@ -22,6 +22,16 @@ const serverEnvSchema = z.object({
     unset,
     z.coerce.number().int().min(1000).max(30000).default(10000),
   ),
+  /** Kitsu's API, used to match partial words in searches. Mocked in e2e tests. */
+  KITSU_API_URL: z.preprocess(
+    unset,
+    z.url().default("https://kitsu.io/api/edge"),
+  ),
+  /** Kept short: search falls back to AniList alone if Kitsu is slow. */
+  KITSU_TIMEOUT_MS: z.preprocess(
+    unset,
+    z.coerce.number().int().min(500).max(10000).default(3000),
+  ),
 })
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>

@@ -21,14 +21,16 @@ test("the main navigation reaches every section", async ({ page }) => {
     .filter({ visible: true })
 
   const sections = [
-    ["Browse", "Browse & search"],
+    ["Browse", "Browse"],
     ["Schedule", "Your airing schedule"],
     ["My List", "Your list"],
     ["Home", "Trending now"],
   ] as const
   for (const [label, heading] of sections) {
     await nav.getByRole("link", { name: label }).click()
-    await expect(page.getByRole("heading", { name: heading })).toBeVisible()
+    await expect(
+      page.getByRole("heading", { name: heading, exact: true }),
+    ).toBeVisible()
     await expect(nav.getByRole("link", { name: label })).toHaveAttribute(
       "aria-current",
       "page",

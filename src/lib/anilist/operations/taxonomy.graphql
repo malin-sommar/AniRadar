@@ -1,0 +1,11 @@
+# Genre and tag lists for the browse filters. They rarely change (7-day cache).
+query GenresAndTags {
+  GenreCollection
+  MediaTagCollection {
+    id
+    name
+    category
+    isAdult
+    isGeneralSpoiler
+  }
+}
