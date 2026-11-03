@@ -4,15 +4,21 @@ import { matchSort, mergeSearchResults } from "@/domain/browse"
 import { isPresent } from "@/domain/media"
 import { fetchAniList } from "@/lib/anilist/browser"
 import { CACHE_POLICIES } from "@/lib/anilist/cache-policy"
-import type { MediaCardFragment } from "@/lib/anilist/gql/graphql"
-import type { OperationVariables } from "@/lib/anilist/registry"
+import type { OperationData, OperationVariables } from "@/lib/anilist/registry"
 import { normalizeSearchText } from "@/lib/kitsu/title-matches"
 import { getQueryClient } from "@/lib/query/query-client"
 
 export type BrowseVariables = Omit<OperationVariables<"BrowseAnime">, "page">
 
+/** A browse or search result: card fields plus series links. */
+export type BrowseMedia = NonNullable<
+  NonNullable<
+    NonNullable<OperationData<"BrowseAnime">["Page"]>["media"]
+  >[number]
+>
+
 export interface BrowsePage {
-  media: MediaCardFragment[]
+  media: BrowseMedia[]
   hasNextPage: boolean
   currentPage: number
 }

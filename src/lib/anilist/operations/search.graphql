@@ -31,6 +31,7 @@ query SearchAnime(
       isAdult: $isAdult
     ) {
       ...MediaCard
+      ...SeriesLinks
     }
   }
   Page(page: $page, perPage: $perPage) {
@@ -51,6 +52,7 @@ query SearchAnime(
       isAdult: $isAdult
     ) {
       ...MediaCard
+      ...SeriesLinks
     }
   }
 }

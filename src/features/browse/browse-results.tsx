@@ -3,13 +3,14 @@
 import { RefreshCwIcon, SearchXIcon, TriangleAlertIcon } from "lucide-react"
 
 import {
-  AnimeCard,
   AnimeCardSkeleton,
   CardGrid,
   CardGridSkeleton,
 } from "@/components/anime/anime-card"
+import { SeriesCard } from "@/components/anime/series-card"
 import { EmptyState } from "@/components/empty-state"
 import { Button } from "@/components/ui/button"
+import { groupIntoSeries } from "@/domain/series"
 import { cn } from "@/lib/utils"
 
 import type { BrowseVariables } from "./fetch-browse-page"
@@ -45,6 +46,8 @@ export function BrowseResults({
   const media = (data?.pages ?? [])
     .flatMap((page) => page.media)
     .filter((item) => !seen.has(item.id) && seen.add(item.id))
+  // One card per series, across every loaded page (PLAN.md §10.0).
+  const series = groupIntoSeries(media)
 
   const canAutoLoad =
     hasNextPage && !isFetching && !isFetchNextPageError && !isPlaceholderData
@@ -112,7 +115,7 @@ export function BrowseResults({
       </EmptyState>
     )
   } else {
-    status = `Showing ${media.length} anime${hasNextPage ? ", scroll for more" : ""}`
+    status = `Showing ${series.length} series${hasNextPage ? ", scroll for more" : ""}`
     body = (
       <>
         <CardGrid
@@ -121,8 +124,12 @@ export function BrowseResults({
             isPlaceholderData && "opacity-50",
           )}
         >
-          {media.map((item, index) => (
-            <AnimeCard key={item.id} media={item} priority={index < 6} />
+          {series.map((group, index) => (
+            <SeriesCard
+              key={group.first.id}
+              group={group}
+              priority={index < 6}
+            />
           ))}
           {isFetchingNextPage
             ? Array.from({ length: 6 }, (_, index) => (

@@ -75,6 +75,7 @@ scripts/        schema, fixtures, icons, bundle check
 - **Client components:** call `useAniListQuery(name, variables)` from `@/lib/anilist/hooks`. It goes through `/api/anilist/[op]`.
 - **Detail pages:** `getAnimeDetail(id)` (`src/features/anime/load.ts`) is the one cached `AnimeDetail` call; the page, its metadata, the MAL chip and the season chain all share it. An operation can pick its cache class from the response (`cacheFor` in the registry).
 - **Freshness** for every layer (TanStack, CDN, Next cache) lives in one table: `src/lib/anilist/cache-policy.ts`.
+- **Series:** browse and search results are grouped into series with `groupIntoSeries` (`src/domain/series.ts`), using the `SeriesLinks` fragment; add it to any new operation whose results are shown as cards. PLAN.md §10.0 explains the model.
 - **Search:** AniList's `search` only matches whole words. Text search goes through `src/features/browse/fetch-browse-page.ts`, which adds partial-word matches from `/api/title-matches` (Kitsu → AniList IDs, `src/lib/kitsu`). Use it rather than calling `BrowseAnime` with `search` directly.
 - Nothing calls `graphql.anilist.co` outside `src/lib/anilist`, or Kitsu outside `src/lib/kitsu`. Images from new hosts need a proxy route, because CSP blocks other origins.
 - AniList's terms (PLAN.md §1, §6): AniRadar is a complementary AniList client.

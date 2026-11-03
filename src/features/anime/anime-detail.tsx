@@ -17,17 +17,21 @@ import { TagList } from "./tag-list"
 import { TrailerPlayer } from "./trailer"
 
 /**
- * The detail page. Sections without data are left out. The MAL score and
- * the season chain arrive as slots that stream in on their own.
+ * The detail page, series first (PLAN.md §10.0): the hero, then the
+ * series' seasons, then this season's details. Sections without data are
+ * left out. The MAL score and the season chain arrive as slots that stream
+ * in on their own.
  */
 export function AnimeDetailView({
   media,
   malScore,
-  seasons,
+  series,
+  related,
 }: {
   media: AnimeDetail
   malScore: ReactNode
-  seasons: ReactNode
+  series: ReactNode
+  related: ReactNode
 }) {
   const accent = {
     "--cover": media.coverImage?.color ?? "var(--primary)",
@@ -63,6 +67,8 @@ export function AnimeDetailView({
           malScore={malScore}
         />
 
+        {series}
+
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="min-w-0 space-y-10">
             {showAiring ? (
@@ -74,7 +80,6 @@ export function AnimeDetailView({
             ) : null}
             {description ? <Synopsis html={description} /> : null}
             {streaming.length > 0 ? <StreamingLinks links={streaming} /> : null}
-            {seasons}
             {characters.length > 0 ? (
               <CharactersSection
                 animeId={media.id}
@@ -82,6 +87,7 @@ export function AnimeDetailView({
                 hasMore={media.characters?.pageInfo?.hasNextPage === true}
               />
             ) : null}
+            {related}
             {trailer ? <TrailerPlayer trailer={trailer} /> : null}
           </div>
 

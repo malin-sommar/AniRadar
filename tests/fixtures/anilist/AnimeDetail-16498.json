@@ -438,6 +438,7 @@
               "type": "MANGA",
               "format": "MANGA",
               "status": "FINISHED",
+              "averageScore": 84,
               "title": {
                 "romaji": "Shingeki no Kyojin",
                 "english": "Attack on Titan",
@@ -618,6 +619,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "Shingeki no Kyojin Zenpen: Guren no Yumiya",
                 "english": "Attack on Titan Part I: Crimson Bow and Arrow",
@@ -672,6 +674,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa",
                 "english": "Attack on Titan Part II: Wings of Freedom",
@@ -740,6 +743,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Shingeki no Kyojin Season 2",
                 "english": "Attack on Titan Season 2",
@@ -815,6 +819,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "Shingeki! Kyojin Chuugakkou",
                 "english": "Attack on Titan: Junior High",
@@ -862,6 +867,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Shingeki no Kyojin OVA",
                 "english": "Attack on Titan OVA",
@@ -909,6 +915,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Shingeki no Kyojin: Chronicle",
                 "english": "Attack on Titan ~Chronicle~",
@@ -977,6 +984,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 83,
               "title": {
                 "romaji": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
                 "english": "Attack on Titan: No Regrets",
@@ -1024,6 +1032,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Shingeki no Kyojin: LOST GIRLS",
                 "english": "Attack on Titan: Lost Girls",
@@ -1085,6 +1094,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 63,
               "title": {
                 "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Tondeke! Kunren Heidan",
                 "english": "Attack on Titan Picture Drama",
@@ -1125,6 +1135,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 50,
               "title": {
                 "romaji": "Chiyuki no Fashion Check",
                 "english": null,

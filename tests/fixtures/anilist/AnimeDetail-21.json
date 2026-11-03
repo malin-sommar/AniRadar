@@ -926,6 +926,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 65,
               "title": {
                 "romaji": "ONE PIECE: Taose! Kaizoku Ganzack",
                 "english": "One Piece: Defeat the Pirate Ganzack!",
@@ -980,6 +981,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 67,
               "title": {
                 "romaji": "ONE PIECE TV Special: Umi no Heso no Daibouken-hen",
                 "english": "One Piece: Umi no Heso no Daibouken-hen",
@@ -1020,6 +1022,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 67,
               "title": {
                 "romaji": "ONE PIECE: Oounabara ni Hirake! Dekkai Dekkai Chichi no Yume!",
                 "english": "One Piece Special: Open Upon the Great Sea! A Father's Huge, HUGE Dream!",
@@ -1060,6 +1063,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 69,
               "title": {
                 "romaji": "ONE PIECE: Mamore! Saigo no Oobutai",
                 "english": "One Piece Special: Protect! The Last Great Performance",
@@ -1100,6 +1104,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 68,
               "title": {
                 "romaji": "ONE PIECE: Nenmatsu Tokubetsu Kikaku! Mugiwara no Luffy Oyabun Torimonochou",
                 "english": "One Piece Special: The Detective Memoirs of Chief Straw Hat Luffy",
@@ -1140,6 +1145,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 66,
               "title": {
                 "romaji": "ONE PIECE: Yume no Soccer Ou!",
                 "english": null,
@@ -1187,6 +1193,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 64,
               "title": {
                 "romaji": "ONE PIECE: Mezase! Kaizoku Yakyuu Ou",
                 "english": null,
@@ -1227,6 +1234,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 61,
               "title": {
                 "romaji": "ONE PIECE 3D: Gekisou! Trap Coaster",
                 "english": null,
@@ -1267,6 +1275,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 72,
               "title": {
                 "romaji": "ONE PIECE: Episode of Luffy - Hand Island no Bouken",
                 "english": "One Piece: Episode of Luffy - Hand Island Adventure",
@@ -1314,6 +1323,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 69,
               "title": {
                 "romaji": "ONE PIECE FILM: Z - GLORIOUS ISLAND",
                 "english": null,
@@ -1361,6 +1371,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE: Episode of Nami - Koukaishi no Namida to Nakama no Kizuna",
                 "english": null,
@@ -1408,6 +1419,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE: Episode of Merry - Mou Hitori no Nakama no Monogatari",
                 "english": "One Piece: Episode of Merry - The Tale of One More Friend",
@@ -1455,6 +1467,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "ONE PIECE \"3D2Y\": Ace no shi wo Koete! Luffy Nakama to no Chikai",
                 "english": "One Piece 3D2Y: Overcome Ace’s Death! Luffy’s Vow to his Friends",
@@ -1495,6 +1508,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 74,
               "title": {
                 "romaji": "ONE PIECE: Episode of Sabo - 3-Kyoudai no Kizuna Kiseki no Saikai to Uketsugareru Ishi",
                 "english": "One Piece - Episode of Sabo: Bond of Three Brothers - A Miraculous Reunion and an Inherited Will",
@@ -1535,6 +1549,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 69,
               "title": {
                 "romaji": "ONE PIECE: Adventure of Nebulandia",
                 "english": "One Piece: Adventure of Nebulandia",
@@ -1575,6 +1590,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 73,
               "title": {
                 "romaji": "ONE PIECE: Heart of Gold",
                 "english": "One Piece: Heart of Gold",
@@ -1629,6 +1645,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "ONE PIECE: Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken",
                 "english": "One Piece: Episode of East Blue",
@@ -1676,6 +1693,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 68,
               "title": {
                 "romaji": "ONE PIECE (Movie)",
                 "english": "ONE PIECE: The Movie",
@@ -1723,6 +1741,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 67,
               "title": {
                 "romaji": "ONE PIECE: Nejimaki-jima no Bouken",
                 "english": "One Piece: Clockwork Island Adventure",
@@ -1784,6 +1803,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 64,
               "title": {
                 "romaji": "ONE PIECE: Chinjuu-jima no Chopper Oukoku",
                 "english": "One Piece: Chopper’s Kingdom on the Island of Strange Animals",
@@ -1845,6 +1865,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 72,
               "title": {
                 "romaji": "ONE PIECE THE MOVIE: Dead End no Bouken",
                 "english": "One Piece The Movie: The Dead End Adventure",
@@ -1899,6 +1920,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 67,
               "title": {
                 "romaji": "ONE PIECE: Norowareta Seiken",
                 "english": "One Piece: The Curse of the Sacred Sword",
@@ -1953,6 +1975,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE THE MOVIE: Omatsuri Danshaku to Himitsu no Shima",
                 "english": "One Piece: Baron Omatsuri and the Secret Island",
@@ -2007,6 +2030,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 68,
               "title": {
                 "romaji": "ONE PIECE THE MOVIE: Karakuri-jou no Mecha Kyohei",
                 "english": "One Piece: Mega Mecha Soldier of Karakuri Castle",
@@ -2061,6 +2085,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "ONE PIECE: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi",
                 "english": "One Piece: The Desert Princess and the Pirates, Adventures in Alabasta",
@@ -2129,6 +2154,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 71,
               "title": {
                 "romaji": "ONE PIECE THE MOVIE: Episode of Chopper Plus - Fuyu ni Saku, Kiseki no Sakura",
                 "english": "One Piece: Episode Of Chopper +: The Miracle Winter Cherry Blossom",
@@ -2197,6 +2223,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE FILM: STRONG WORLD",
                 "english": "One Piece Film: Strong World",
@@ -2258,6 +2285,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 64,
               "title": {
                 "romaji": "ONE PIECE 3D: Mugiwara Chase",
                 "english": "One Piece 3D: Mugiwara Chase",
@@ -2312,6 +2340,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 79,
               "title": {
                 "romaji": "ONE PIECE FILM: Z",
                 "english": "One Piece Film: Z",
@@ -2373,6 +2402,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "ONE PIECE FILM: GOLD",
                 "english": "One Piece Film: Gold",
@@ -2434,6 +2464,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 73,
               "title": {
                 "romaji": "ONE PIECE: Loguetown-hen",
                 "english": null,
@@ -2481,6 +2512,7 @@
               "type": "MANGA",
               "format": "MANGA",
               "status": "RELEASING",
+              "averageScore": 91,
               "title": {
                 "romaji": "ONE PIECE",
                 "english": "One Piece",
@@ -2850,6 +2882,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "ONE PIECE: Episode of Sorajima",
                 "english": "One Piece: Episode of Skypiea",
@@ -2897,6 +2930,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "ONE PIECE FILM: STRONG WORLD - EPISODE:0",
                 "english": null,
@@ -2951,6 +2985,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 80,
               "title": {
                 "romaji": "ONE PIECE STAMPEDE",
                 "english": "One Piece: Stampede",
@@ -3005,6 +3040,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 56,
               "title": {
                 "romaji": "Nissan SERENA × One Piece: Sennyuu Sauzando Sanii-gou",
                 "english": null,
@@ -3045,6 +3081,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 44,
               "title": {
                 "romaji": "Kyutai Panic Adventure!",
                 "english": null,
@@ -3106,6 +3143,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 69,
               "title": {
                 "romaji": "ONE PIECE: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi",
                 "english": null,
@@ -3160,6 +3198,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 59,
               "title": {
                 "romaji": "ONE PIECE: Cry heart",
                 "english": null,
@@ -3207,6 +3246,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 47,
               "title": {
                 "romaji": "Kyutai Panic Adventure Returns!!!",
                 "english": null,
@@ -3268,6 +3308,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 67,
               "title": {
                 "romaji": "ONE PIECE: Nejimaki-jima no Bouken - Jango no Dance Carnival",
                 "english": "One Piece: Django's Dance Carnival",
@@ -3315,6 +3356,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 62,
               "title": {
                 "romaji": "HUNGRY DAYS: Aoharu ka yo.",
                 "english": null,
@@ -3383,6 +3425,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 69,
               "title": {
                 "romaji": "ONE PIECE FILM: GOLD - episode 0 711ver.",
                 "english": null,
@@ -3437,6 +3480,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "ONE PIECE: ROMANCE DAWN STORY",
                 "english": "One Piece: Romance Dawn Story",
@@ -3484,6 +3528,7 @@
               "type": "MANGA",
               "format": "MANGA",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "WANTED! Oda Eiichiro Tanpenshuu",
                 "english": "Wanted! Eiichiro Oda Before One Piece",
@@ -3573,6 +3618,7 @@
               "type": "ANIME",
               "format": "MUSIC",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "Kinen Satsuei",
                 "english": null,
@@ -3620,6 +3666,7 @@
               "type": "ANIME",
               "format": "MUSIC",
               "status": "FINISHED",
+              "averageScore": 58,
               "title": {
                 "romaji": "A-RA-SHI : Reborn",
                 "english": null,
@@ -3660,6 +3707,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 70,
               "title": {
                 "romaji": "Toriko",
                 "english": null,
@@ -3735,6 +3783,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 81,
               "title": {
                 "romaji": "Dragon Ball Z",
                 "english": "Dragon Ball Z",
@@ -4020,6 +4069,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 61,
               "title": {
                 "romaji": "Tokyo One Piece Tower: Tongari Shima no Dai Hihou",
                 "english": "The Great Tongari Island Treasure Hunting Adventure",
@@ -4060,6 +4110,7 @@
               "type": "MANGA",
               "format": "ONE_SHOT",
               "status": "FINISHED",
+              "averageScore": 71,
               "title": {
                 "romaji": "Romance Dawn",
                 "english": "Romance Dawn",
@@ -4121,6 +4172,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE FILM: RED",
                 "english": "One Piece Film: Red",
@@ -4210,6 +4262,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 54,
               "title": {
                 "romaji": "One Piece: Annecy Festival 60th Anniversary",
                 "english": "One Piece: Annecy Festival 60th Anniversary",
@@ -4257,6 +4310,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "MONSTERS: Ippaku Sanjou Hiryuu Jigoku",
                 "english": "MONSTERS: 103 Mercies Dragon Damnation",
@@ -4304,6 +4358,7 @@
               "type": "ANIME",
               "format": null,
               "status": "NOT_YET_RELEASED",
+              "averageScore": null,
               "title": {
                 "romaji": "THE ONE PIECE",
                 "english": "THE ONE PIECE",
@@ -4351,6 +4406,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 59,
               "title": {
                 "romaji": "ONE PIECE×KAWAISOUNI! Kono Boushi wo Omae ni Azukeru",
                 "english": null,
@@ -4398,6 +4454,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "ONE PIECE FAN LETTER",
                 "english": "ONE PIECE FAN LETTER",
@@ -4452,6 +4509,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "ONE PIECE: Gyojin Tou-hen",
                 "english": "One Piece Log: Fish-Man Island Saga",
@@ -4506,6 +4564,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 76,
               "title": {
                 "romaji": "LOS ANGELES LAKERS x ONE PIECE",
                 "english": null,
@@ -4546,6 +4605,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 66,
               "title": {
                 "romaji": "Koisuru ONE PIECE",
                 "english": null,
@@ -4600,6 +4660,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "ONE PIECE HEROINES",
                 "english": "ONE PIECE HEROINES",
@@ -4647,6 +4708,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 64,
               "title": {
                 "romaji": "ONE PIECE: Original Episode/Luffy, Law",
                 "english": null,
@@ -4687,6 +4749,7 @@
               "type": "ANIME",
               "format": "TV_SHORT",
               "status": "FINISHED",
+              "averageScore": 58,
               "title": {
                 "romaji": "CHOPPER's",
                 "english": null,
@@ -4727,6 +4790,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "NOT_YET_RELEASED",
+              "averageScore": null,
               "title": {
                 "romaji": "ONE PIECE FILM: GOD VALLEY",
                 "english": null,
@@ -4767,6 +4831,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "NOT_YET_RELEASED",
+              "averageScore": null,
               "title": {
                 "romaji": "ONE PIECE FILM: BAAD",
                 "english": null,

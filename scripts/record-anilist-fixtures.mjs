@@ -29,6 +29,18 @@ const FIXTURES = {
       isAdult: false,
     },
   },
+  // A search where one series has many results, for the grouping tests.
+  "BrowseAnime-search-attack-on-titan": {
+    operation: "BrowseAnime",
+    file: "browse.graphql",
+    variables: {
+      page: 1,
+      perPage: 30,
+      search: "attack on titan",
+      sort: ["SEARCH_MATCH"],
+      isAdult: false,
+    },
+  },
   GenresAndTags: {
     operation: "GenresAndTags",
     file: "taxonomy.graphql",
