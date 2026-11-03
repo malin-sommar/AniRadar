@@ -6,6 +6,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 82,
       "title": {
         "romaji": "Bakemonogatari",
         "english": "Bakemonogatari",
@@ -35,6 +36,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Nekomonogatari (Kuro)",
                 "english": "Nekomonogatari Black",
@@ -89,6 +91,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 79,
               "title": {
                 "romaji": "Nisemonogatari",
                 "english": "Nisemonogatari",
@@ -164,6 +167,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 88,
               "title": {
                 "romaji": "Bakemonogatari",
                 "english": "Bakemonogatari: Monster Tale",
@@ -225,6 +229,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 74,
               "title": {
                 "romaji": "Koyomimonogatari",
                 "english": "Koyomimonogatari",
@@ -293,6 +298,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 64,
               "title": {
                 "romaji": "Nisekoimonogatari",
                 "english": "Nisekoimonogatari",
@@ -340,6 +346,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 65,
               "title": {
                 "romaji": "Bakemonogatari Anime Complete Guidebook",
                 "english": null,
@@ -387,6 +394,7 @@
               "type": "MANGA",
               "format": "MANGA",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Bakemonogatari",
                 "english": "Bakemonogatari",
@@ -476,6 +484,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 73,
               "title": {
                 "romaji": "Bakemonogatari PV",
                 "english": null,
@@ -524,6 +533,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 79,
       "title": {
         "romaji": "Nisemonogatari",
         "english": "Nisemonogatari",
@@ -553,6 +563,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Bakemonogatari",
                 "english": "Bakemonogatari",
@@ -642,6 +653,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 88,
               "title": {
                 "romaji": "Monogatari Series: Second Season",
                 "english": "Monogatari Series Second Season",
@@ -738,6 +750,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 74,
               "title": {
                 "romaji": "Koyomimonogatari",
                 "english": "Koyomimonogatari",
@@ -806,6 +819,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 63,
               "title": {
                 "romaji": "Nisemonogatari Anime Complete Guidebook",
                 "english": null,
@@ -846,6 +860,7 @@
               "type": "ANIME",
               "format": "MUSIC",
               "status": "FINISHED",
+              "averageScore": 59,
               "title": {
                 "romaji": "Naisho no Hanashi",
                 "english": "Naisho no Hanashi",
@@ -886,6 +901,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 80,
               "title": {
                 "romaji": "Nisemonogatari",
                 "english": "Nisemonogatari: Fake Tale",
@@ -948,6 +964,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 77,
       "title": {
         "romaji": "Nekomonogatari (Kuro)",
         "english": "Nekomonogatari Black",
@@ -977,6 +994,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Bakemonogatari",
                 "english": "Bakemonogatari",
@@ -1066,6 +1084,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 87,
               "title": {
                 "romaji": "Kizumonogatari III: Reiketsu-hen",
                 "english": "Kizumonogatari Part 3: Reiketsu",
@@ -1127,6 +1146,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 81,
               "title": {
                 "romaji": "Nekomonogatari: Kuro",
                 "english": "Nekomonogatari: Cat Tale (Black)",
@@ -1189,6 +1209,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 88,
       "title": {
         "romaji": "Monogatari Series: Second Season",
         "english": "Monogatari Series Second Season",
@@ -1218,6 +1239,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 79,
               "title": {
                 "romaji": "Nisemonogatari",
                 "english": "Nisemonogatari",
@@ -1293,6 +1315,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Nekomonogatari: Shiro",
                 "english": "Nekomonogatari: Cat Tale (White)",
@@ -1354,6 +1377,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 74,
               "title": {
                 "romaji": "Koyomimonogatari",
                 "english": "Koyomimonogatari",
@@ -1422,6 +1446,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 66,
               "title": {
                 "romaji": "Koyomi History",
                 "english": null,
@@ -1462,6 +1487,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Owarimonogatari",
                 "english": "Owarimonogatari",
@@ -1516,6 +1542,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 83,
               "title": {
                 "romaji": "Kabukimonogatari",
                 "english": "Kabukimonogatari: Dandy Tale",
@@ -1570,6 +1597,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 87,
               "title": {
                 "romaji": "Otorimonogatari",
                 "english": "Otorimonogatari: Decoy Tale",
@@ -1624,6 +1652,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 81,
               "title": {
                 "romaji": "Onimonogatari",
                 "english": "Onimonogatari: Demon Tale",
@@ -1678,6 +1707,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 90,
               "title": {
                 "romaji": "Koimonogatari",
                 "english": "Koimonogatari: Love Tale",
@@ -1740,6 +1770,7 @@
       "type": "ANIME",
       "format": "MOVIE",
       "status": "FINISHED",
+      "averageScore": 87,
       "title": {
         "romaji": "Kizumonogatari III: Reiketsu-hen",
         "english": "Kizumonogatari Part 3: Reiketsu",
@@ -1769,6 +1800,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Kizumonogatari II: Nekketsu-hen",
                 "english": "Kizumonogatari Part 2: Nekketsu",
@@ -1830,6 +1862,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 77,
               "title": {
                 "romaji": "Nekomonogatari (Kuro)",
                 "english": "Nekomonogatari Black",
@@ -1884,6 +1917,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Kizumonogatari",
                 "english": "Kizumonogatari: Wound Tale",
@@ -1966,6 +2000,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 80,
               "title": {
                 "romaji": "Kizumonogatari: Koyomi Vamp",
                 "english": "KIZUMONOGATARI -Koyomi Vamp-",
@@ -2028,6 +2063,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 85,
       "title": {
         "romaji": "Owarimonogatari",
         "english": "Owarimonogatari",
@@ -2057,6 +2093,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 88,
               "title": {
                 "romaji": "Monogatari Series: Second Season",
                 "english": "Monogatari Series Second Season",
@@ -2153,6 +2190,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 79,
               "title": {
                 "romaji": "Tsukimonogatari",
                 "english": "Tsukimonogatari",
@@ -2221,6 +2259,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 90,
               "title": {
                 "romaji": "Owarimonogatari",
                 "english": "Owarimonogatari: End Tale",
@@ -2283,6 +2322,7 @@
       "type": "ANIME",
       "format": "MOVIE",
       "status": "FINISHED",
+      "averageScore": 85,
       "title": {
         "romaji": "Kizumonogatari II: Nekketsu-hen",
         "english": "Kizumonogatari Part 2: Nekketsu",
@@ -2312,6 +2352,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 83,
               "title": {
                 "romaji": "Kizumonogatari I: Tekketsu-hen",
                 "english": "Kizumonogatari Part 1: Tekketsu",
@@ -2366,6 +2407,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 87,
               "title": {
                 "romaji": "Kizumonogatari III: Reiketsu-hen",
                 "english": "Kizumonogatari Part 3: Reiketsu",
@@ -2427,6 +2469,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Kizumonogatari",
                 "english": "Kizumonogatari: Wound Tale",
@@ -2509,6 +2552,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 80,
               "title": {
                 "romaji": "Kizumonogatari: Koyomi Vamp",
                 "english": "KIZUMONOGATARI -Koyomi Vamp-",
@@ -2571,6 +2615,7 @@
       "type": "ANIME",
       "format": "MOVIE",
       "status": "FINISHED",
+      "averageScore": 83,
       "title": {
         "romaji": "Kizumonogatari I: Tekketsu-hen",
         "english": "Kizumonogatari Part 1: Tekketsu",
@@ -2600,6 +2645,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Kizumonogatari II: Nekketsu-hen",
                 "english": "Kizumonogatari Part 2: Nekketsu",
@@ -2661,6 +2707,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Kizumonogatari",
                 "english": "Kizumonogatari: Wound Tale",
@@ -2743,6 +2790,7 @@
               "type": "ANIME",
               "format": "MOVIE",
               "status": "FINISHED",
+              "averageScore": 80,
               "title": {
                 "romaji": "Kizumonogatari: Koyomi Vamp",
                 "english": "KIZUMONOGATARI -Koyomi Vamp-",
@@ -2805,6 +2853,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 79,
       "title": {
         "romaji": "Tsukimonogatari",
         "english": "Tsukimonogatari",
@@ -2834,6 +2883,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Tsukimonogatari",
                 "english": "Tsukimonogatari: Possession Tale",
@@ -2895,6 +2945,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 56,
               "title": {
                 "romaji": "Okitegami Kyouko no Bibouroku × Monogatari",
                 "english": null,
@@ -2949,6 +3000,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 74,
               "title": {
                 "romaji": "Koyomimonogatari",
                 "english": "Koyomimonogatari",
@@ -3017,6 +3069,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Owarimonogatari (Ge)",
                 "english": "Owarimonogatari Second Season",
@@ -3071,6 +3124,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Owarimonogatari",
                 "english": "Owarimonogatari",
@@ -3126,6 +3180,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 89,
       "title": {
         "romaji": "Owarimonogatari (Ge)",
         "english": "Owarimonogatari Second Season",
@@ -3155,6 +3210,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 84,
               "title": {
                 "romaji": "Zoku Owarimonogatari",
                 "english": "Zoku Owarimonogatari",
@@ -3216,6 +3272,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 79,
               "title": {
                 "romaji": "Tsukimonogatari",
                 "english": "Tsukimonogatari",
@@ -3284,6 +3341,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 90,
               "title": {
                 "romaji": "Owarimonogatari",
                 "english": "Owarimonogatari: End Tale",
@@ -3346,6 +3404,7 @@
       "type": "ANIME",
       "format": "OVA",
       "status": "FINISHED",
+      "averageScore": 84,
       "title": {
         "romaji": "Zoku Owarimonogatari",
         "english": "Zoku Owarimonogatari",
@@ -3375,6 +3434,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "Hanamonogatari",
                 "english": "Hanamonogatari",
@@ -3422,6 +3482,7 @@
               "type": "ANIME",
               "format": "TV",
               "status": "FINISHED",
+              "averageScore": 89,
               "title": {
                 "romaji": "Owarimonogatari (Ge)",
                 "english": "Owarimonogatari Second Season",
@@ -3476,6 +3537,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 85,
               "title": {
                 "romaji": "Zoku Owarimonogatari",
                 "english": "Zoku Owarimonogatari: End Tale (Cont.)",
@@ -3537,6 +3599,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 86,
               "title": {
                 "romaji": "Monogatari Series: Off & Monster Season",
                 "english": "MONOGATARI Series: OFF & MONSTER Season",
@@ -3627,6 +3690,7 @@
       "type": "ANIME",
       "format": "TV",
       "status": "FINISHED",
+      "averageScore": 78,
       "title": {
         "romaji": "Hanamonogatari",
         "english": "Hanamonogatari",
@@ -3656,6 +3720,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 84,
               "title": {
                 "romaji": "Zoku Owarimonogatari",
                 "english": "Zoku Owarimonogatari",
@@ -3717,6 +3782,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Hanamonogatari",
                 "english": "Hanamonogatari: Flower Tale",
@@ -3772,6 +3838,7 @@
       "type": "ANIME",
       "format": "ONA",
       "status": "FINISHED",
+      "averageScore": 86,
       "title": {
         "romaji": "Monogatari Series: Off & Monster Season",
         "english": "MONOGATARI Series: OFF & MONSTER Season",
@@ -3801,6 +3868,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 83,
               "title": {
                 "romaji": "Orokamonogatari",
                 "english": null,
@@ -3855,6 +3923,7 @@
               "type": "ANIME",
               "format": "OVA",
               "status": "FINISHED",
+              "averageScore": 84,
               "title": {
                 "romaji": "Zoku Owarimonogatari",
                 "english": "Zoku Owarimonogatari",
@@ -3916,6 +3985,7 @@
               "type": "ANIME",
               "format": "SPECIAL",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "Monogatari Series: Off & Monster Season - Zankoku Douwa: Utsukushi-hime",
                 "english": "MONOGATARI Series: OFF & MONSTER Season - A Cruel Fairy Tale: The Beautiful Princess",
@@ -3963,6 +4033,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 87,
               "title": {
                 "romaji": "Nademonogatari",
                 "english": null,
@@ -4017,6 +4088,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Wazamonogatari",
                 "english": null,
@@ -4085,6 +4157,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Shinobumonogatari",
                 "english": null,
@@ -4139,6 +4212,7 @@
               "type": "ANIME",
               "format": "MUSIC",
               "status": "FINISHED",
+              "averageScore": 78,
               "title": {
                 "romaji": "UNDEAD",
                 "english": "UNDEAD",
@@ -4179,6 +4253,7 @@
               "type": "ANIME",
               "format": null,
               "status": "NOT_YET_RELEASED",
+              "averageScore": null,
               "title": {
                 "romaji": "Monogatari Series: Off & Monster Season Shin Episode",
                 "english": null,
@@ -4227,6 +4302,7 @@
       "type": "ANIME",
       "format": null,
       "status": "NOT_YET_RELEASED",
+      "averageScore": null,
       "title": {
         "romaji": "Monogatari Series: Off & Monster Season Shin Episode",
         "english": null,
@@ -4256,6 +4332,7 @@
               "type": "ANIME",
               "format": "ONA",
               "status": "FINISHED",
+              "averageScore": 86,
               "title": {
                 "romaji": "Monogatari Series: Off & Monster Season",
                 "english": "MONOGATARI Series: OFF & MONSTER Season",
@@ -4345,6 +4422,7 @@
               "type": "MANGA",
               "format": "NOVEL",
               "status": "FINISHED",
+              "averageScore": 82,
               "title": {
                 "romaji": "Wazamonogatari",
                 "english": null,

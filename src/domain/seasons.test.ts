@@ -6,6 +6,7 @@ import {
   compareStartDates,
   formatStartDate,
   groupSeasons,
+  seriesSummary,
   walkSeasonChain,
   type SeasonItem,
 } from "./seasons"
@@ -152,5 +153,31 @@ describe("dates", () => {
     expect(formatStartDate(node(2027, 1))).toBe("Jan 2027")
     expect(formatStartDate(node(2027))).toBe("2027")
     expect(formatStartDate(node(null))).toBe("TBA")
+  })
+})
+
+describe("seriesSummary", () => {
+  it("sums episodes and averages scores across the main story", async () => {
+    const { groups } = await seasonsFrom(aot)
+    const summary = seriesSummary(groups.main)
+    expect(summary.seasons).toBe(6)
+    expect(summary.years).toEqual([2013, 2022])
+    expect(summary.episodes).toBeGreaterThan(80)
+    expect(summary.averageScore).toBeGreaterThan(70)
+  })
+
+  it("leaves the episode total out when a season's count is unknown", () => {
+    const node = (episodes: number | null) =>
+      ({
+        id: episodes ?? 0,
+        status: "FINISHED",
+        episodes,
+        averageScore: null,
+        startDate: null,
+        seasonYear: null,
+      }) as Parameters<typeof seriesSummary>[0][number]
+    expect(seriesSummary([node(12), node(null)]).episodes).toBeUndefined()
+    expect(seriesSummary([node(12), node(13)]).episodes).toBe(25)
+    expect(seriesSummary([node(12)]).averageScore).toBeUndefined()
   })
 })

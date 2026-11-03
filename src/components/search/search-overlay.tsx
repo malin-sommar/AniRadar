@@ -17,13 +17,21 @@ import {
   CommandList,
 } from "@/components/ui/command"
 import { EMPTY_FILTERS, toBrowseVariables } from "@/domain/browse"
-import { mediaMeta } from "@/domain/media"
-import { fetchBrowsePage } from "@/features/browse/fetch-browse-page"
+import { formatLabel, mediaMeta } from "@/domain/media"
+import {
+  groupIntoSeries,
+  seriesCountLabel,
+  yearsLabel,
+  type SeriesGroup,
+} from "@/domain/series"
+import {
+  fetchBrowsePage,
+  type BrowseMedia,
+} from "@/features/browse/fetch-browse-page"
 import { browseSearchHref } from "@/features/browse/search-params"
 import { useDebouncedValue } from "@/hooks/use-debounced-value"
 import { useDisplayTitle, usePreferences } from "@/hooks/use-preferences"
 import { CACHE_POLICIES } from "@/lib/anilist/cache-policy"
-import type { MediaCardFragment } from "@/lib/anilist/gql/graphql"
 import { aniListQueryKey } from "@/lib/anilist/query-keys"
 
 const MAX_RESULTS = 8
@@ -108,7 +116,7 @@ function SearchPanel({ onDone }: { onDone: () => void }) {
     MAX_RESULTS,
   )
   // Same lookup as the browse page's first page (partial words included),
-  // trimmed to the top matches.
+  // grouped into series and trimmed to the top matches.
   const { data, isFetching, isError } = useQuery({
     queryKey: [...aniListQueryKey("BrowseAnime", variables), "overlay"],
     queryFn: ({ signal }) => fetchBrowsePage(variables, 1, signal),
@@ -116,13 +124,15 @@ function SearchPanel({ onDone }: { onDone: () => void }) {
     enabled,
     placeholderData: keepPreviousData,
   })
-  const results = enabled ? (data?.media ?? []).slice(0, MAX_RESULTS) : []
+  const results = enabled
+    ? groupIntoSeries(data?.media ?? []).slice(0, MAX_RESULTS)
+    : []
   const typing = term.trim() !== search
   const busy = enabled && (isFetching || typing)
 
   // Highlight the top match whenever a new set of results arrives, rather
   // than whichever row happened to be highlighted before.
-  const firstValue = results[0] ? `anime-${results[0].id}` : "see-all"
+  const firstValue = results[0] ? `anime-${results[0].first.id}` : "see-all"
   const [highlighted, setHighlighted] = useState(firstValue)
   const [lastFirst, setLastFirst] = useState(firstValue)
   if (firstValue !== lastFirst) {
@@ -178,11 +188,11 @@ function SearchPanel({ onDone }: { onDone: () => void }) {
         ) : null}
         {results.length > 0 ? (
           <CommandGroup heading="Anime">
-            {results.map((media) => (
+            {results.map((group) => (
               <SearchResult
-                key={media.id}
-                media={media}
-                onSelect={() => go(`/anime/${media.id}`)}
+                key={group.first.id}
+                group={group}
+                onSelect={() => go(`/anime/${group.first.id}`)}
               />
             ))}
           </CommandGroup>
@@ -208,14 +218,22 @@ function SearchPanel({ onDone }: { onDone: () => void }) {
 }
 
 function SearchResult({
-  media,
+  group,
   onSelect,
 }: {
-  media: MediaCardFragment
+  group: SeriesGroup<BrowseMedia>
   onSelect: () => void
 }) {
+  const media = group.first
   const title = useDisplayTitle(media.title)
-  const meta = mediaMeta(media)
+  const continues = useDisplayTitle(group.continues?.title)
+  const count = seriesCountLabel(group)
+  const meta = count
+    ? [formatLabel(media.format), count, yearsLabel(group.years)]
+        .filter(Boolean)
+        .join(" · ")
+    : mediaMeta(media)
+  const isAdult = group.members.some((item) => item.isAdult)
   return (
     <CommandItem
       value={`anime-${media.id}`}
@@ -233,8 +251,13 @@ function SearchResult({
         {meta ? (
           <span className="block text-xs text-muted-foreground">{meta}</span>
         ) : null}
+        {group.continues ? (
+          <span className="block text-xs text-muted-foreground">
+            Continues {continues}
+          </span>
+        ) : null}
       </span>
-      {media.isAdult ? (
+      {isAdult ? (
         <span className="ml-auto shrink-0 rounded-full bg-destructive px-1.5 text-[11px] font-semibold text-background">
           18+
         </span>

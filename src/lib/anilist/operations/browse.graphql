@@ -32,6 +32,7 @@ query BrowseAnime(
       isAdult: $isAdult
     ) {
       ...MediaCard
+      ...SeriesLinks
     }
   }
 }

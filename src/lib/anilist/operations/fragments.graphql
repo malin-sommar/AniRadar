@@ -26,12 +26,39 @@ fragment MediaCard on Media {
   }
 }
 
+# Relation links on browse and search results, so seasons of one series can
+# be grouped into one card (and a lone sequel labelled with what it
+# continues) without extra requests.
+fragment SeriesLinks on Media {
+  startDate {
+    year
+    month
+    day
+  }
+  relations {
+    edges {
+      relationType(version: 2)
+      node {
+        id
+        type
+        format
+        title {
+          romaji
+          english
+          native
+        }
+      }
+    }
+  }
+}
+
 # One entry in a franchise's season chain (seasons, movies, specials).
 fragment SeasonNode on Media {
   id
   type
   format
   status
+  averageScore
   title {
     romaji
     english

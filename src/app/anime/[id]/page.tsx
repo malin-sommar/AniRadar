@@ -5,6 +5,7 @@ import { Suspense } from "react"
 
 import { displayTitle } from "@/domain/media"
 import { parseAnimeId } from "@/domain/detail"
+import { hasSeasonChain } from "@/domain/seasons"
 import { AnimeDetailView } from "@/features/anime/anime-detail"
 import { DetailError } from "@/features/anime/detail-error"
 import { DetailSkeleton } from "@/features/anime/detail-skeleton"
@@ -12,8 +13,9 @@ import { getAnimeDetail, type AnimeDetail } from "@/features/anime/load"
 import { MalScoreChip } from "@/features/anime/mal-score"
 import { ScoreChipSkeleton } from "@/features/anime/score-chip"
 import {
-  SeasonsSection,
+  RelatedSection,
   SeasonsSkeleton,
+  SeriesSection,
 } from "@/features/anime/seasons-section"
 import { imageSrc } from "@/lib/images"
 import { descriptionText } from "@/lib/sanitize"
@@ -89,9 +91,18 @@ async function AnimeDetailRoute({ params }: PageProps<"/anime/[id]">) {
           <MalScoreChip id={id} />
         </Suspense>
       }
-      seasons={
-        <Suspense fallback={<SeasonsSkeleton />}>
-          <SeasonsSection id={id} />
+      series={
+        // Only entries with a prequel or sequel get the series overview, so
+        // one-off shows never flash its skeleton.
+        hasSeasonChain(media) ? (
+          <Suspense fallback={<SeasonsSkeleton />}>
+            <SeriesSection id={id} />
+          </Suspense>
+        ) : null
+      }
+      related={
+        <Suspense>
+          <RelatedSection id={id} />
         </Suspense>
       }
     />

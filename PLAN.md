@@ -96,6 +96,11 @@ If you prefer B or C, Appendix A shows what changes.
    Docker isn't installed on this machine. Can you install Docker Desktop or an alternative, so Supabase can run locally? If not, the database tests run in GitHub Actions and local development uses the dev project. **Decided: no Docker.** Local development uses the dev project; database tests run in GitHub Actions.
 7. **Privacy policy:** **Decided:** the data controller is Malin Sommar, contact malinsommar1997@gmail.com.
 8. **Git workflow:** **Decided: one branch and pull request per phase.** You review and merge; I ask before every commit and push.
+9. **Series or seasons?** (2026-11-03, after Phase 2) **Decided: series first.** You search, browse, follow and get notified per *series*; seasons live inside the series page. AniList itself stays per season, so AniRadar adds the series layer on top (§10.0).
+   - Movies in the main story count as part of the series.
+   - Ratings: both: a score per season (in AniList) and a score for the whole series (in AniRadar).
+   - Spin-offs are separate series, but still listed under "Side stories & specials" on the detail page. Each series gets an option to "Track all side stories and specials" too.
+   - In browse, a new season whose earlier seasons aren't among the results shows as itself, labelled with the season it continues (my call; easy to change later).
 
 **Confirmed:**
 - English UI.
@@ -398,6 +403,16 @@ create table public.entry_prefs (                        -- AniRadar-only data p
   primary key (user_id, media_id)
 );
 
+create table public.series_prefs (                       -- Phase 4: AniRadar-only data per followed series (§10.0)
+  user_id              uuid not null default auth.uid() references auth.users on delete cascade,
+  anchor_media_id      integer not null,                  -- any AniList entry in the series; the chain is resolved when used
+  notify               boolean,                           -- null = default for the series' status
+  track_side_stories   boolean not null default false,    -- "Track all side stories and specials"
+  series_score         numeric(3,1) check (series_score between 1 and 10),
+  updated_at           timestamptz not null default now(),
+  primary key (user_id, anchor_media_id)
+);
+
 create table public.feed_events (
   id               bigint generated always as identity primary key,
   user_id          uuid not null default auth.uid() references auth.users on delete cascade,
@@ -525,6 +540,27 @@ revoke all on public.entry_prefs from anon;
 
 ## 10. Feature specs
 
+### 10.0 Series (applies everywhere, from Phase 2b)
+
+AniList has no "series": every season, movie and special is its own entry, and your AniList list is per entry. AniRadar groups them, so you deal with *Attack on Titan*, not with nine entries.
+
+- **What a series is:** the entries linked by AniList's PREQUEL/SEQUEL relations (the season chain from §10.2). Its **main story** is the TV seasons, ONAs and movies in the chain, in start-date order; OVAs and specials in the chain sit with the side stories. The series is named after its first main-story entry (AniList has no franchise names, so Monogatari shows as "Bakemonogatari").
+- **What it isn't:** spin-offs, side stories, alternative versions (remakes, recap films) and source material are separate series. The detail page still lists them under "Side stories & specials".
+- **Where it shows:**
+  - **Search and browse:** one card per series (§10.1).
+  - **Detail page:** the series comes first: every season with its own episodes, dates, status and score, then the selected season's details (§10.2).
+  - **My list, schedule, feed and push:** per series (§10.3, §10.7, §10.8, §10.11).
+- **Tracking a series** (Phase 4):
+  - One action covers the whole series: "Where are you?" picks a season and episode, and AniRadar writes it to AniList: earlier seasons → Completed, that season → Watching at that episode, later ones are left alone (or set to Want to watch if you choose).
+  - Each AniList write is one request, so a long series is written in the background within the rate limit, with progress shown.
+  - Lists you already have on AniList are grouped automatically.
+  - **Series status**, worked out from the seasons: Watching · Up to date (waiting for the next episode or season, i.e. Awaiting) · Want to watch · Completed · Paused · Dropped.
+  - **Following a series** covers seasons that don't exist yet: when AniList adds a sequel to the chain, it appears in your feed, schedule and (Phase 9) push, without you adding it. Adding it to your AniList list stays the optional auto-add setting (Q5).
+  - **"Track all side stories and specials"** per series: when on, the side stories, specials and spin-offs listed on the series page are followed too.
+- **What AniRadar stores:** per followed series, one AniList ID (any entry in it; the chain is resolved again when it's used, since AniList sometimes adds a prequel later), the bell, the side-stories option and your series score (`series_prefs`, §8). AniList IDs only, as §6 requires; progress per season stays in AniList.
+- **Cost:** grouping search results needs only the relation IDs that come with each result (no extra requests). The full chain is walked on the series page (at most 4 requests, cached a day) and, for followed series, once a day in the background to spot new seasons.
+- **Edge cases, accepted for now:** some franchises chain shows you might call separate (e.g. Dragon Ball → Dragon Ball Z); recaps or specials can sit inside a chain; long chains may stop after 8 steps (marked "some entries may be missing"). A per-series "treat as separate" override can come later if it's needed.
+
 ### 10.1 Browse & search (Phase 1)
 
 - **Filters:**
@@ -545,6 +581,7 @@ revoke all on public.entry_prefs from anon;
   - AniList score
   - an airing badge ("Ep 7 in 2 d")
   - your list status, if the show is on your list
+- **One card per series** (Phase 2b, §10.0): seasons of the same series among the loaded results become one card, shown as the series' first season with "6 seasons" and the airing badge of whichever season is airing. A season whose earlier seasons aren't among the results (typical when browsing one season) shows as itself, labelled "Continues *previous season*". The same applies to the search overlay.
 
 ### 10.2 Detail page (Phase 2)
 
@@ -554,6 +591,7 @@ revoke all on public.entry_prefs from anon;
 - **Airing:** a live countdown to the next episode (per second during the last hour), and the next 6 episodes in your time zone.
 - **Where to stream:** branded chips from AniList's streaming links (icon, colour, language), labelled "availability varies by region".
 - **Characters & voice actors:** main characters first, with the Japanese and English voice actors side by side. "Show all" pages through the rest.
+- **Series first** (Phase 2b, §10.0): right under the hero, the series' seasons with each one's format, episodes, year, status and score, plus a summary (seasons, years, total episodes, average score). The season you opened is marked; picking another opens that season's details in place of these.
 - **Seasons & related:**
   - Built by walking the prequel/sequel chain: batched `id_in` lookups, at most 8 hops, cached 24 h. The result is ordered by start date.
   - Groups: main story (TV, ONA and movies in the chain), side stories & specials, and source material (linking to AniList).
@@ -564,6 +602,7 @@ revoke all on public.entry_prefs from anon;
 
 ### 10.3 My list (Phase 4)
 
+- **Per series** (§10.0): one row per series, with its status, where you are ("S3 · Ep 5 of 12") and the next episode or announced season. Expanding a row shows its seasons with their own AniList status and progress. Tracking actions work on the series ("Where are you?") or on a single season.
 - **Tabs:** All · Watching · Awaiting · Want to watch · Completed · Paused · Dropped. Rewatching shows inside Watching with a badge.
 - **Sort and search:** sort by last updated, title, next airing, score or start date, and search within the list.
 - **Edit sheet:** status, a progress stepper (+1, −1, or type a number), score, the bell, and "Remove from list".
@@ -571,6 +610,7 @@ revoke all on public.entry_prefs from anon;
   - Quick repeated +1 taps are bundled into one AniList call (about 0.8 s).
   - Offline edits are queued and replayed when you're back online. AniList stays the source of truth, and only changed fields are sent.
 - **Loading the list:** one `MediaListCollection` call through `/api/me/list`. Custom lists are ignored, so nothing shows up twice.
+- **Smart status** is worked out per season below, and a series takes the status of its current season (the latest one you've started), or Awaiting when every aired season is completed and a new one is announced.
 - **Smart status** lives in `src/domain/smart-status.ts`. It's a pure function of entry + media + sequels + overrides + current time:
 
 | AniList status | Condition | AniRadar shows | Written to AniList |
@@ -613,6 +653,7 @@ stateDiagram-v2
 ### 10.5 My ratings (Phase 4)
 
 - **Score:** 1–10 in half points, using stars with half-star precision or a slider, with "Clear". It's written to AniList as `scoreRaw` (score × 10) and read back in AniList's 10-point decimal format.
+- **Per season and per series** (§10.0): each season has its own score (in AniList). The series has your own series score (in AniRadar's `series_prefs`); without one, it shows the average of your season scores. "Apply to all seasons" copies the series score to seasons that have none.
 - **Top list:** ranked by score, with ties broken by last updated. Filter by genre, format and year; sort by score, title or year.
 - A warning appears if your AniList score format can't hold half points.
 
@@ -632,8 +673,8 @@ stateDiagram-v2
 
 This is notifications step 1.
 
-- **Event types:** new episode aired, sequel announced, sequel started airing, automatic status changes (with Undo), and news (Phase 7).
-- **Bell per anime:** with the bell on, the show appears in New for you, in your calendar feed, and (from Phase 9) in push notifications. The bell is on by default for Watching and Awaiting; you can change both defaults in settings.
+- **Event types:** new episode aired, new season announced (a sequel joins a followed series), new season started airing, automatic status changes (with Undo), and news (Phase 7).
+- **Bell per series** (§10.0): with the bell on, every season of the series appears in New for you, in your calendar feed, and (from Phase 9) in push notifications, including seasons announced later. With "Track all side stories and specials", those count too. The bell is on by default for Watching and Awaiting series; you can change both defaults in settings.
 - **How events are created:**
   - The app checks when it opens or comes back to the foreground, at most every 15 minutes, compares against the last check, and saves new events.
   - Each event has a dedupe key such as `ep:154587:5`, so two devices never create duplicates.
@@ -643,7 +684,7 @@ This is notifications step 1.
 ### 10.8 Schedule & seasonal view (Phase 6)
 
 - **Week view** (Monday to Sunday, in your time zone):
-  - Shows episodes from your list plus season premieres, with episode numbers, times and countdowns.
+  - Shows episodes from the series you follow (any of their seasons, even ones not on your AniList list yet) plus season premieres, with episode numbers, times and countdowns.
   - A day list on phones and a 7-column grid on desktop.
   - Previous and next week, and a jump to today.
   - A **My list / All airing** toggle. "All airing" is filtered by popularity so it doesn't get cluttered.
@@ -681,13 +722,13 @@ This is notifications step 3.
 
 - **Turn it on per device** in Settings → Notifications. On iPhone this only works after "Add to Home Screen" (iOS 16.4+), so a guide appears when needed.
 - **Every 15 minutes**, Supabase `pg_cron` calls `/api/cron/notify` with a secret. The route:
-  - finds episodes that aired since the last run, for shows with the bell on (one batched AniList call for all users' shows together)
+  - finds episodes that aired since the last run, for followed series with the bell on (one batched AniList call for all users' seasons together)
   - creates feed events and sends pushes with `web-push`
   - removes dead subscriptions (404 or 410)
   - respects per-type settings and optional quiet hours
 - **Daily:**
   - refresh the list snapshot of every push user from AniList (1 call per user)
-  - check for new sequels
+  - check followed series for new seasons (chain walks, cached a day)
   - delete old events
 - **Payload:** title, text, link and a tag, so repeat pushes about the same episode replace each other. Tapping a notification opens the anime's page.
 
@@ -855,6 +896,7 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 | 0 | Foundation: setup, API layer, caching, app shell | M | done, in review |
 | 1 | Browse & search | M | done, in review |
 | 2 | Detail page | L | done, in review |
+| 2b | Series view: one card per series, series-first detail page | S | done, in review |
 | 3 | Accounts & AniList connection | L | not started |
 | 4 | My list, ratings, smart status, streaming filter | L | not started |
 | 5 | Home dashboard & "New for you" (notifications step 1) | M | not started |
@@ -914,6 +956,19 @@ I changed your suggested order in one place: **accounts and the AniList connecti
   - a throttled network, which should show skeletons and no layout shift
 - **Checks:** season-ordering tests on recorded franchise fixtures; the server log shows a single AniList call for the main content.
 
+### Phase 2b — Series view
+
+Added after Phase 2 (Q9): the series-first parts that don't need an account.
+
+- Search, browse and the search overlay show one card per series (§10.1); a season whose earlier seasons aren't among the results is labelled with the season it continues.
+- The detail page puts the series first: its seasons with episodes, dates, status and score, and a series summary, right under the hero (§10.2).
+- PLAN.md describes how the list, ratings, feed, schedule and push work per series (§10.0), so Phases 4–9 are built that way.
+- **You can test:**
+  - search "attack on titan": one card with its seasons, spin-offs as their own cards
+  - browse Winter 2026: new seasons say which season they continue
+  - open a series and switch between its seasons
+- **Checks:** unit tests for grouping on recorded results; e2e tests for grouped search and the series overview.
+
 ### Phase 3 — Accounts & AniList connection
 
 - **Database:** Supabase dev and prod projects in the EU, CLI migrations, schema v1 with RLS and pgTAP tests (including the guard tests), and generated DB types.
@@ -938,7 +993,8 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 - **`/list`:** tabs, sorting, search, the streaming filter and "My services".
 - **Smart status:** overrides, auto-complete and sequel handling (Q5).
 - **`/ratings`:** the top list.
-- **List controls** on cards and on the detail page.
+- **List controls** on cards and on the detail page, per series ("Where are you?") and per season (§10.0).
+- **Series:** `series_prefs` with RLS and tests; series status; series and season scores; "Track all side stories and specials".
 - **You can test:**
   - your real AniList list appears, and progress you change shows up on anilist.co
   - a show you're caught up on that's still airing sits under Awaiting
@@ -1063,6 +1119,8 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 | 2026-11-02 | 0 Foundation | done, in review | App shell, AniList layer, caching, image proxy, PWA basics, tests and CI. Details below. |
 | 2026-11-03 | 1 Browse & search | done, in review | `/browse` with filters, sort, URL state and infinite scroll; search overlay; final card; title language and adult content settings. Details below. |
 | 2026-11-03 | 2 Detail page | done, in review | `/anime/[id]` with hero, airing countdown, streaming links, seasons in order, characters and voice actors, tags, trailer, recommendations, link previews; MAL score via Jikan. Details below. |
+| 2026-11-03 | Planning | decided | Series first (Q9): search, browse, follow and notifications per series; seasons inside the series page. New Phase 2b for the parts that don't need an account. |
+| 2026-11-03 | 2b Series view | done, in review | One card per series in search, browse and the overlay; lone sequels say what they continue; the detail page leads with the series' seasons and a summary. Details below. |
 
 ### Phase 0 notes
 
@@ -1173,6 +1231,22 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 - **Prefetching is safe:** cards prefetch only the detail page's shell, never its data, so a browse page doesn't trigger AniList calls.
 - **The e2e server's AniList limit is raised to 600/min** (mock only; the real limit stays at 25/min), and assertions get 10 s instead of 5 s, since detail pages render a lot on the server when many tests run at once.
 - **Left for Phase 8:** the cover-to-detail animation (View Transitions) and accent colours adjusted in OKLCH for contrast. The cover colour is used for decoration only, never for text.
+
+### Phase 2b notes
+
+**What's in place**
+- **One card per series** in search, browse and the search overlay. Browse and search results now carry their prequel/sequel links (`SeriesLinks`), and `groupIntoSeries` (`src/domain/series.ts`) joins linked results across every loaded page. No extra AniList requests.
+  - The card shows the series' first season with "6 seasons", "3 films" or "9 seasons · 3 films", the years ("2013–2023"), and the airing badge of whichever season airs next.
+  - A season whose earlier seasons aren't among the results shows as itself with "Continues *previous season*" (e.g. browsing Winter 2026: "JUJUTSU KAISEN Season 3 … Continues JUJUTSU KAISEN Season 2").
+  - Spin-offs, recap films and chibi shorts stay their own cards. Searching "attack on titan" gives 8 cards for 20 results.
+- **Series-first detail page:** right under the hero, "Seasons" lists the main story with each entry's score, episodes, year and status (Airing or Upcoming), plus a summary such as "Attack on Titan · 6 seasons · 2013–2022 · 87 episodes · 87% average". The entry you're on is marked. Side stories, spin-offs and the source moved to their own section further down ("Side stories & related"). One-off shows don't get the section at all, so no skeleton flashes.
+- **PLAN.md** now describes series everywhere (§10.0, Q9), so Phases 4–9 build the list, ratings, feed, schedule and push per series, with `series_prefs` (§8) for followed series.
+- **Tests:** 180 unit and component tests (grouping on a recorded "attack on titan" search and the popular-shows fixture; series summary); 62 e2e tests.
+
+**Deviations and findings**
+- **The series card counts only the seasons among the results.** A search that matches 5 of 6 seasons says "5 seasons"; the series page always has the full chain.
+- **Average scores and episode totals cover the main story** (TV, ONA, films) as far as it has aired; upcoming seasons don't count towards episodes.
+- **Kitsu's partial matches can rank first** in the overlay and on page 1 (e.g. "Attack on Skytree" second for "attack on titan"); grouping keeps each series where its best result was.
 
 ---
 

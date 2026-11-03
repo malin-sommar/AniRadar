@@ -3,7 +3,9 @@ import AxeBuilder from "@axe-core/playwright"
 import { expect, test } from "./fixtures"
 
 // The mock AniList filters a fixture of 50 popular shows: 3 of them are
-// movies, 47 are TV, and 5 have "Titan" in the title.
+// movies, 47 are TV, and 5 have "Titan" in the title. Seasons of one series
+// share a card (PLAN.md §10.0): the first 30 results make 23 cards, all 50
+// make 41, and the 47 TV shows make 23 (first page) and 39 cards.
 
 function results(page: import("@playwright/test").Page) {
   return page.getByRole("region", { name: "Results" }).getByRole("listitem")
@@ -13,7 +15,7 @@ test("filters combine, live in the URL and survive a reload", async ({
   page,
 }) => {
   await page.goto("/browse")
-  await expect(results(page)).toHaveCount(30)
+  await expect(results(page)).toHaveCount(23)
 
   await page.getByRole("button", { name: "Format" }).click()
   await page.getByRole("option", { name: "Movie" }).click()
@@ -40,14 +42,16 @@ test("filters combine, live in the URL and survive a reload", async ({
     .getByRole("button", { name: /Movie/ })
     .click()
   await expect(page).not.toHaveURL(/format=/)
-  await expect(results(page)).toHaveCount(30)
+  await expect(results(page)).toHaveCount(23)
 })
 
 test("search text filters the results", async ({ page }) => {
   await page.goto("/browse")
   await page.getByRole("searchbox", { name: "Search anime" }).fill("titan")
   await expect(page).toHaveURL(/q=titan/)
-  await expect(results(page)).toHaveCount(5)
+  // Five seasons, one series.
+  await expect(results(page)).toHaveCount(1)
+  await expect(results(page).first()).toContainText("5 seasons")
   await expect(
     page.getByRole("button", { name: "Sort: Best match" }),
   ).toBeVisible()
@@ -71,30 +75,43 @@ test("search finds titles from part of a word", async ({ page }) => {
   ).toBeVisible()
 })
 
+test("a season without its earlier seasons says what it continues", async ({
+  page,
+}) => {
+  // Of the three films, only Mugen Train belongs to a series; its earlier
+  // seasons aren't films, so they aren't among these results.
+  await page.goto("/browse?format=movie")
+  await expect(results(page)).toHaveCount(3)
+  await expect(results(page).filter({ hasText: "Mugen Train" })).toContainText(
+    "Continues Demon Slayer: Kimetsu no Yaiba",
+  )
+})
+
 test("an empty result offers to clear the filters", async ({ page }) => {
   await page.goto("/browse?q=titan&format=movie")
   await expect(
     page.getByRole("heading", { name: "No anime found" }),
   ).toBeVisible()
   await page.getByRole("button", { name: "Clear search and filters" }).click()
-  await expect(results(page)).toHaveCount(30)
+  await expect(results(page)).toHaveCount(23)
 })
 
 test("infinite scroll loads the next page", async ({ page }) => {
   await page.goto("/browse")
-  await expect(results(page)).toHaveCount(30)
+  await expect(results(page)).toHaveCount(23)
   await page.getByRole("button", { name: "Load more" }).scrollIntoViewIfNeeded()
-  await expect(results(page)).toHaveCount(50)
+  // Seasons on page 2 join their series' cards from page 1.
+  await expect(results(page)).toHaveCount(41)
   await expect(page.getByText("That's everything.")).toBeVisible()
 })
 
 test("Back restores the filters and the scroll position", async ({ page }) => {
   await page.goto("/browse?format=tv")
-  await expect(results(page)).toHaveCount(30)
+  await expect(results(page)).toHaveCount(23)
   await page.getByRole("button", { name: "Load more" }).scrollIntoViewIfNeeded()
-  await expect(results(page)).toHaveCount(47)
+  await expect(results(page)).toHaveCount(39)
 
-  const card = results(page).nth(40).getByRole("link")
+  const card = results(page).nth(35).getByRole("link")
   await card.scrollIntoViewIfNeeded()
   const scrollBefore = await page.evaluate(() => window.scrollY)
   const href = await card.getAttribute("href")
@@ -103,8 +120,8 @@ test("Back restores the filters and the scroll position", async ({ page }) => {
 
   await page.goBack()
   await expect(page).toHaveURL(/format=tv/)
-  await expect(results(page)).toHaveCount(47)
-  await expect(results(page).nth(40)).toBeInViewport()
+  await expect(results(page)).toHaveCount(39)
+  await expect(results(page).nth(35)).toBeInViewport()
   const scrollAfter = await page.evaluate(() => window.scrollY)
   expect(Math.abs(scrollAfter - scrollBefore)).toBeLessThan(200)
 })
@@ -119,19 +136,19 @@ test("the search overlay finds anime from any page", async ({ page }) => {
   const dialog = page.getByRole("dialog", { name: "Search anime" })
   await dialog.getByRole("combobox").fill("titan")
   await expect(
-    dialog.getByRole("option", { name: /Attack on Titan/ }),
-  ).toHaveCount(5)
+    dialog.getByRole("option", { name: /Attack on Titan.*5 seasons/ }),
+  ).toHaveCount(1)
 
   await dialog.getByRole("option", { name: /See all results/ }).click()
   await expect(page).toHaveURL(/\/browse\?q=titan/)
-  await expect(results(page)).toHaveCount(5)
+  await expect(results(page)).toHaveCount(1)
 
   // Enter opens the top match.
   await page.keyboard.press("/")
   await page.getByRole("dialog").getByRole("combobox").fill("titan")
   await expect(
     page.getByRole("dialog").getByRole("option", { name: /Attack on Titan/ }),
-  ).toHaveCount(5)
+  ).toHaveCount(1)
   await page.keyboard.press("Enter")
   await expect(page).toHaveURL(/\/anime\/\d+$/)
 })

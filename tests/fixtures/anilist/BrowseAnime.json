@@ -32,7 +32,159 @@
             "Mystery"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2013,
+            "month": 4,
+            "day": 7
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 53390,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 20691,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Zenpen: Guren no Yumiya",
+                    "english": "Attack on Titan Part I: Crimson Bow and Arrow",
+                    "native": "劇場版「進撃の巨人」前編～紅蓮の弓矢～"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 20692,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa",
+                    "english": "Attack on Titan Part II: Wings of Freedom",
+                    "native": "劇場版「進撃の巨人」後編～自由の翼～"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 20958,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 2",
+                    "english": "Attack on Titan Season 2",
+                    "native": "進撃の巨人 Season２"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 21281,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki! Kyojin Chuugakkou",
+                    "english": "Attack on Titan: Junior High",
+                    "native": "進撃！巨人中学校"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 18397,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin OVA",
+                    "english": "Attack on Titan OVA",
+                    "native": "進撃の巨人 OVA"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 119113,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chronicle",
+                    "english": "Attack on Titan ~Chronicle~",
+                    "native": "進撃の巨人 〜クロニクル〜"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 20811,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
+                    "english": "Attack on Titan: No Regrets",
+                    "native": "進撃の巨人 外伝 悔いなき選択"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 99634,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: LOST GIRLS",
+                    "english": "Attack on Titan: Lost Girls",
+                    "native": "進撃の巨人 LOST GIRLS"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 19391,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Tondeke! Kunren Heidan",
+                    "english": "Attack on Titan Picture Drama",
+                    "native": "「進撃の巨人」ちみキャラ劇場\"とんでけ! 訓練兵団\""
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 143391,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Chiyuki no Fashion Check",
+                    "english": null,
+                    "native": "千雪のファッションチェック！"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 101922,
@@ -61,7 +213,94 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 4,
+            "day": 6
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 87216,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba",
+                    "english": "Demon Slayer: Kimetsu no Yaiba",
+                    "native": "鬼滅の刃"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 112151,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen",
+                    "english": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+                    "native": "鬼滅の刃 無限列車編"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 129627,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Chuukou Ikkan!! Kimetsu Gakuen Monogatari: Valentine-hen",
+                    "english": "Junior High and High School!! Kimetsu Academy Story: Valentine Edition",
+                    "native": "中高一貫!!キメツ学園物語 ～バレンタイン編～"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 129874,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen (TV)",
+                    "english": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+                    "native": "鬼滅の刃 無限列車編 (TV)"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 154541,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Chuukou Ikkan!! Kimetsu Gakuen Monogatari: Kimetsu no Utage Tokubetsu-hen",
+                    "english": "Junior High and High School!! Kimetsu Academy Story: Kimetsu no Utage Special Edition",
+                    "native": "中高一貫!!キメツ学園物語 ～鬼滅の宴=特別編=～"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 187383,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba × MLB Tokyo Series presented by Guggenheim",
+                    "english": null,
+                    "native": "鬼滅の刃 × MLB Tokyo Series presented by Guggenheim"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 113415,
@@ -88,7 +327,68 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2020,
+            "month": 10,
+            "day": 3
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 101517,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Jujutsu Kaisen",
+                    "english": "Jujutsu Kaisen",
+                    "native": "呪術廻戦"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 131573,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Jujutsu Kaisen 0",
+                    "english": "JUJUTSU KAISEN 0",
+                    "native": "呪術廻戦 0"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 145064,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Jujutsu Kaisen 2nd Season",
+                    "english": "JUJUTSU KAISEN Season 2",
+                    "native": "呪術廻戦 第2期"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 147463,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Jujutsu Kaisen PV",
+                    "english": null,
+                    "native": "呪術廻戦PV"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 1535,
@@ -116,7 +416,55 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2006,
+            "month": 10,
+            "day": 4
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30021,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "DEATH NOTE",
+                    "english": "Death Note",
+                    "native": "DEATH NOTE"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 2994,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "DEATH NOTE Rewrite",
+                    "english": "Death Note: Relight",
+                    "native": "DEATH NOTE リライト"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 20931,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Death Parade",
+                    "english": "Death Parade",
+                    "native": "デス・パレード"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21459,
@@ -143,7 +491,68 @@
             "Comedy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 4,
+            "day": 3
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85486,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia",
+                    "english": "My Hero Academia",
+                    "native": "僕のヒーローアカデミア"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21856,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 2",
+                    "english": "My Hero Academia Season 2",
+                    "native": "僕のヒーローアカデミア２"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 87486,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia: Sukue! Kyuujo Kunren!",
+                    "english": null,
+                    "native": "僕のヒーローアカデミア救え!救助訓練!"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 185736,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Vigilante: Boku no Hero Academia ILLEGALS",
+                    "english": "My Hero Academia: Vigilantes",
+                    "native": "ヴィジランテ -僕のヒーローアカデミア ILLEGALS-"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 11061,
@@ -170,7 +579,133 @@
             "Fantasy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2011,
+            "month": 10,
+            "day": 2
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 13271,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER: Phantom Rouge",
+                    "english": "Hunter x Hunter: Phantom Rouge",
+                    "native": "劇場版 HUNTER×HUNTER 緋色の幻影（ファントム・ルージュ）"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 136,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER",
+                    "english": "Hunter x Hunter",
+                    "native": "HUNTER×HUNTER"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 137,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER OVA",
+                    "english": "Hunter x Hunter: Yorknew City",
+                    "native": "HUNTER×HUNTER OVA"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 138,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER: Greed Island",
+                    "english": null,
+                    "native": "HUNTER×HUNTER: Greed Island"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 139,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER: Greed Island Final",
+                    "english": null,
+                    "native": "HUNTER×HUNTER　G・I　Final"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 19951,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER: THE LAST MISSION",
+                    "english": "Hunter x Hunter: The Last Mission",
+                    "native": "劇場版 HUNTER×HUNTER THE LAST MISSION"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30026,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "HUNTER×HUNTER",
+                    "english": "Hunter x Hunter",
+                    "native": "HUNTER×HUNTER"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 99530,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Just Awake",
+                    "english": null,
+                    "native": "Just Awake"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 9834,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Level E",
+                    "english": "Level E",
+                    "native": "レベルE"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21087,
@@ -198,7 +733,68 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2015,
+            "month": 10,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 74347,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "One Punch-Man",
+                    "english": "One-Punch Man",
+                    "native": "ワンパンマン"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21416,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "One Punch Man OVA",
+                    "english": "One-Punch Man OVA",
+                    "native": "ワンパンマン OVA"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 97668,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "One Punch Man 2",
+                    "english": "One-Punch Man Season 2",
+                    "native": "ワンパンマン 2"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21386,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "One Punch Man: Road to Hero",
+                    "english": "One-Punch Man: Road to Hero",
+                    "native": "ワンパンマン「ロード・トゥ・ヒーロー」"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21,
@@ -230,6 +826,860 @@
           "nextAiringEpisode": {
             "airingAt": 1798985760,
             "episode": 1181
+          },
+          "startDate": {
+            "year": 1999,
+            "month": 10,
+            "day": 20
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 466,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "ONE PIECE: Taose! Kaizoku Ganzack",
+                    "english": "One Piece: Defeat the Pirate Ganzack!",
+                    "native": "ONE PIECE 倒せ!海賊ギャンザック"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1094,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE TV Special: Umi no Heso no Daibouken-hen",
+                    "english": "One Piece: Umi no Heso no Daibouken-hen",
+                    "native": "ONE PIECE TVスペシャル 海のヘソの大冒険篇"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1237,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Oounabara ni Hirake! Dekkai Dekkai Chichi no Yume!",
+                    "english": "One Piece Special: Open Upon the Great Sea! A Father's Huge, HUGE Dream!",
+                    "native": "ONE PIECE: 大海原にひらけ! でっかいでっカイ父の夢"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1238,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Mamore! Saigo no Oobutai",
+                    "english": "One Piece Special: Protect! The Last Great Performance",
+                    "native": "ONE PIECE 守れ! 最後の大舞台"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2020,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Nenmatsu Tokubetsu Kikaku! Mugiwara no Luffy Oyabun Torimonochou",
+                    "english": "One Piece Special: The Detective Memoirs of Chief Straw Hat Luffy",
+                    "native": "ONE PIECE 年末特別企画！麦わらのルフィ親分捕物帖"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2386,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Yume no Soccer Ou!",
+                    "english": null,
+                    "native": "ONE PIECE 夢のサッカー王!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2490,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Mezase! Kaizoku Yakyuu Ou",
+                    "english": null,
+                    "native": "ONE PIECE めざせ! 海賊野球王"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 12001,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE 3D: Gekisou! Trap Coaster",
+                    "english": null,
+                    "native": "ONE PIECE 3D 激走! トラップコースター"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 16239,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Luffy - Hand Island no Bouken",
+                    "english": "One Piece: Episode of Luffy - Hand Island Adventure",
+                    "native": "ONE PIECE エピソードオブルフィ 〜ハンドアイランドの冒険〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 16468,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: Z - GLORIOUS ISLAND",
+                    "english": null,
+                    "native": "ONE PIECE FILM Z『GLORIOUS ISLAND』"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 15323,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Nami - Koukaishi no Namida to Nakama no Kizuna",
+                    "english": null,
+                    "native": "ONE PIECE エピソードオブナミ 〜航海士の涙と仲間の絆〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 19123,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Merry - Mou Hitori no Nakama no Monogatari",
+                    "english": "One Piece: Episode of Merry - The Tale of One More Friend",
+                    "native": "ONE PIECE エピソードオブメリー 〜もうひとりの仲間の物語〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 20835,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE \"3D2Y\": Ace no shi wo Koete! Luffy Nakama to no Chikai",
+                    "english": "One Piece 3D2Y: Overcome Ace’s Death! Luffy’s Vow to his Friends",
+                    "native": "ONE PIECE “3D2Y” エースの死を越えて! ルフィ仲間との誓い"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 21230,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Sabo - 3-Kyoudai no Kizuna Kiseki no Saikai to Uketsugareru Ishi",
+                    "english": "One Piece - Episode of Sabo: Bond of Three Brothers - A Miraculous Reunion and an Inherited Will",
+                    "native": "ONE PIECE エピソードオブサボ ~3兄弟の絆 奇跡の再会と受け継がれる意志~"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21485,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Adventure of Nebulandia",
+                    "english": "One Piece: Adventure of Nebulandia",
+                    "native": "ONE PIECE 〜アドベンチャー オブ ネブランディア〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21831,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Heart of Gold",
+                    "english": "One Piece: Heart of Gold",
+                    "native": "ONE PIECE 〜ハートオブゴールド〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 99302,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken",
+                    "english": "One Piece: Episode of East Blue",
+                    "native": "ONE PIECE エピソードオブ東の海〜ルフィと4人の仲間の大冒険!!〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 459,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE (Movie)",
+                    "english": "ONE PIECE: The Movie",
+                    "native": "ONE PIECE (Movie)"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 460,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE: Nejimaki-jima no Bouken",
+                    "english": "One Piece: Clockwork Island Adventure",
+                    "native": "ONE PIECE ねじまき島の冒険"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 461,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE: Chinjuu-jima no Chopper Oukoku",
+                    "english": "One Piece: Chopper’s Kingdom on the Island of Strange Animals",
+                    "native": "ONE PIECE 珍獣島のチョッパー王国"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 462,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE THE MOVIE: Dead End no Bouken",
+                    "english": "One Piece The Movie: The Dead End Adventure",
+                    "native": "ONE PIECE THE MOVIE デッドエンドの冒険"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 463,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE: Norowareta Seiken",
+                    "english": "One Piece: The Curse of the Sacred Sword",
+                    "native": "ONE PIECE 呪われた聖剣"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 464,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE THE MOVIE: Omatsuri Danshaku to Himitsu no Shima",
+                    "english": "One Piece: Baron Omatsuri and the Secret Island",
+                    "native": "ONE PIECE THE MOVIE オマツリ男爵と秘密の島"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 465,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE THE MOVIE: Karakuri-jou no Mecha Kyohei",
+                    "english": "One Piece: Mega Mecha Soldier of Karakuri Castle",
+                    "native": "ONE PIECE THE MOVIE カラクリ城のメカ巨兵"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 2107,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi",
+                    "english": "One Piece: The Desert Princess and the Pirates, Adventures in Alabasta",
+                    "native": "ONE PIECE エピソードオブアラバスタ 砂漠の王女と海賊たち"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 3848,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE THE MOVIE: Episode of Chopper Plus - Fuyu ni Saku, Kiseki no Sakura",
+                    "english": "One Piece: Episode Of Chopper +: The Miracle Winter Cherry Blossom",
+                    "native": "ONE PIECE THE MOVIE エピソードオブチョッパー+ 冬に咲く、奇跡の桜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 4155,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: STRONG WORLD",
+                    "english": "One Piece Film: Strong World",
+                    "native": "ONE PIECE FILM STRONG WORLD"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 9999,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE 3D: Mugiwara Chase",
+                    "english": "One Piece 3D: Mugiwara Chase",
+                    "native": "ONE PIECE 3D 麦わらチェイス"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 12859,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: Z",
+                    "english": "One Piece Film: Z",
+                    "native": "ONE PIECE FILM Z"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21335,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: GOLD",
+                    "english": "One Piece Film: Gold",
+                    "native": "ONE PIECE FILM GOLD"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 96427,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "ONE PIECE: Loguetown-hen",
+                    "english": null,
+                    "native": "ONE PIECE ローグタウン編"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30013,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "ONE PIECE",
+                    "english": "One Piece",
+                    "native": "ONE PIECE"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 101918,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Sorajima",
+                    "english": "One Piece: Episode of Skypiea",
+                    "native": "ONE PIECE エピソードオブ空島"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 8740,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: STRONG WORLD - EPISODE:0",
+                    "english": null,
+                    "native": "ONE PIECE FILM STRONG WORLD EPISODE:0"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 105143,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE STAMPEDE",
+                    "english": "One Piece: Stampede",
+                    "native": "ONE PIECE STAMPEDE"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 102639,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Nissan SERENA × One Piece: Sennyuu Sauzando Sanii-gou",
+                    "english": null,
+                    "native": "日産SERENA×ワンピース 潜入サウザンド・サニー号"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 106492,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Kyutai Panic Adventure!",
+                    "english": null,
+                    "native": "球体パニックアドベンチャー!"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 106572,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi",
+                    "english": null,
+                    "native": "ONE PIECE エピソードオブアラバスタ 砂漠の王女と海賊たち"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 107110,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Cry heart",
+                    "english": null,
+                    "native": "ワンピース Cry heart"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 107256,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Kyutai Panic Adventure Returns!!!",
+                    "english": null,
+                    "native": "球体パニックアドベンチャーリターンズ!!!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2385,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Nejimaki-jima no Bouken - Jango no Dance Carnival",
+                    "english": "One Piece: Django's Dance Carnival",
+                    "native": "ONE PIECE ねじまき島の冒険 ジャンゴのダンスカーニバル"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 101099,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "HUNGRY DAYS: Aoharu ka yo.",
+                    "english": null,
+                    "native": "HUNGRY DAYS　アオハルかよ。"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21880,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: GOLD - episode 0 711ver.",
+                    "english": null,
+                    "native": "ONE PIECE FILM GOLD 〜episode 0〜 711ver."
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 5252,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "ONE PIECE: ROMANCE DAWN STORY",
+                    "english": "One Piece: Romance Dawn Story",
+                    "native": "ONE PIECE ロマンス ドーン ストーリー"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30793,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "WANTED! Oda Eiichiro Tanpenshuu",
+                    "english": "Wanted! Eiichiro Oda Before One Piece",
+                    "native": "WANTED！ 尾田栄一郎短編集"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 113308,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Kinen Satsuei",
+                    "english": null,
+                    "native": "記念撮影"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 114761,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "A-RA-SHI : Reborn",
+                    "english": null,
+                    "native": "A-RA-SHI : Reborn"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 10033,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Toriko",
+                    "english": null,
+                    "native": "トリコ"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 813,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Dragon Ball Z",
+                    "english": "Dragon Ball Z",
+                    "native": "ドラゴンボールZ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 126649,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Tokyo One Piece Tower: Tongari Shima no Dai Hihou",
+                    "english": "The Great Tongari Island Treasure Hunting Adventure",
+                    "native": "東京ワンピースタワー トンガリ島の大秘宝"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 134184,
+                  "type": "MANGA",
+                  "format": "ONE_SHOT",
+                  "title": {
+                    "romaji": "Romance Dawn",
+                    "english": "Romance Dawn",
+                    "native": "ロマンスドーン"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 141902,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: RED",
+                    "english": "One Piece Film: Red",
+                    "native": "ONE PIECE FILM RED"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 143293,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "One Piece: Annecy Festival 60th Anniversary",
+                    "english": "One Piece: Annecy Festival 60th Anniversary",
+                    "native": "One Piece: Annecy Festival 60th Anniversary"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 167404,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "MONSTERS: Ippaku Sanjou Hiryuu Jigoku",
+                    "english": "MONSTERS: 103 Mercies Dragon Damnation",
+                    "native": "MONSTERS 一百三情飛龍侍極"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 171630,
+                  "type": "ANIME",
+                  "format": null,
+                  "title": {
+                    "romaji": "THE ONE PIECE",
+                    "english": "THE ONE PIECE",
+                    "native": "THE ONE PIECE"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 177475,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "ONE PIECE×KAWAISOUNI! Kono Boushi wo Omae ni Azukeru",
+                    "english": null,
+                    "native": "ONE PIECE×可哀想に！～この帽子を お前に預ける～"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 182469,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE FAN LETTER",
+                    "english": "ONE PIECE FAN LETTER",
+                    "native": "ONE PIECE FAN LETTER"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 183423,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "ONE PIECE: Gyojin Tou-hen",
+                    "english": "One Piece Log: Fish-Man Island Saga",
+                    "native": "SPECIAL EDITED VERSION『ONE PIECE』魚人島編"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 187225,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "LOS ANGELES LAKERS x ONE PIECE",
+                    "english": null,
+                    "native": "LOS ANGELES LAKERS x ONE PIECE"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 188668,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Koisuru ONE PIECE",
+                    "english": null,
+                    "native": "恋するワンピース"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 197178,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE HEROINES",
+                    "english": "ONE PIECE HEROINES",
+                    "native": "ONE PIECE HEROINES"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 187380,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ONE PIECE: Original Episode/Luffy, Law",
+                    "english": null,
+                    "native": "ONE PIECE オリジナルエピソード／ルフィ、ロー"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 204432,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "CHOPPER's",
+                    "english": null,
+                    "native": "CHOPPER's"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 215855,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: GOD VALLEY",
+                    "english": null,
+                    "native": "ONE PIECE FILM GOD VALLEY"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 215856,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ONE PIECE FILM: BAAD",
+                    "english": null,
+                    "native": "ONE PIECE FILM BAAD"
+                  }
+                }
+              }
+            ]
           }
         },
         {
@@ -260,7 +1710,81 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 7,
+            "day": 4
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 63327,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Tokyo Ghoul",
+                    "english": "Tokyo Ghoul",
+                    "native": "東京喰種 トーキョーグール"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21326,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Tokyo Ghoul: [PINTO]",
+                    "english": null,
+                    "native": "東京喰種トーキョーグール【PINTO】"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 20850,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Tokyo Ghoul √A",
+                    "english": "Tokyo Ghoul √A",
+                    "native": "東京喰種[トーキョーグール]√A"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21132,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Tokyo Ghoul: [JACK]",
+                    "english": null,
+                    "native": "東京喰種トーキョーグール [JACK]"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 195457,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "「unravel」×『Tokyo Ghoul』TV Animation 10th Anniversary Collaboration MV",
+                    "english": null,
+                    "native": "「unravel」×『東京喰種』TV Animation 10th Anniversary Collaboration MV"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20958,
@@ -288,7 +1812,94 @@
             "Mystery"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2017,
+            "month": 4,
+            "day": 1
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 16498,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 99147,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 3",
+                    "english": "Attack on Titan Season 3",
+                    "native": "進撃の巨人 Season３"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 100465,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 2: Kakusei no Houkou",
+                    "english": "Attack on Titan: The Roar of Awakening",
+                    "native": "劇場版「進撃の巨人」Season 2～覚醒の咆哮～"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 53390,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 110640,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Shingeki no Kyotou",
+                    "english": "Attack on Skytree",
+                    "native": "進撃の巨塔"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 119113,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chronicle",
+                    "english": "Attack on Titan ~Chronicle~",
+                    "native": "進撃の巨人 〜クロニクル〜"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 5114,
@@ -316,7 +1927,94 @@
             "Fantasy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2009,
+            "month": 4,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30025,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Hagane no Renkinjutsushi",
+                    "english": "Fullmetal Alchemist",
+                    "native": "鋼の錬金術師"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 6421,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST Mihousou Episode",
+                    "english": "Fullmetal Alchemist: Brotherhood OVA Collection",
+                    "native": "鋼の錬金術師 FULLMETAL ALCHEMIST 未放送エピソード"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 9135,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Hagane no Renkinjutsushi: Milos no Seinaru Hoshi",
+                    "english": "Fullmetal Alchemist: The Sacred Star of Milos",
+                    "native": "鋼の錬金術師 嘆きの丘の聖なる星"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 121,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Hagane no Renkinjutsushi",
+                    "english": "Fullmetal Alchemist",
+                    "native": "鋼の錬金術師"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 7902,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST - Arakawa Hiromu Kaki Oroshi 4-koma Gekijou",
+                    "english": "Fullmetal Alchemist: Brotherhood: 4-Koma Theater",
+                    "native": "鋼の錬金術師 FULLMETAL ALCHEMIST 荒川弘 描き下ろし4コマ劇場"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 195600,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Yomi no Tsugai",
+                    "english": "Daemons of the Shadow Realm",
+                    "native": "黄泉のツガイ"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20,
@@ -346,7 +2044,172 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2002,
+            "month": 10,
+            "day": 3
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 1735,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden",
+                    "english": "Naruto: Shippuden",
+                    "native": "NARUTO -ナルト- 疾風伝"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30011,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "NARUTO",
+                    "english": "Naruto",
+                    "native": "NARUTO -ナルト-"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 442,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Dai Katsugeki! Yuki Hime Ninpouchou Dattebayo!!",
+                    "english": "Naruto the Movie: Ninja Clash in the Land of Snow",
+                    "native": "劇場版 NARUTO -ナルト- 大活劇!雪姫忍法帖だってばよ!!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 594,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: Takigakure no Shitou - Ore ga Eiyuu Dattebayo!",
+                    "english": "Naruto: The Lost Story - Mission: Protect the Waterfall Village",
+                    "native": "NARUTO -ナルト- 滝隠れの死闘 オレが英雄だってばよ！"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 761,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: Akaki Yotsuba no Clover wo Sagase",
+                    "english": null,
+                    "native": "NARUTO -ナルト- 紅き四つ葉のクローバーを探せ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 936,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Dai Gekitotsu! Maboroshi no Chitei Iseki Dattebayo",
+                    "english": "Naruto the Movie: Legend of the Stone of Gelel",
+                    "native": "劇場版 NARUTO -ナルト- 大激突!幻の地底遺跡だってばよ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1074,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "NARUTO: Narutimate Hero 3: Tsui ni Gekitotsu! Jounin VS Genin!! Musabetsu Dairansen Taikai Kaisai!!",
+                    "english": null,
+                    "native": "NARUTO -ナルト- ナルティメットヒーロー3 ついに激突! 上忍VS下忍!! 無差別大乱戦大会開催!!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2144,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Dai Koufun! Mikazukijima no Animal Panic Dattebayo!",
+                    "english": "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
+                    "native": "劇場版 NARUTO -ナルト- 大興奮!みかづき島のアニマル騒動だってばよ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 7367,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: THE CROSS ROADS",
+                    "english": null,
+                    "native": "NARUTO -ナルト- THE CROSS ROADS"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 10659,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: Soyokazeden - Naruto to Mashin to Mitsu no Onegai Dattebayo!!",
+                    "english": "Naruto, the Genie, and the Three Wishes, Believe It!",
+                    "native": "劇場版 NARUTO -ナルト- そよかぜ伝 ナルトと魔神と3つのお願いだってばよ!!"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 155348,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ROAD OF NARUTO",
+                    "english": null,
+                    "native": "ROAD OF NARUTO"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 162561,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "NARUTO×NINKU",
+                    "english": null,
+                    "native": "NARUTO-ナルト-×NINKU-忍空-"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 11757,
@@ -374,7 +2237,159 @@
             "Romance"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2012,
+            "month": 7,
+            "day": 8
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 51479,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Sword Art Online",
+                    "english": "Sword Art Online",
+                    "native": "ソードアート・オンライン"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 20021,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Sword Art Online: Extra Edition",
+                    "english": "Sword Art Online EXTRA EDITION",
+                    "native": "ソードアート・オンライン Extra Edition"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 20594,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Sword Art Online II",
+                    "english": "Sword Art Online II",
+                    "native": "ソードアート・オンライン II"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 124140,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Sword Art Online: Progressive - Hoshinaki Yoru no Aria",
+                    "english": "Sword Art Online the Movie -Progressive- Aria of a Starless Night",
+                    "native": "劇場版 ソードアート・オンライン プログレッシブ 星なき夜のアリア"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 16099,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Sword Art Offline",
+                    "english": "Sword Art OFFline",
+                    "native": "そーどあーと・おふらいん"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 53718,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Sword Art Online: Aincrad",
+                    "english": "Sword Art Online: Aincrad",
+                    "native": "ソードアート・オンライン アインクラッド"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 74733,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Sword Art Online: Fairy Dance",
+                    "english": "Sword Art Online: Fairy Dance",
+                    "native": "ソードアート・オンライン フェアリィ・ダンス"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 141165,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Sword Art Online: Re:Aincrad",
+                    "english": "Sword Art Online Re:Aincrad",
+                    "native": "ソードアート・オンライン Re:Aincrad"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 21685,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Eromanga Sensei",
+                    "english": "Eromanga Sensei",
+                    "native": "エロマンガ先生"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 157058,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Sword Art Online: FULLDIVE - Opening Eizou",
+                    "english": null,
+                    "native": "ソードアート・オンライン -フルダイブ- オープニング映像"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 208754,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Unanswered//butterfly: Sword Art Online",
+                    "english": null,
+                    "native": "Unanswered//butterfly: Sword Art Online"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20954,
@@ -401,7 +2416,42 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 9,
+            "day": 17
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85135,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Koe no Katachi",
+                    "english": "A Silent Voice",
+                    "native": "聲の形"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 107764,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Koe no Katachi Specials",
+                    "english": "A Silent Voice Specials",
+                    "native": "聲の形スペシャル"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21519,
@@ -428,7 +2478,81 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 8,
+            "day": 26
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 97962,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Suntory Minami Alps no Tennen Mizu",
+                    "english": null,
+                    "native": "サントリー 南アルプスの天然水"
+                  }
+                }
+              },
+              {
+                "relationType": "ADAPTATION",
+                "node": {
+                  "id": 97337,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kimi no Na wa.",
+                    "english": "your name.",
+                    "native": "君の名は。"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 97789,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Kimi no Na wa. Another Side: Earthbound",
+                    "english": "your name. Another Side: Earthbound",
+                    "native": "君の名は。 Another Side：Earthbound"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 106286,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Tenki no Ko",
+                    "english": "Weathering With You",
+                    "native": "天気の子"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 16782,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Kotonoha no Niwa",
+                    "english": "The Garden of Words",
+                    "native": "言の葉の庭"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 99147,
@@ -456,7 +2580,107 @@
             "Mystery"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2018,
+            "month": 7,
+            "day": 23
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 20958,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 2",
+                    "english": "Attack on Titan Season 2",
+                    "native": "進撃の巨人 Season２"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 53390,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 104578,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 3 Part 2",
+                    "english": "Attack on Titan Season 3 Part 2",
+                    "native": "進撃の巨人 Season３ Part.2"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 108942,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Rivai-han",
+                    "english": null,
+                    "native": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 119113,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chronicle",
+                    "english": "Attack on Titan ~Chronicle~",
+                    "native": "進撃の巨人 〜クロニクル〜"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 99634,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: LOST GIRLS",
+                    "english": "Attack on Titan: Lost Girls",
+                    "native": "進撃の巨人 LOST GIRLS"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 150005,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Akatsuki no Requiem",
+                    "english": null,
+                    "native": "暁の鎮魂歌"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21856,
@@ -483,7 +2707,68 @@
             "Comedy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2017,
+            "month": 4,
+            "day": 1
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 100166,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 3",
+                    "english": "My Hero Academia Season 3",
+                    "native": "僕のヒーローアカデミア３"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85486,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia",
+                    "english": "My Hero Academia",
+                    "native": "僕のヒーローアカデミア"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21459,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia",
+                    "english": "My Hero Academia",
+                    "native": "僕のヒーローアカデミア"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 130183,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia: Training of the Dead",
+                    "english": null,
+                    "native": "僕のヒーローアカデミア トレーニング・オブ・ザ・デッド"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 110277,
@@ -511,7 +2796,68 @@
             "Mystery"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2020,
+            "month": 12,
+            "day": 7
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 104578,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 3 Part 2",
+                    "english": "Attack on Titan Season 3 Part 2",
+                    "native": "進撃の巨人 Season３ Part.2"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 53390,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 131681,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: The Final Season Part 2",
+                    "english": "Attack on Titan Final Season Part 2",
+                    "native": "進撃の巨人 The Final Season Part 2"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 139754,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Final",
+                    "english": "Attack On Titan: The Final Season Specials",
+                    "native": "「進撃の巨人」ちみキャラ劇場 \"ファイナル\""
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 127230,
@@ -539,7 +2885,120 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2022,
+            "month": 10,
+            "day": 12
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 105778,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Chainsaw Man",
+                    "english": "Chainsaw Man",
+                    "native": "チェンソーマン"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 155884,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Zanki",
+                    "english": "Time Left",
+                    "native": "残機"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 156809,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Jouzai",
+                    "english": "tablet",
+                    "native": "錠剤"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 157173,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "In the Back Room",
+                    "english": "In the Back Room",
+                    "native": "インザバックルーム"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 157349,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Dainouteki na Rendezvous",
+                    "english": "Rendezvous",
+                    "native": "大脳的なランデブー"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 159110,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Fight Song",
+                    "english": "Fight Song",
+                    "native": "ファイトソング"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 171627,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Chainsaw Man: Reze-hen",
+                    "english": "Chainsaw Man – The Movie: Reze Arc",
+                    "native": "チェンソーマン レゼ篇"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 198726,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Chainsaw Biyori",
+                    "english": "Chainsaw Days",
+                    "native": "チェンソー びより"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 101759,
@@ -569,7 +3028,55 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 1,
+            "day": 10
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 87423,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Yakusoku no Neverland",
+                    "english": "The Promised Neverland",
+                    "native": "約束のネバーランド"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 108725,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Yakusoku no Neverland 2",
+                    "english": "The Promised Neverland Season 2",
+                    "native": "約束のネバーランド2"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 184876,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Oyakusoku no Neverland: Tokubetsu no Bangai-hen",
+                    "english": null,
+                    "native": "お約束のネバーランド　特別番外編"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20755,
@@ -597,7 +3104,120 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2015,
+            "month": 1,
+            "day": 10
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 69883,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu",
+                    "english": "Assassination Classroom",
+                    "native": "暗殺教室"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21170,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu 2nd Season",
+                    "english": "Assassination Classroom Second Season",
+                    "native": "暗殺教室 第２期"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21303,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu: episode:0 Deai no Jikan",
+                    "english": "Assassination Classroom: Meeting Time",
+                    "native": "暗殺教室 episode:0 出会いの時間"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 21864,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Koro-sensei Q!",
+                    "english": null,
+                    "native": "殺せんせーQ！"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 101102,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu Movie: 365-Nichi no Jikan",
+                    "english": "Assassination Classroom the Movie: 365 Days‘ Time",
+                    "native": "劇場版 暗殺教室 365日の時間"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 97985,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Koro-sensei Q! (ONA)",
+                    "english": "Koro Sensei Quest!",
+                    "native": "殺せんせーQ[クエスト]! (ONA)"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 19759,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu: Jump Festa 2013 Special",
+                    "english": null,
+                    "native": "暗殺教室"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 198373,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Ansatsu Kyoushitsu: Minna no Jikan",
+                    "english": "Assassination Classroom the Movie: Our Time",
+                    "native": "暗殺教室 みんなの時間"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21507,
@@ -627,7 +3247,81 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 7,
+            "day": 12
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85189,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Mob Psycho 100",
+                    "english": "Mob Psycho 100",
+                    "native": "モブサイコ100"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 101338,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Mob Psycho 100 II",
+                    "english": "Mob Psycho 100 II",
+                    "native": "モブサイコ100 II"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 102449,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Mob Psycho mini",
+                    "english": null,
+                    "native": "モブサイコmini"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 100353,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Mob Psycho 100 REIGEN: Shirarezaru Kiseki Reinouryokusha",
+                    "english": "Mob Psycho 100 REIGEN The Miraculous Unknown Psychic",
+                    "native": "モブサイコ100 REIGEN ～知られざる奇跡の霊能力者～"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 214031,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Mob Psycho 100: 10 Shuunen Kinen Tokubetsu Eizou",
+                    "english": "Mob Psycho 100 10th Anniversary Special Movie",
+                    "native": "モブサイコ100 10周年記念特別映像"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21355,
@@ -658,7 +3352,185 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 4,
+            "day": 4
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85737,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu",
+                    "english": "Re:ZERO -Starting Life in Another World-",
+                    "native": "Re:ゼロから始める異世界生活"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 21780,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Kyuukei Jikan (Break Time)",
+                    "english": "Re:ZERO ~Starting Break Time From Zero~",
+                    "native": "Re:ゼロから始める休憩時間(ブレイクタイム)"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 21891,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Re:Petit kara Hajimeru Isekai Seikatsu",
+                    "english": "Re:PETIT ~Re: Starting Life in Another World From PETIT~",
+                    "native": "Re:プチから始める異世界生活"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 100049,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu OVAs",
+                    "english": "Re:ZERO -Starting Life in Another World- OVAs",
+                    "native": "Re:ゼロから始める異世界生活 OVAs"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 104454,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet",
+                    "english": "Isekai Quartet",
+                    "native": "異世界かるてっと"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 108632,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+                    "english": "Re:ZERO -Starting Life in Another World- Season 2",
+                    "native": "Re:ゼロから始める異世界生活 2nd Season"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 110178,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet 2",
+                    "english": "Isekai Quartet 2",
+                    "native": "異世界かるてっと 2"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 87259,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu: Dai-3 Shou - Truth of Zero",
+                    "english": "Re:ZERO -Starting Life in Another World- Chapter 3: Truth of Zero",
+                    "native": "Re:ゼロから始める異世界生活 第三章 Truth of Zero"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 85736,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu: Dai-1 Shou - Outo no Ichinichi-hen",
+                    "english": "Re:ZERO -Starting Life in Another World- Chapter 1: A Day in the Capital",
+                    "native": "Re:ゼロから始める異世界生活 第一章 王都の一日編"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 85814,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu: Dai-2 Shou - Yashiki no Isshuukan-hen",
+                    "english": "Re:ZERO -Starting Life in Another World- Chapter 2: A Week at the Mansion",
+                    "native": "Re:ゼロから始める異世界生活 第二章 屋敷の一週間編"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 117074,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Isekai Quartet: Another World",
+                    "english": "Isekai Quartet The Movie: Another World",
+                    "native": "異世界かるてっと ～あなざーわーるど～"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 166093,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Snack Basue",
+                    "english": "Snack Basue",
+                    "native": "スナックバス江"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 194447,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet 3",
+                    "english": "Isekai Quartet 3",
+                    "native": "異世界かるてっと 3"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20665,
@@ -686,7 +3558,42 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 10,
+            "day": 10
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 67707,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shigatsu wa Kimi no Uso",
+                    "english": "Your Lie in April",
+                    "native": "四月は君の嘘"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21039,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Shigatsu wa Kimi no Uso: MOMENTS",
+                    "english": "Your lie in April: Moments",
+                    "native": "四月は君の嘘 MOMENTS"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 104578,
@@ -714,7 +3621,81 @@
             "Mystery"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 4,
+            "day": 29
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 53390,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin",
+                    "english": "Attack on Titan",
+                    "native": "進撃の巨人"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 99147,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin Season 3",
+                    "english": "Attack on Titan Season 3",
+                    "native": "進撃の巨人 Season３"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 110277,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: The Final Season",
+                    "english": "Attack on Titan Final Season",
+                    "native": "進撃の巨人 The Final Season"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 119113,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chronicle",
+                    "english": "Attack on Titan ~Chronicle~",
+                    "native": "進撃の巨人 〜クロニクル〜"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 120257,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Rivai-han Part 2",
+                    "english": null,
+                    "native": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班” Part 2"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 1735,
@@ -744,7 +3725,289 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2007,
+            "month": 2,
+            "day": 15
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 20,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "NARUTO",
+                    "english": "Naruto",
+                    "native": "NARUTO -ナルト-"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30011,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "NARUTO",
+                    "english": "Naruto",
+                    "native": "NARUTO -ナルト-"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2472,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden Movie",
+                    "english": "Naruto Shippuden the Movie",
+                    "native": "劇場版 NARUTO -ナルト- 疾風伝"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 4437,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden - Kizuna",
+                    "english": "Naruto Shippuden the Movie: Bonds",
+                    "native": "劇場版 NARUTO -ナルト- 疾風伝 絆"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 6325,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden - Hi no Ishi wo Tsugu Mono",
+                    "english": "Naruto Shippuden the Movie: The Will of Fire",
+                    "native": "劇場版 NARUTO -ナルト- 疾風伝 火の意志を継ぐ者"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 8246,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden - The Lost Tower",
+                    "english": "Naruto Shippuden the Movie: The Lost Tower",
+                    "native": "劇場版 NARUTO -ナルト- 疾風伝 ザ・ロストタワー"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 10075,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "NARUTO×UT",
+                    "english": null,
+                    "native": "NARUTO×UT"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 10589,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Blood Prison",
+                    "english": "Naruto Shippuden the Movie: Blood Prison",
+                    "native": "劇場版 NARUTO -ナルト- ブラッド・プリズン"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 13667,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "ROAD TO NINJA: NARUTO THE MOVIE",
+                    "english": "Road to Ninja: Naruto the Movie",
+                    "native": "ROAD TO NINJA -NARUTO THE MOVIE-"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 16870,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "THE LAST: NARUTO THE MOVIE",
+                    "english": "The Last: Naruto the Movie",
+                    "native": "THE LAST -NARUTO THE MOVIE-"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 4134,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden - Shippu! \"Konoha Gakuen\" Den",
+                    "english": "Naruto Shippuden: Konoha Gakuen - Special",
+                    "native": "NARUTO -ナルト- 疾風伝 疾風! \"木ノ葉学園\"伝"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 12979,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "NARUTO SD Rock Lee no Seishun Full-Power Ninden",
+                    "english": "NARUTO Spin-Off: Rock Lee & His Ninja Pals",
+                    "native": "NARUTOナルトSD ロック・リーの青春フルパワー忍伝"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 19511,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "NARUTO: Shippuuden - Sunny Side Battle!!!",
+                    "english": null,
+                    "native": "NARUTO -ナルト- 疾風伝 サニー・サイド・バトル!!!"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21579,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "BORUTO: NARUTO THE MOVIE - Naruto ga Hokage ni Natta Hi",
+                    "english": "Boruto: Naruto the Movie - The Day Naruto Became Hokage",
+                    "native": "BORUTO -NARUTO THE MOVIE- ナルトが火影になった日"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 87232,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "NARUTO Shinden Series (2015)",
+                    "english": null,
+                    "native": "NARUTO -ナルト- 真伝シリーズ"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 97938,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "BORUTO: NARUTO NEXT GENERATIONS",
+                    "english": "Boruto: Naruto Next Generations",
+                    "native": "BORUTO-ボルト- NARUTO NEXT GENERATIONS"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 10686,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "NARUTO: Honoo no Chuunin Shiken! Naruto vs Konohamaru!!",
+                    "english": null,
+                    "native": "NARUTO -ナルト- 炎の中忍試験! ナルトvs木ノ葉丸!!"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 115105,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Newsong",
+                    "english": "Newsong",
+                    "native": "Newsong"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 87230,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "NARUTO Hiden Series",
+                    "english": "Naruto Secret Chronicles Book Series",
+                    "native": "NARUTO秘伝シリーズ"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 70549,
+                  "type": "MANGA",
+                  "format": "ONE_SHOT",
+                  "title": {
+                    "romaji": "NARUTO: Road to Ninja",
+                    "english": null,
+                    "native": "#MOVIE 9：ROAD TO NARUTO THE MOVIE"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 155348,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "ROAD OF NARUTO",
+                    "english": null,
+                    "native": "ROAD OF NARUTO"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21234,
@@ -773,7 +4036,29 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 1,
+            "day": 8
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 69325,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Boku dake ga Inai Machi",
+                    "english": "Erased",
+                    "native": "僕だけがいない街"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 100166,
@@ -801,7 +4086,68 @@
             "Drama"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2018,
+            "month": 4,
+            "day": 7
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21856,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 2",
+                    "english": "My Hero Academia Season 2",
+                    "native": "僕のヒーローアカデミア２"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 104276,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 4",
+                    "english": "My Hero Academia Season 4",
+                    "native": "僕のヒーローアカデミア４"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85486,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia",
+                    "english": "My Hero Academia",
+                    "native": "僕のヒーローアカデミア"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 100723,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Boku no Hero Academia THE MOVIE: Futari no Hero",
+                    "english": "My Hero Academia: Two Heroes",
+                    "native": "僕のヒーローアカデミア THE MOVIE 〜2人の英雄〜"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 9253,
@@ -829,7 +4175,172 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2011,
+            "month": 4,
+            "day": 6
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 10863,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Steins;Gate: Oukoubakko no Poriomania",
+                    "english": "Steins;Gate: Egoistic Poriomania",
+                    "native": "シュタインズ・ゲート 横行跋扈のポリオマニア"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 20907,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Steins;Gate: Soumei Eichi no Cognitive Computing",
+                    "english": null,
+                    "native": "Steins;Gate 聡明叡智のコグニティブ・コンピューティング"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 21624,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero",
+                    "english": "Steins;Gate 0: 23β -Divide by Zero-",
+                    "native": "シュタインズ・ゲート 境界面上のミッシングリンク -Divide By Zero-"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 47517,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Steins;Gate",
+                    "english": "Steins;Gate",
+                    "native": "シュタインズ・ゲート"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 11577,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Steins;Gate: Fuka Ryouiki no Déjà vu",
+                    "english": "Steins;Gate The Movie – Load Region of Déjà Vu",
+                    "native": "劇場版 シュタインズゲート 負荷領域のデジャヴ"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 58897,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Steins;Gate: Shijou Saikyou no Slight Fever",
+                    "english": null,
+                    "native": "STEINS;GATE 史上最強のスライトフィーバー"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 127015,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "STEINS;GATE: Enkan Rensa no Uroborosu",
+                    "english": null,
+                    "native": "STEINS;GATE─シュタインズゲート- 円環連鎖のウロボロス"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 10519,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Mahou Shoujo Sonico☆Magica",
+                    "english": "Puella Magi Sonico Magica",
+                    "native": "魔法少女そに子☆マギカ"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 91997,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Steins;Gate: Hoshikuzu no Duplet",
+                    "english": null,
+                    "native": "STEINS;GATE 星屑のデュプレット"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 4975,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "ChäoS;HEAd",
+                    "english": "ChäoS;HEAd",
+                    "native": "カオスヘッド"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 13599,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Robotics;Notes",
+                    "english": "Robotics;Notes",
+                    "native": "Robotics;Notes"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 21708,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Occultic;Nine",
+                    "english": "Occultic;Nine",
+                    "native": "Occultic;Nine -オカルティック・ナイン-"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 97940,
@@ -857,7 +4368,120 @@
             "Fantasy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2017,
+            "month": 10,
+            "day": 3
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 86123,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Black Clover",
+                    "english": "Black Clover",
+                    "native": "ブラッククローバー"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 110318,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Mugyutto! Black Clover",
+                    "english": "Squishy! Black Clover",
+                    "native": "むぎゅっと！ブラッククローバー"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 106223,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Black Clover: All Mahou Kishi Kanshasai",
+                    "english": "Black Clover: The All Magic Knights Thanksgiving Festa",
+                    "native": "ブラッククローバー オール魔法騎士感謝祭"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 87528,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Black Clover: Jump Festa 2016 Special",
+                    "english": "Black Clover: Jump Festa 2016 Special",
+                    "native": "ブラッククローバー"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 155017,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Petit Clover Advance",
+                    "english": null,
+                    "native": "プチット・クローバー アドバンス"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 131680,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Black Clover: Mahou Tei no Ken",
+                    "english": "Black Clover: Sword of the Wizard King",
+                    "native": "ブラッククローバー 魔法帝の剣"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 100088,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Black Clover: Abareushi no Sho",
+                    "english": null,
+                    "native": "ブラッククローバー 暴牛の書"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 195604,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Black Clover 2nd Season",
+                    "english": "Black Clover Season 2",
+                    "native": "ブラッククローバー 第2期"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20464,
@@ -884,7 +4508,107 @@
             "Sports"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 4,
+            "day": 6
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 21120,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Haikyuu!!: Owari to Hajimari",
+                    "english": "Haikyu!! the Movie: The End and the Beginning",
+                    "native": "ハイキュー!! 終わりと始まり"
+                  }
+                }
+              },
+              {
+                "relationType": "SUMMARY",
+                "node": {
+                  "id": 21244,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Haikyuu!!: Shousha to Haisha",
+                    "english": "Haikyuu!! the Movie: The Winner and the Loser",
+                    "native": "ハイキュー!! 勝者と敗者"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 65243,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Haikyuu!!",
+                    "english": "Haikyu!!",
+                    "native": "ハイキュー！！"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 20992,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Haikyuu!! 2nd Season",
+                    "english": "HAIKYU!! 2nd Season",
+                    "native": "ハイキュー!! セカンドシーズン"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 115217,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Haikyuu!! Ningyou Anime",
+                    "english": null,
+                    "native": "ハイキュー!! 人形アニメ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 20884,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Haikyuu!!: Lev Kenzan!",
+                    "english": "HAIKYU!!: Lev Appears!",
+                    "native": "ハイキュー!! リエーフ見参！"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 107263,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Haikyuu Quest",
+                    "english": "Haikyuu!! Quest Picture Drama",
+                    "native": "ハイキュークエスト"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 101291,
@@ -914,7 +4638,159 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2018,
+            "month": 10,
+            "day": 4
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 91170,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Bunny Girl Senpai",
+                    "native": "青春ブタ野郎はバニーガール先輩の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 104157,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of a Dreaming Girl",
+                    "native": "青春ブタ野郎はゆめみる少女の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 87471,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Bunny Girl Senpai",
+                    "native": "青春ブタ野郎はバニーガール先輩の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 145157,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Petit Devil Kouhai no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Petite Devil Kohai",
+                    "native": "青春ブタ野郎はプチデビル後輩の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 145159,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Logical Witch no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Logical Witch",
+                    "native": "青春ブタ野郎はロジカルウィッチの夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 145160,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Siscon Idol no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Siscon Idol",
+                    "native": "青春ブタ野郎はシスコンアイドルの夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 145162,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Orusuban Imouto no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of a Sister Home Alone",
+                    "native": "青春ブタ野郎はおるすばん妹の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 104236,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Petit Devil Kouhai no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Petite Devil Kohai",
+                    "native": "青春ブタ野郎はプチデビル後輩の夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 127683,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Logical Witch no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of Logical Witch",
+                    "native": "青春ブタ野郎はロジカルウィッチの夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 163683,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Siscon Idol no Yume wo Minai",
+                    "english": null,
+                    "native": "青春ブタ野郎はシスコンアイドルの夢を見ない"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 163684,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Seishun Buta Yarou wa Orusuban Imouto no Yume wo Minai",
+                    "english": "Rascal Does Not Dream of a Sister Home Alone",
+                    "native": "青春ブタ野郎はおるすばん妹の夢を見ない"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 140960,
@@ -942,7 +4818,42 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2022,
+            "month": 4,
+            "day": 9
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 108556,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "SPY×FAMILY",
+                    "english": "SPY x FAMILY",
+                    "native": "SPY×FAMILY"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 142838,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "SPY×FAMILY Part 2",
+                    "english": "SPY x FAMILY Cour 2",
+                    "native": "SPY×FAMILY 第2クール"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 101921,
@@ -970,7 +4881,55 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 1,
+            "day": 12
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 86635,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+                    "english": "Kaguya-sama: Love is War",
+                    "native": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 112641,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen",
+                    "english": "Kaguya-sama: Love is War?",
+                    "native": "かぐや様は告らせたい？～天才たちの恋愛頭脳戦～"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 150672,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "[Oshi no Ko]",
+                    "english": "OSHI NO KO",
+                    "native": "【推しの子】"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 105333,
@@ -998,7 +4957,42 @@
             "Sci-Fi"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 7,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 98416,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Dr. STONE",
+                    "english": "Dr. STONE",
+                    "native": "Dr.STONE"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 113936,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Dr. STONE: STONE WARS",
+                    "english": "Dr. STONE: STONE WARS",
+                    "native": "Dr.STONE STONE WARS"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 101348,
@@ -1025,7 +5019,55 @@
             "Drama"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 7,
+            "day": 8
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30642,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Vinland Saga",
+                    "english": "Vinland Saga",
+                    "native": "ヴィンランド・サガ"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 136430,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "VINLAND SAGA SEASON 2",
+                    "english": "Vinland Saga Season 2",
+                    "native": "ヴィンランド・サガ SEASON2"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 145902,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Ponkotsuland Saga",
+                    "english": null,
+                    "native": "ポンコツランド・サガ"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21827,
@@ -1052,7 +5094,68 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2018,
+            "month": 1,
+            "day": 11
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 101432,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Violet Evergarden: Kitto \"Ai\" wo Shiru Hi ga Kuru no Darou",
+                    "english": "Violet Evergarden: Special",
+                    "native": "ヴァイオレット・エヴァーガーデン きっと\"愛\"を知る日が来るのだろう"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 97298,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Violet Evergarden",
+                    "english": null,
+                    "native": "ヴァイオレット・エヴァーガーデン"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 109190,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou",
+                    "english": "Violet Evergarden: Eternity and the Auto Memory Doll",
+                    "native": "ヴァイオレット・エヴァーガーデン 外伝~永遠と自動手記人形~"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 154164,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Violet Evergarden CM",
+                    "english": null,
+                    "native": "ヴァイオレット・エヴァーガーデン CM"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 124080,
@@ -1079,7 +5182,55 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2021,
+            "month": 1,
+            "day": 10
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 72451,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Horimiya",
+                    "english": "Horimiya",
+                    "native": "ホリミヤ"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 14753,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Hori-san to Miyamura-kun",
+                    "english": null,
+                    "native": "堀さんと宮村くん"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 163132,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Horimiya: piece",
+                    "english": "Horimiya: The Missing Pieces",
+                    "native": "ホリミヤ -piece-"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 4224,
@@ -1107,7 +5258,94 @@
             "Slice of Life"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2008,
+            "month": 10,
+            "day": 2
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 37149,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Toradora!",
+                    "english": "Toradora!",
+                    "native": "とらドラ!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 6127,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Toradora!: SOS!",
+                    "english": "Toradora!: SOS! Hurray for Foodies",
+                    "native": "とらドラ! SOS!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 11553,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Toradora!: Bentou no Gokui",
+                    "english": "Toradora!: Bento Battle",
+                    "native": "とらドラ！ 弁当の極意"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 34368,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Toradora!",
+                    "english": "Toradora!",
+                    "native": "とらドラ！"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 7769,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Ookami-san to Shichinin no Nakama-tachi",
+                    "english": "Okami-san and Her Seven Companions",
+                    "native": "オオカミさんと七人の仲間たち"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 206729,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Toradora!: Ami no Monomane 150 Renpatsu!!",
+                    "english": null,
+                    "native": "とらどら！亜美モノマネ１５０連発！！"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 19815,
@@ -1135,7 +5373,81 @@
             "Fantasy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 4,
+            "day": 9
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 20769,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "No Game No Life Mini OVAs",
+                    "english": "No Game No Life Specials",
+                    "native": "ノーゲーム・ノーライフ ミニOVAs"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 78399,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "No Game No Life",
+                    "english": null,
+                    "native": "ノーゲーム・ノーライフ"
+                  }
+                }
+              },
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 21875,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "No Game No Life Zero",
+                    "english": "No Game, No Life Zero",
+                    "native": "ノーゲーム・ノーライフ ゼロ"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 78397,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "No Game No Life",
+                    "english": "No Game, No Life",
+                    "native": "ノーゲーム・ノーライフ"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 142204,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "No Game No Life: Dai-2 Shou - Toubu Rengou-hen",
+                    "english": "No Game No Life: Chapter 2 Eastern Union Arc",
+                    "native": "ノーゲームノーライフ第二章東部連合編"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20613,
@@ -1166,7 +5478,42 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 7,
+            "day": 7
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 55132,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Akame ga Kill!",
+                    "english": "Akame ga KILL!",
+                    "native": "アカメが斬る！"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 20775,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Akame ga Kill! Gekijou",
+                    "english": "AkaKill! Theater",
+                    "native": "アカ斬る!劇場"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20447,
@@ -1194,7 +5541,81 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 1,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 54692,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Noragami",
+                    "english": "Noragami: Stray God",
+                    "native": "ノラガミ"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21128,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Noragami ARAGOTO",
+                    "english": "Noragami Aragoto",
+                    "native": "ノラガミ ARAGOTO"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 100716,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Noraneko",
+                    "english": null,
+                    "native": "ノラネコ"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 102618,
+                  "type": "ANIME",
+                  "format": "MUSIC",
+                  "title": {
+                    "romaji": "Heart Realize",
+                    "english": null,
+                    "native": "ハートリアライズ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 20494,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Noragami OVA",
+                    "english": "Noragami OVA",
+                    "native": "ノラガミ OAD"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 104276,
@@ -1223,7 +5644,81 @@
             "Sci-Fi"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2019,
+            "month": 10,
+            "day": 12
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 100166,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 3",
+                    "english": "My Hero Academia Season 3",
+                    "native": "僕のヒーローアカデミア３"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 85486,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia",
+                    "english": "My Hero Academia",
+                    "native": "僕のヒーローアカデミア"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 108553,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Boku no Hero Academia THE MOVIE: Heroes:Rising",
+                    "english": "My Hero Academia: Heroes Rising",
+                    "native": "僕のヒーローアカデミア THE MOVIE ヒーローズ:ライジング"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 117193,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Boku no Hero Academia 5",
+                    "english": "My Hero Academia Season 5",
+                    "native": "僕のヒーローアカデミア５"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 122349,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Boku no Hero Academia: Ikinokore! Kesshi no Survival Kunren",
+                    "english": "My Hero Academia: Make It! Do-or-Die Survival Training",
+                    "native": "僕のヒーローアカデミア 生き残れ！決死のサバイバル訓練"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20789,
@@ -1253,7 +5748,55 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 10,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 74485,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Nanatsu no Taizai",
+                    "english": "The Seven Deadly Sins",
+                    "native": "七つの大罪"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21104,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Nanatsu no Taizai OVA",
+                    "english": "The Seven Deadly Sins OVA",
+                    "native": "七つの大罪 OAD"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21385,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Nanatsu no Taizai: Seisen no Shirushi",
+                    "english": "The Seven Deadly Sins: Signs of A Holy War",
+                    "native": "七つの大罪 聖戦の予兆"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 269,
@@ -1280,7 +5823,159 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2004,
+            "month": 10,
+            "day": 5
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30012,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "BLEACH",
+                    "english": "Bleach",
+                    "native": "BLEACH"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 834,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "BLEACH: The Sealed Sword Frenzy",
+                    "english": null,
+                    "native": "BLEACH The Sealed Sword Frenzy"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1686,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "BLEACH: MEMORIES OF NOBODY",
+                    "english": "Bleach the Movie: Memories of Nobody",
+                    "native": "BLEACH MEMORIES OF NOBODY"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 2889,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "BLEACH: The DiamondDust Rebellion - Mou Hitotsu no Hyourinmaru",
+                    "english": "Bleach the Movie: The DiamondDust Rebellion",
+                    "native": "BLEACH The DiamondDust Rebellion もう一つの氷輪丸"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 4835,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "BLEACH: Fade to Black - Kimi no Na wo Yobu",
+                    "english": "Bleach the Movie: Fade to Black",
+                    "native": "BLEACH Fade to Black 君の名を呼ぶ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 8247,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "BLEACH: Jigoku-hen",
+                    "english": "Bleach the Movie: Hell Verse",
+                    "native": "BLEACH 地獄篇"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 100719,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "BLEACH Colorful!: Gotei Juusan Yatai Daisakusen!",
+                    "english": null,
+                    "native": "BLEACH カラブリ！護廷十三屋台大作戦！"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 116674,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "BLEACH: Sennen Kessen-hen",
+                    "english": "BLEACH: Thousand-Year Blood War",
+                    "native": "BLEACH 千年血戦篇"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 116673,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "BURN THE WITCH",
+                    "english": "BURN THE WITCH",
+                    "native": "BURN THE WITCH"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 154037,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "BLEACH: memories in the rain",
+                    "english": null,
+                    "native": "BLEACH memories in the rain"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 182561,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "BLEACH 20th PV",
+                    "english": "BLEACH 20th Anime Anniversary Official Trailer",
+                    "native": "BLEACH 20th PV"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 21202,
@@ -1308,7 +6003,133 @@
             "Fantasy"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2016,
+            "month": 1,
+            "day": 14
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 86238,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Kono Subarashii Sekai ni Shukufuku wo!",
+                    "english": "Konosuba: God's Blessing on This Wonderful World!",
+                    "native": "この素晴らしい世界に祝福を!"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 21574,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Kono Subarashii Sekai ni Shukufuku wo!: Kono Subarashii Choker ni Shukufuku wo!",
+                    "english": "KONOSUBA -God's blessing on this wonderful world!: God's Blessings On This Wonderful Choker!",
+                    "native": "この素晴らしい世界に祝福を！ この素晴らしいチョーカーに祝福を!"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 21699,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+                    "english": "KONOSUBA -God's blessing on this wonderful world! 2",
+                    "native": "この素晴らしい世界に祝福を！2"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 104454,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet",
+                    "english": "Isekai Quartet",
+                    "native": "異世界かるてっと"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 85702,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kono Subarashii Sekai ni Shukufuku wo!",
+                    "english": "Konosuba: God's Blessing on This Wonderful World!",
+                    "native": "この素晴らしい世界に祝福を!"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 110178,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet 2",
+                    "english": "Isekai Quartet 2",
+                    "native": "異世界かるてっと 2"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 117074,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Isekai Quartet: Another World",
+                    "english": "Isekai Quartet The Movie: Another World",
+                    "native": "異世界かるてっと ～あなざーわーるど～"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 150075,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kono Subarashii Sekai ni Bakuen wo!",
+                    "english": "KONOSUBA -An Explosion on This Wonderful World!",
+                    "native": "この素晴らしい世界に爆焔を！"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 194447,
+                  "type": "ANIME",
+                  "format": "TV_SHORT",
+                  "title": {
+                    "romaji": "Isekai Quartet 3",
+                    "english": "Isekai Quartet 3",
+                    "native": "異世界かるてっと 3"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 112151,
@@ -1338,7 +6159,68 @@
             "Supernatural"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2020,
+            "month": 10,
+            "day": 16
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "PREQUEL",
+                "node": {
+                  "id": 101922,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba",
+                    "english": "Demon Slayer: Kimetsu no Yaiba",
+                    "native": "鬼滅の刃"
+                  }
+                }
+              },
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 87216,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba",
+                    "english": "Demon Slayer: Kimetsu no Yaiba",
+                    "native": "鬼滅の刃"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 129874,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba: Mugen Ressha-hen (TV)",
+                    "english": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+                    "native": "鬼滅の刃 無限列車編 (TV)"
+                  }
+                }
+              },
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 142329,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Kimetsu no Yaiba: Yuukaku-hen",
+                    "english": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+                    "native": "鬼滅の刃 遊郭編"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 1575,
@@ -1367,7 +6249,276 @@
             "Thriller"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2006,
+            "month": 10,
+            "day": 6
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SEQUEL",
+                "node": {
+                  "id": 2904,
+                  "type": "ANIME",
+                  "format": "TV",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch R2",
+                    "english": "Code Geass: Lelouch of the Rebellion R2",
+                    "native": "コードギアス 反逆のルルーシュ R2"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 1953,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch Picture Drama",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ ピクチャードラマ"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 8888,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Code Geass: Boukoku no Akito 1 - Yokuryuu wa Maiorita",
+                    "english": "Code Geass: Akito the Exiled - The Wyvern Arrives",
+                    "native": "コードギアス 亡国のアキト 第1章 翼竜は舞い降りた"
+                  }
+                }
+              },
+              {
+                "relationType": "ALTERNATIVE",
+                "node": {
+                  "id": 101811,
+                  "type": "ANIME",
+                  "format": "MOVIE",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch I - Koudou",
+                    "english": "Code Geass: Lelouch of the Rebellion I - Initiation",
+                    "native": "コードギアス 反逆のルルーシュⅠ 興道"
+                  }
+                }
+              },
+              {
+                "relationType": "ADAPTATION",
+                "node": {
+                  "id": 31528,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch",
+                    "english": "Code Geass: Lelouch of the Rebellion",
+                    "native": "コードギアス 反逆のルルーシュ"
+                  }
+                }
+              },
+              {
+                "relationType": "ADAPTATION",
+                "node": {
+                  "id": 41496,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ"
+                  }
+                }
+              },
+              {
+                "relationType": "ADAPTATION",
+                "node": {
+                  "id": 108187,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch Re;",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ Re;"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 110253,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch Picture Drama STAGE 0.97 - Hajimari no Zenya",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ ピクチャードラマ STAGE 0.97 はじまりの前夜"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 42042,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch Koushiki Comic Anthology: Knight - for Girls",
+                    "english": null,
+                    "native": "コ－ドギアス反逆のルル－シュ公式コミックアンソロジ－Ｋｎｉｇｈｔ-- for Girls"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 126169,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch DVD Magazine",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ DVDマガジン"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 126416,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch - Shu no Kiseki",
+                    "english": null,
+                    "native": "コードギアス　反逆のルルーシュ　朱の軌跡"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 126830,
+                  "type": "ANIME",
+                  "format": "ONA",
+                  "title": {
+                    "romaji": "Code Geass: Dakkan no Rozé",
+                    "english": "Code Geass: Rozé of the Recapture",
+                    "native": "コードギアス 奪還のロゼ"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 72381,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Soubou no Oz",
+                    "english": null,
+                    "native": "コードギアス　双貌のオズ"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 144050,
+                  "type": "MANGA",
+                  "format": "NOVEL",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch - Seitokai Jikenbo",
+                    "english": null,
+                    "native": "コードギアス 反逆のルルーシュ 生徒会事件簿"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 139044,
+                  "type": "ANIME",
+                  "format": "SPECIAL",
+                  "title": {
+                    "romaji": "Jongtama PV",
+                    "english": null,
+                    "native": "雀魂 PV"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 17277,
+                  "type": "ANIME",
+                  "format": "OVA",
+                  "title": {
+                    "romaji": "Code Geass: Soubou no Oz Picture Drama",
+                    "english": "Code Geass: Oz the Reflection Picture Drama",
+                    "native": "コードギアス 双貌のオズ ピクチャードマラ"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 41968,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch Koushiki Comic Anthology For Boys - Queen",
+                    "english": "Code Geass: Queen",
+                    "native": "コードギアス 反逆のルルーシュ 公式コミックアンソロジー For Boys -Queen-"
+                  }
+                }
+              },
+              {
+                "relationType": "SIDE_STORY",
+                "node": {
+                  "id": 202993,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Code Geass: Hangyaku no Lelouch - Lost Stories",
+                    "english": null,
+                    "native": "コードギアス　反逆のルルーシュ　ロストストーリーズ"
+                  }
+                }
+              },
+              {
+                "relationType": "OTHER",
+                "node": {
+                  "id": 203651,
+                  "type": "ANIME",
+                  "format": null,
+                  "title": {
+                    "romaji": "Code Geass: Hoshi Oi no Aspal",
+                    "english": null,
+                    "native": "コードギアス 星追いのアスパル"
+                  }
+                }
+              },
+              {
+                "relationType": "CHARACTER",
+                "node": {
+                  "id": 215181,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Shin Kidou Senki Gundam Wing x Code Geass: Hangyaku no Lelouch - Minuet Zero",
+                    "english": null,
+                    "native": "新機動戦記ガンダムW × コードギアス 反逆のルルーシュ　メヌエット・ゼロ"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 99423,
@@ -1397,7 +6548,42 @@
             "Sci-Fi"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2018,
+            "month": 1,
+            "day": 13
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "ADAPTATION",
+                "node": {
+                  "id": 100937,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Darling in the Franxx",
+                    "english": "DARLING in the FRANXX",
+                    "native": "ダーリン・イン・ザ・フランキス"
+                  }
+                }
+              },
+              {
+                "relationType": "SPIN_OFF",
+                "node": {
+                  "id": 101268,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Darling in the FranXX!",
+                    "english": null,
+                    "native": "だーりん・いん・ざ・ふらんきす！"
+                  }
+                }
+              }
+            ]
+          }
         },
         {
           "id": 20623,
@@ -1426,7 +6612,29 @@
             "Sci-Fi"
           ],
           "isAdult": false,
-          "nextAiringEpisode": null
+          "nextAiringEpisode": null,
+          "startDate": {
+            "year": 2014,
+            "month": 10,
+            "day": 9
+          },
+          "relations": {
+            "edges": [
+              {
+                "relationType": "SOURCE",
+                "node": {
+                  "id": 30401,
+                  "type": "MANGA",
+                  "format": "MANGA",
+                  "title": {
+                    "romaji": "Kiseijuu",
+                    "english": "Parasyte",
+                    "native": "寄生獣"
+                  }
+                }
+              }
+            ]
+          }
         }
       ]
     }

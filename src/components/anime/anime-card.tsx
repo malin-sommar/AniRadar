@@ -5,7 +5,7 @@ import Link from "next/link"
 import type { CSSProperties } from "react"
 
 import { Skeleton } from "@/components/ui/skeleton"
-import { mediaMeta } from "@/domain/media"
+import { formatLabel, mediaMeta, type MediaTitleFields } from "@/domain/media"
 import { useDisplayTitle } from "@/hooks/use-preferences"
 import type { MediaCardFragment } from "@/lib/anilist/gql/graphql"
 import { cn } from "@/lib/utils"
@@ -36,15 +36,38 @@ export function CardGrid({
   )
 }
 
+/** Extra details when a card stands for a whole series (see SeriesCard). */
+export interface CardSeriesInfo {
+  /** "6 seasons" or "3 entries"; replaces the episode count. */
+  count?: string
+  /** "2013–2023"; replaces the year. */
+  years?: string
+  /** The next episode of whichever season airs soonest. */
+  airing?: { episode: number; airingAt: number } | null
+  /** The season this one continues, when that one isn't on the page. */
+  continues?: MediaTitleFields | null
+  /** Any season in the series is adult. */
+  isAdult?: boolean
+}
+
 export function AnimeCard({
   media,
   priority = false,
+  series,
 }: {
   media: MediaCardFragment
   priority?: boolean
+  series?: CardSeriesInfo
 }) {
   const title = useDisplayTitle(media.title)
-  const meta = mediaMeta(media)
+  const continues = useDisplayTitle(series?.continues)
+  const meta = series?.count
+    ? [formatLabel(media.format), series.count, series.years]
+        .filter(Boolean)
+        .join(" · ")
+    : mediaMeta(media)
+  const airing = series?.airing ?? media.nextAiringEpisode
+  const isAdult = series?.isAdult ?? media.isAdult
   const accent = {
     "--cover": media.coverImage?.color ?? "var(--primary)",
   } as CSSProperties
@@ -64,7 +87,7 @@ export function AnimeCard({
             priority={priority}
             className="transition-transform duration-500 group-hover:scale-[1.04]"
           />
-          {media.isAdult ? (
+          {isAdult ? (
             <span className="absolute top-2 left-2 rounded-full bg-destructive px-2 py-0.5 text-[11px] font-semibold text-background">
               18+
               <span className="sr-only"> adult content</span>
@@ -80,10 +103,10 @@ export function AnimeCard({
               <span className="sr-only"> average score</span>
             </span>
           ) : null}
-          {media.nextAiringEpisode ? (
+          {airing ? (
             <AiringBadge
-              episode={media.nextAiringEpisode.episode}
-              airingAt={media.nextAiringEpisode.airingAt}
+              episode={airing.episode}
+              airingAt={airing.airingAt}
               className="absolute bottom-2 left-2"
             />
           ) : null}
@@ -94,6 +117,11 @@ export function AnimeCard({
           </h3>
           {meta ? (
             <p className="text-xs text-muted-foreground">{meta}</p>
+          ) : null}
+          {series?.continues ? (
+            <p className="line-clamp-1 text-xs text-muted-foreground">
+              Continues {continues}
+            </p>
           ) : null}
         </div>
       </Link>

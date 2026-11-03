@@ -1,19 +1,21 @@
 "use client"
 
-import { BookOpenIcon, ExternalLinkIcon } from "lucide-react"
+import { BookOpenIcon, ExternalLinkIcon, StarIcon } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
 import { CoverImage } from "@/components/anime/cover-image"
 import { Button } from "@/components/ui/button"
-import { formatLabel } from "@/domain/media"
+import { STATUS_LABELS, formatLabel } from "@/domain/media"
 import {
   RELATION_LABELS,
   formatStartDate,
+  seriesSummary,
   type RelatedEntry,
   type SeasonGroups,
   type SeasonNode,
 } from "@/domain/seasons"
+import { mainStoryLabel, yearsLabel } from "@/domain/series"
 import { useDisplayTitle, usePreferences } from "@/hooks/use-preferences"
 import { cn } from "@/lib/utils"
 
@@ -22,44 +24,101 @@ import { DetailSection } from "./section"
 /** Side stories shown before "Show all". */
 const SIDE_PREVIEW = 6
 
-/** Seasons in order, then side stories and specials, then the source. */
-export function SeasonsList({
+function useAllowed() {
+  const { showAdult } = usePreferences()
+  return (node: SeasonNode) => showAdult || !node.isAdult
+}
+
+/**
+ * The series first (PLAN.md §10.0): every season of the main story in
+ * order, each with its own numbers, and a summary of the whole series.
+ * The season you're looking at is marked.
+ */
+export function SeriesOverview({
   currentId,
-  groups,
+  main: allMain,
   incomplete,
 }: {
   currentId: number
-  groups: SeasonGroups
+  main: SeasonGroups["main"]
   incomplete: boolean
 }) {
-  const { showAdult } = usePreferences()
-  const [showAllSide, setShowAllSide] = useState(false)
-  const allowed = (node: SeasonNode) => showAdult || !node.isAdult
-  const main = groups.main.filter(allowed)
-  const side = groups.side.filter((entry) => allowed(entry.node))
-  const visibleSide = showAllSide ? side : side.slice(0, SIDE_PREVIEW)
+  const allowed = useAllowed()
+  const main = allMain.filter(allowed)
+  const seriesTitle = useDisplayTitle(main[0]?.title)
+  const summary = seriesSummary(main)
+  const current = main.findIndex((node) => node.id === currentId)
+
+  const facts = [
+    mainStoryLabel(main.map((node) => node.format)),
+    yearsLabel(summary.years),
+    summary.episodes ? `${summary.episodes} episodes` : undefined,
+  ].filter(Boolean)
 
   return (
-    <DetailSection id="seasons-title" title="Seasons & related">
-      {main.length > 1 ? (
-        <div className="space-y-2">
-          <h3 className="text-sm font-medium text-muted-foreground">
-            Main story · {main.length} entries
-          </h3>
-          <ol className="-mx-4 flex gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden">
-            {main.map((node, index) => (
-              <li key={node.id} className="w-28 shrink-0 sm:w-32">
-                <SeasonCard
-                  node={node}
-                  current={node.id === currentId}
-                  label={`${index + 1}`}
-                />
-              </li>
-            ))}
-          </ol>
-        </div>
+    <DetailSection id="series-title" title="Seasons">
+      <div className="space-y-1">
+        <p className="text-sm">
+          <span className="font-medium">{seriesTitle}</span>
+          <span className="text-muted-foreground"> · {facts.join(" · ")}</span>
+          {summary.averageScore ? (
+            <span className="text-muted-foreground">
+              {" · "}
+              <StarIcon
+                className="inline size-3.5 -translate-y-px fill-score text-score"
+                aria-hidden="true"
+              />{" "}
+              {summary.averageScore}% average
+            </span>
+          ) : null}
+        </p>
+        {current >= 0 ? (
+          <p className="text-xs text-muted-foreground">
+            You&apos;re looking at entry {current + 1} of {main.length}.
+          </p>
+        ) : null}
+      </div>
+      <ol className="-mx-4 flex gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden">
+        {main.map((node, index) => (
+          <li key={node.id} className="w-32 shrink-0 sm:w-36">
+            <SeasonCard
+              node={node}
+              current={node.id === currentId}
+              label={`${index + 1}`}
+            />
+          </li>
+        ))}
+      </ol>
+      {incomplete ? (
+        <p className="text-xs text-muted-foreground">
+          This franchise is long; some entries may be missing.
+        </p>
       ) : null}
+    </DetailSection>
+  )
+}
 
+/**
+ * Side stories, specials and spin-offs (separate series, still listed
+ * here), then the source material.
+ */
+export function RelatedList({
+  currentId,
+  side: allSide,
+  source,
+}: {
+  currentId: number
+  side: SeasonGroups["side"]
+  source: SeasonGroups["source"]
+}) {
+  const allowed = useAllowed()
+  const [showAllSide, setShowAllSide] = useState(false)
+  const side = allSide.filter((entry) => allowed(entry.node))
+  const visibleSide = showAllSide ? side : side.slice(0, SIDE_PREVIEW)
+  if (side.length === 0 && source.length === 0) return null
+
+  return (
+    <DetailSection id="related-title" title="Side stories & related">
       {side.length > 0 ? (
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground">
@@ -90,25 +149,19 @@ export function SeasonsList({
         </div>
       ) : null}
 
-      {groups.source.length > 0 ? (
+      {source.length > 0 ? (
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground">
             Source material
           </h3>
           <ul className="grid gap-2 sm:grid-cols-2">
-            {groups.source.map((entry) => (
+            {source.map((entry) => (
               <li key={entry.node.id}>
                 <SourceRow entry={entry} />
               </li>
             ))}
           </ul>
         </div>
-      ) : null}
-
-      {incomplete ? (
-        <p className="text-xs text-muted-foreground">
-          This franchise is long; some entries may be missing.
-        </p>
       ) : null}
     </DetailSection>
   )
@@ -125,6 +178,19 @@ function SeasonCard({
 }) {
   const title = useDisplayTitle(node.title)
   const upcoming = node.status === "NOT_YET_RELEASED"
+  const airing = node.status === "RELEASING"
+  const details = [
+    formatLabel(node.format),
+    node.format === "MOVIE" || !node.episodes
+      ? undefined
+      : `${node.episodes} ${node.episodes === 1 ? "ep" : "eps"}`,
+    upcoming
+      ? formatStartDate(node)
+      : (node.startDate?.year ?? node.seasonYear),
+  ]
+    .filter(Boolean)
+    .join(" · ")
+
   return (
     <Link
       href={`/anime/${node.id}`}
@@ -137,28 +203,31 @@ function SeasonCard({
           current ? "ring-2 ring-(--cover)" : "group-hover:ring-(--cover)/60",
         )}
       >
-        <CoverImage cover={node.coverImage} alt="" sizes="128px" />
+        <CoverImage cover={node.coverImage} alt="" sizes="144px" />
         <span className="absolute top-1.5 left-1.5 rounded-full bg-background/80 px-1.5 text-[11px] font-semibold backdrop-blur">
           {label}
         </span>
+        {node.averageScore ? (
+          <span className="absolute top-1.5 right-1.5 inline-flex items-center gap-0.5 rounded-full bg-background/80 px-1.5 text-[11px] font-semibold backdrop-blur">
+            <StarIcon
+              className="size-2.5 fill-score text-score"
+              aria-hidden="true"
+            />
+            {node.averageScore}%<span className="sr-only"> average score</span>
+          </span>
+        ) : null}
         {current ? (
           <span className="absolute inset-x-0 bottom-0 bg-(--cover)/90 py-0.5 text-center text-[11px] font-semibold text-background">
             You&apos;re here
           </span>
+        ) : (airing || upcoming) && node.status ? (
+          <span className="absolute inset-x-0 bottom-0 bg-background/85 py-0.5 text-center text-[11px] font-semibold text-airing backdrop-blur">
+            {STATUS_LABELS[node.status]}
+          </span>
         ) : null}
       </div>
       <p className="mt-1.5 line-clamp-2 text-xs font-medium">{title}</p>
-      <p className="text-[11px] text-muted-foreground">
-        {[
-          formatLabel(node.format),
-          upcoming
-            ? formatStartDate(node)
-            : (node.startDate?.year ?? node.seasonYear),
-        ]
-          .filter(Boolean)
-          .join(" · ")}
-        {upcoming ? " · upcoming" : ""}
-      </p>
+      <p className="text-[11px] text-muted-foreground">{details}</p>
     </Link>
   )
 }

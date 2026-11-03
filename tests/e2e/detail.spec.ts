@@ -33,17 +33,23 @@ test("shows a show's main content with its MAL score", async ({ page }) => {
   await expect(page).toHaveTitle("Attack on Titan · AniRadar")
 })
 
-test("lists the seasons in order and marks the current one", async ({
+test("puts the series first: its seasons in order, the current one marked", async ({
   page,
 }) => {
   await page.goto("/anime/16498")
-  const seasons = page
-    .getByRole("region", { name: "Seasons & related" })
-    .getByRole("list")
-    .first()
-    .getByRole("link")
+  const series = page.getByRole("region", { name: "Seasons" })
+  await expect(series).toContainText(
+    "Attack on Titan · 6 seasons · 2013–2022 · 87 episodes",
+  )
+  // The series comes before this season's synopsis.
+  const headings = await page
+    .getByRole("heading", { level: 2 })
+    .allTextContents()
+  expect(headings.indexOf("Seasons")).toBeLessThan(headings.indexOf("Synopsis"))
+
+  const seasons = series.getByRole("list").getByRole("link")
   await expect(seasons).toHaveText([
-    /^1You're hereAttack on TitanTV/,
+    /^1.*You're hereAttack on TitanTV · 25 eps · 2013$/,
     /Attack on Titan Season 2/,
     /Attack on Titan Season 3/,
     /Season 3 Part 2/,
@@ -73,6 +79,17 @@ test("shows voice actors and loads all characters on request", async ({
   await expect(eren).toContainText("Bryce Papenbrook")
   await characters.getByRole("button", { name: "Show all characters" }).click()
   await expect(characters.getByRole("button")).toHaveCount(0)
+})
+
+test("lists side stories and spin-offs separately from the seasons", async ({
+  page,
+}) => {
+  await page.goto("/anime/16498")
+  const related = page.getByRole("region", { name: "Side stories & related" })
+  await expect(related.getByRole("link", { name: /Junior High/ })).toBeVisible()
+  await expect(
+    related.getByRole("link", { name: /Manga.*on AniList/ }),
+  ).toBeVisible()
 })
 
 test("keeps spoiler tags hidden until asked for", async ({ page }) => {
@@ -118,9 +135,7 @@ test("a show without banner, MAL entry or extras still works", async ({
   await expect(
     page.getByRole("link", { name: /MyAnimeList score/ }),
   ).toHaveCount(0)
-  await expect(
-    page.getByRole("region", { name: "Seasons & related" }),
-  ).toHaveCount(0)
+  await expect(page.getByRole("region", { name: "Seasons" })).toHaveCount(0)
 })
 
 test("an unknown anime shows the not-found page", async ({ page }) => {

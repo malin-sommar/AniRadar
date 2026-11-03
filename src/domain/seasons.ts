@@ -57,6 +57,7 @@ function seasonNode(item: SeasonNode): SeasonNode {
     type: item.type,
     format: item.format,
     status: item.status,
+    averageScore: item.averageScore,
     title: item.title,
     coverImage: item.coverImage,
     startDate: item.startDate,
@@ -312,4 +313,47 @@ export function formatStartDate(
   if (!year) return "TBA"
   const month = node.startDate?.month
   return month ? `${MONTHS[month - 1]} ${year}` : String(year)
+}
+
+export interface SeriesSummary {
+  seasons: number
+  years: [number, number] | null
+  /** Known episodes across the main story (undefined if any is unknown). */
+  episodes: number | undefined
+  /** Average of the seasons' AniList scores that are known. */
+  averageScore: number | undefined
+}
+
+/** "6 seasons · 2013–2023 · 94 episodes · 85% average", as numbers. */
+export function seriesSummary(main: readonly SeasonNode[]): SeriesSummary {
+  const years = main
+    .map((node) => node.startDate?.year ?? node.seasonYear)
+    .filter((year): year is number => typeof year === "number")
+  const released = main.filter((node) => node.status !== "NOT_YET_RELEASED")
+  const episodes = released.every((node) => node.episodes)
+    ? released.reduce((sum, node) => sum + (node.episodes ?? 0), 0)
+    : undefined
+  const scores = main
+    .map((node) => node.averageScore)
+    .filter((score): score is number => typeof score === "number")
+  return {
+    seasons: main.length,
+    years: years.length > 0 ? [Math.min(...years), Math.max(...years)] : null,
+    episodes: episodes || undefined,
+    averageScore:
+      scores.length > 0
+        ? Math.round(
+            scores.reduce((sum, score) => sum + score, 0) / scores.length,
+          )
+        : undefined,
+  }
+}
+
+/** Whether an entry has a prequel or sequel, i.e. belongs to a series. */
+export function hasSeasonChain(item: Pick<SeasonItem, "relations">): boolean {
+  return (item.relations?.edges ?? []).some(
+    (edge) =>
+      CHAIN_RELATIONS.has(edge?.relationType ?? null) &&
+      edge?.node?.type === "ANIME",
+  )
 }
