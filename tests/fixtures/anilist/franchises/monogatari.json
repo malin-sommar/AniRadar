@@ -1,0 +1,4413 @@
+{
+  "startId": 5081,
+  "items": [
+    {
+      "id": 5081,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Bakemonogatari",
+        "english": "Bakemonogatari",
+        "native": "化物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5081-9GocceQ5Z865.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5081-9GocceQ5Z865.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg",
+        "color": "#4393e4"
+      },
+      "startDate": {
+        "year": 2009,
+        "month": 7,
+        "day": 3
+      },
+      "seasonYear": 2009,
+      "episodes": 15,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/5081",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 15689,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nekomonogatari (Kuro)",
+                "english": "Nekomonogatari Black",
+                "native": "猫物語（黒）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx15689-1Na3FwWgGk8v.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15689-1Na3FwWgGk8v.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-1Na3FwWgGk8v.png",
+                "color": "#935de4"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 12,
+                "day": 31
+              },
+              "seasonYear": 2012,
+              "episodes": 4,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/15689",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143704,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 11597,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nisemonogatari",
+                "english": "Nisemonogatari",
+                "native": "偽物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11597-dcEqcn2ku4RN.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11597-dcEqcn2ku4RN.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-dcEqcn2ku4RN.jpg",
+                "color": "#e4ae5d"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 1,
+                "day": 8
+              },
+              "seasonYear": 2012,
+              "episodes": 11,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/11597",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 95265,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 102859,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 44893,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari",
+                "english": "Bakemonogatari: Monster Tale",
+                "native": "化物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx44893-aV0XRP0OfWf7.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx44893-aV0XRP0OfWf7.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx44893-aV0XRP0OfWf7.jpg",
+                "color": "#f16b5d"
+              },
+              "startDate": {
+                "year": 2006,
+                "month": 11,
+                "day": 1
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/44893",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 181463,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 21520,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koyomimonogatari",
+                "english": "Koyomimonogatari",
+                "native": "暦物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21520-nZKCr7PZrv7e.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21520-nZKCr7PZrv7e.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21520-nZKCr7PZrv7e.png",
+                "color": "#d67886"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 9
+              },
+              "seasonYear": 2016,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21520",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "OTHER",
+            "node": {
+              "id": 106495,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nisekoimonogatari",
+                "english": "Nisekoimonogatari",
+                "native": "ニセコイモノガタリ"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx106495-gEnPvRaS5HoU.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx106495-gEnPvRaS5HoU.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx106495-gEnPvRaS5HoU.jpg",
+                "color": "#e49350"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 4,
+                "day": 1
+              },
+              "seasonYear": 2015,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/106495",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 18897,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "CHARACTER",
+            "node": {
+              "id": 54499,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari Anime Complete Guidebook",
+                "english": null,
+                "native": "化物語アニメコンプリートガイドブック"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/24499.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/24499.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/24499.jpg",
+                "color": "#f1785d"
+              },
+              "startDate": {
+                "year": 2010,
+                "month": 10,
+                "day": 27
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/54499",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "ALTERNATIVE",
+            "node": {
+              "id": 101311,
+              "type": "MANGA",
+              "format": "MANGA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari",
+                "english": "Bakemonogatari",
+                "native": "化物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx101311-NOQuXK7eRHDm.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101311-NOQuXK7eRHDm.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101311-NOQuXK7eRHDm.jpg",
+                "color": "#e44378"
+              },
+              "startDate": {
+                "year": 2018,
+                "month": 3,
+                "day": 14
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/101311",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 143663,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143704,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53751,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 54499,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "ALTERNATIVE",
+            "node": {
+              "id": 143663,
+              "type": "ANIME",
+              "format": "SPECIAL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari PV",
+                "english": null,
+                "native": "化物語 PV"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b143663-uhiYo1Yg6UA5.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b143663-uhiYo1Yg6UA5.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b143663-uhiYo1Yg6UA5.png",
+                "color": "#e4c96b"
+              },
+              "startDate": {
+                "year": 2022,
+                "month": 2,
+                "day": 17
+              },
+              "seasonYear": null,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/143663",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 11597,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Nisemonogatari",
+        "english": "Nisemonogatari",
+        "native": "偽物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11597-dcEqcn2ku4RN.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11597-dcEqcn2ku4RN.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-dcEqcn2ku4RN.jpg",
+        "color": "#e4ae5d"
+      },
+      "startDate": {
+        "year": 2012,
+        "month": 1,
+        "day": 8
+      },
+      "seasonYear": 2012,
+      "episodes": 11,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/11597",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 5081,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari",
+                "english": "Bakemonogatari",
+                "native": "化物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5081-9GocceQ5Z865.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5081-9GocceQ5Z865.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg",
+                "color": "#4393e4"
+              },
+              "startDate": {
+                "year": 2009,
+                "month": 7,
+                "day": 3
+              },
+              "seasonYear": 2009,
+              "episodes": 15,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/5081",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 15689,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 106495,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 54499,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 143663,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 17074,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Monogatari Series: Second Season",
+                "english": "Monogatari Series Second Season",
+                "native": "〈物語〉シリーズ セカンドシーズン"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx17074-xMhVAZsEDH66.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx17074-xMhVAZsEDH66.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17074-xMhVAZsEDH66.png",
+                "color": "#43a1e4"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 7,
+                "day": 7
+              },
+              "seasonYear": 2013,
+              "episodes": 26,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/17074",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53751,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 104434,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143720,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143722,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143724,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143726,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 21520,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koyomimonogatari",
+                "english": "Koyomimonogatari",
+                "native": "暦物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21520-nZKCr7PZrv7e.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21520-nZKCr7PZrv7e.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21520-nZKCr7PZrv7e.png",
+                "color": "#d67886"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 9
+              },
+              "seasonYear": 2016,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21520",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "CHARACTER",
+            "node": {
+              "id": 95265,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nisemonogatari Anime Complete Guidebook",
+                "english": null,
+                "native": "偽物語アニメコンプリートガイドブック"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx95265-l8e2xf4W5iUy.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx95265-l8e2xf4W5iUy.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx95265-l8e2xf4W5iUy.jpg",
+                "color": "#e4a135"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 9,
+                "day": 27
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/95265",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "OTHER",
+            "node": {
+              "id": 102859,
+              "type": "ANIME",
+              "format": "MUSIC",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Naisho no Hanashi",
+                "english": "Naisho no Hanashi",
+                "native": "ナイショの話"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/102859-MSyxWnjaXVrg.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/102859-MSyxWnjaXVrg.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/102859-MSyxWnjaXVrg.jpg",
+                "color": null
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 2,
+                "day": 1
+              },
+              "seasonYear": null,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/102859",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143703,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nisemonogatari",
+                "english": "Nisemonogatari: Fake Tale",
+                "native": "偽物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143703-nOs1h4qBtt61.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143703-nOs1h4qBtt61.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143703-nOs1h4qBtt61.jpg",
+                "color": "#f1bb28"
+              },
+              "startDate": {
+                "year": 2008,
+                "month": 9,
+                "day": 1
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143703",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143704,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 15689,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Nekomonogatari (Kuro)",
+        "english": "Nekomonogatari Black",
+        "native": "猫物語（黒）"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx15689-1Na3FwWgGk8v.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15689-1Na3FwWgGk8v.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-1Na3FwWgGk8v.png",
+        "color": "#935de4"
+      },
+      "startDate": {
+        "year": 2012,
+        "month": 12,
+        "day": 31
+      },
+      "seasonYear": 2012,
+      "episodes": 4,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/15689",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 5081,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Bakemonogatari",
+                "english": "Bakemonogatari",
+                "native": "化物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5081-9GocceQ5Z865.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5081-9GocceQ5Z865.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg",
+                "color": "#4393e4"
+              },
+              "startDate": {
+                "year": 2009,
+                "month": 7,
+                "day": 3
+              },
+              "seasonYear": 2009,
+              "episodes": 15,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/5081",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 15689,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 106495,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 54499,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 143663,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 21400,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari III: Reiketsu-hen",
+                "english": "Kizumonogatari Part 3: Reiketsu",
+                "native": "傷物語〈Ⅲ冷血篇〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21400-38ykNo3j4xXo.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21400-38ykNo3j4xXo.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png",
+                "color": "#e4d628"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 1,
+                "day": 6
+              },
+              "seasonYear": 2017,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21400",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 15689,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143704,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nekomonogatari: Kuro",
+                "english": "Nekomonogatari: Cat Tale (Black)",
+                "native": "猫物語（黒）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143704-K5nKk6xP3tJ1.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143704-K5nKk6xP3tJ1.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143704-K5nKk6xP3tJ1.jpg",
+                "color": "#ae5035"
+              },
+              "startDate": {
+                "year": 2010,
+                "month": 7,
+                "day": 28
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143704",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 53751,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 15689,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 17074,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Monogatari Series: Second Season",
+        "english": "Monogatari Series Second Season",
+        "native": "〈物語〉シリーズ セカンドシーズン"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx17074-xMhVAZsEDH66.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx17074-xMhVAZsEDH66.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17074-xMhVAZsEDH66.png",
+        "color": "#43a1e4"
+      },
+      "startDate": {
+        "year": 2013,
+        "month": 7,
+        "day": 7
+      },
+      "seasonYear": 2013,
+      "episodes": 26,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/17074",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 11597,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nisemonogatari",
+                "english": "Nisemonogatari",
+                "native": "偽物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11597-dcEqcn2ku4RN.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11597-dcEqcn2ku4RN.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-dcEqcn2ku4RN.jpg",
+                "color": "#e4ae5d"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 1,
+                "day": 8
+              },
+              "seasonYear": 2012,
+              "episodes": 11,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/11597",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 95265,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 102859,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 53751,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nekomonogatari: Shiro",
+                "english": "Nekomonogatari: Cat Tale (White)",
+                "native": "猫物語（白）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx53751-1PHRYYsVP2cE.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx53751-1PHRYYsVP2cE.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53751-1PHRYYsVP2cE.jpg",
+                "color": "#e4935d"
+              },
+              "startDate": {
+                "year": 2010,
+                "month": 10,
+                "day": 27
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/53751",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143704,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143720,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 21520,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koyomimonogatari",
+                "english": "Koyomimonogatari",
+                "native": "暦物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21520-nZKCr7PZrv7e.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21520-nZKCr7PZrv7e.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21520-nZKCr7PZrv7e.png",
+                "color": "#d67886"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 9
+              },
+              "seasonYear": 2016,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21520",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 104434,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koyomi History",
+                "english": null,
+                "native": "こよみヒストリー"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104434-6Pbe0XxAZp2S.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104434-6Pbe0XxAZp2S.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104434-6Pbe0XxAZp2S.png",
+                "color": null
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 9,
+                "day": 22
+              },
+              "seasonYear": null,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/104434",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 21262,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari",
+                "english": "Owarimonogatari",
+                "native": "終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21262-jfbv9hvjymMW.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21262-jfbv9hvjymMW.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21262-jfbv9hvjymMW.jpg",
+                "color": "#1aa16b"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 10,
+                "day": 4
+              },
+              "seasonYear": 2015,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21262",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143747,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143720,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kabukimonogatari",
+                "english": "Kabukimonogatari: Dandy Tale",
+                "native": "傾物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143720-Q9NpXhNTAbCO.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143720-Q9NpXhNTAbCO.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143720-Q9NpXhNTAbCO.jpg",
+                "color": "#50a1e4"
+              },
+              "startDate": {
+                "year": 2010,
+                "month": 12,
+                "day": 24
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143720",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 53751,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143721,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143722,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Otorimonogatari",
+                "english": "Otorimonogatari: Decoy Tale",
+                "native": "囮物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143722-yR4AjSj6MITF.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143722-yR4AjSj6MITF.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143722-yR4AjSj6MITF.jpg",
+                "color": "#d6ae78"
+              },
+              "startDate": {
+                "year": 2011,
+                "month": 6,
+                "day": 29
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143722",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143721,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143724,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143724,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Onimonogatari",
+                "english": "Onimonogatari: Demon Tale",
+                "native": "鬼物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143724-U38uLeLYaU3g.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143724-U38uLeLYaU3g.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143724-U38uLeLYaU3g.jpg",
+                "color": "#e48650"
+              },
+              "startDate": {
+                "year": 2011,
+                "month": 9,
+                "day": 28
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143724",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143722,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143726,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143726,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koimonogatari",
+                "english": "Koimonogatari: Love Tale",
+                "native": "恋物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143726-oM6XdI2Ghb8b.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143726-oM6XdI2Ghb8b.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143726-oM6XdI2Ghb8b.jpg",
+                "color": "#e46b50"
+              },
+              "startDate": {
+                "year": 2011,
+                "month": 12,
+                "day": 20
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143726",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143724,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 85538,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 74227,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 21400,
+      "type": "ANIME",
+      "format": "MOVIE",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Kizumonogatari III: Reiketsu-hen",
+        "english": "Kizumonogatari Part 3: Reiketsu",
+        "native": "傷物語〈Ⅲ冷血篇〉"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21400-38ykNo3j4xXo.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21400-38ykNo3j4xXo.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png",
+        "color": "#e4d628"
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 1,
+        "day": 6
+      },
+      "seasonYear": 2017,
+      "episodes": 1,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/21400",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 21399,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari II: Nekketsu-hen",
+                "english": "Kizumonogatari Part 2: Nekketsu",
+                "native": "傷物語〈Ⅱ熱血篇〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21399-VTAdAqc8u5AE.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21399-VTAdAqc8u5AE.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png",
+                "color": "#28aee4"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 8,
+                "day": 19
+              },
+              "seasonYear": 2016,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21399",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 15689,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nekomonogatari (Kuro)",
+                "english": "Nekomonogatari Black",
+                "native": "猫物語（黒）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx15689-1Na3FwWgGk8v.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15689-1Na3FwWgGk8v.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-1Na3FwWgGk8v.png",
+                "color": "#935de4"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 12,
+                "day": 31
+              },
+              "seasonYear": 2012,
+              "episodes": 4,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/15689",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143704,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143701,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari",
+                "english": "Kizumonogatari: Wound Tale",
+                "native": "傷物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143701-JltoJEa9GLAS.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143701-JltoJEa9GLAS.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143701-JltoJEa9GLAS.jpg",
+                "color": "#e4ae50"
+              },
+              "startDate": {
+                "year": 2008,
+                "month": 5,
+                "day": 7
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143701",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SUMMARY",
+            "node": {
+              "id": 181970,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari: Koyomi Vamp",
+                "english": "KIZUMONOGATARI -Koyomi Vamp-",
+                "native": "傷物語 -こよみヴァンプ-"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181970-dqNqPsJcBk5I.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181970-dqNqPsJcBk5I.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181970-dqNqPsJcBk5I.jpg",
+                "color": null
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 1,
+                "day": 12
+              },
+              "seasonYear": 2024,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/181970",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 21262,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Owarimonogatari",
+        "english": "Owarimonogatari",
+        "native": "終物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21262-jfbv9hvjymMW.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21262-jfbv9hvjymMW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21262-jfbv9hvjymMW.jpg",
+        "color": "#1aa16b"
+      },
+      "startDate": {
+        "year": 2015,
+        "month": 10,
+        "day": 4
+      },
+      "seasonYear": 2015,
+      "episodes": 12,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/21262",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 17074,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Monogatari Series: Second Season",
+                "english": "Monogatari Series Second Season",
+                "native": "〈物語〉シリーズ セカンドシーズン"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx17074-xMhVAZsEDH66.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx17074-xMhVAZsEDH66.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17074-xMhVAZsEDH66.png",
+                "color": "#43a1e4"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 7,
+                "day": 7
+              },
+              "seasonYear": 2013,
+              "episodes": 26,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/17074",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53751,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 104434,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143720,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143722,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143724,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143726,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 20918,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Tsukimonogatari",
+                "english": "Tsukimonogatari",
+                "native": "憑物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20918-8Gp6nJpbjFgr.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20918-8Gp6nJpbjFgr.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20918-8Gp6nJpbjFgr.jpg",
+                "color": "#e4ae5d"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 12,
+                "day": 31
+              },
+              "seasonYear": 2014,
+              "episodes": 4,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20918",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 74227,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 99678,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143747,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari",
+                "english": "Owarimonogatari: End Tale",
+                "native": "終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143747-dxRIq37Odflm.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143747-dxRIq37Odflm.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143747-dxRIq37Odflm.jpg",
+                "color": "#e45d86"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 10,
+                "day": 21
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143747",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 21399,
+      "type": "ANIME",
+      "format": "MOVIE",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Kizumonogatari II: Nekketsu-hen",
+        "english": "Kizumonogatari Part 2: Nekketsu",
+        "native": "傷物語〈Ⅱ熱血篇〉"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21399-VTAdAqc8u5AE.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21399-VTAdAqc8u5AE.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png",
+        "color": "#28aee4"
+      },
+      "startDate": {
+        "year": 2016,
+        "month": 8,
+        "day": 19
+      },
+      "seasonYear": 2016,
+      "episodes": 1,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/21399",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 9260,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari I: Tekketsu-hen",
+                "english": "Kizumonogatari Part 1: Tekketsu",
+                "native": "傷物語〈Ⅰ鉄血篇〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9260-cl7sczYOpTeW.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9260-cl7sczYOpTeW.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png",
+                "color": "#e4a128"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 8
+              },
+              "seasonYear": 2016,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/9260",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 21400,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari III: Reiketsu-hen",
+                "english": "Kizumonogatari Part 3: Reiketsu",
+                "native": "傷物語〈Ⅲ冷血篇〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21400-38ykNo3j4xXo.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21400-38ykNo3j4xXo.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png",
+                "color": "#e4d628"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 1,
+                "day": 6
+              },
+              "seasonYear": 2017,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21400",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 15689,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143701,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari",
+                "english": "Kizumonogatari: Wound Tale",
+                "native": "傷物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143701-JltoJEa9GLAS.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143701-JltoJEa9GLAS.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143701-JltoJEa9GLAS.jpg",
+                "color": "#e4ae50"
+              },
+              "startDate": {
+                "year": 2008,
+                "month": 5,
+                "day": 7
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143701",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SUMMARY",
+            "node": {
+              "id": 181970,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari: Koyomi Vamp",
+                "english": "KIZUMONOGATARI -Koyomi Vamp-",
+                "native": "傷物語 -こよみヴァンプ-"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181970-dqNqPsJcBk5I.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181970-dqNqPsJcBk5I.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181970-dqNqPsJcBk5I.jpg",
+                "color": null
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 1,
+                "day": 12
+              },
+              "seasonYear": 2024,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/181970",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 9260,
+      "type": "ANIME",
+      "format": "MOVIE",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Kizumonogatari I: Tekketsu-hen",
+        "english": "Kizumonogatari Part 1: Tekketsu",
+        "native": "傷物語〈Ⅰ鉄血篇〉"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9260-cl7sczYOpTeW.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9260-cl7sczYOpTeW.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png",
+        "color": "#e4a128"
+      },
+      "startDate": {
+        "year": 2016,
+        "month": 1,
+        "day": 8
+      },
+      "seasonYear": 2016,
+      "episodes": 1,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/9260",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 21399,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari II: Nekketsu-hen",
+                "english": "Kizumonogatari Part 2: Nekketsu",
+                "native": "傷物語〈Ⅱ熱血篇〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21399-VTAdAqc8u5AE.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21399-VTAdAqc8u5AE.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png",
+                "color": "#28aee4"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 8,
+                "day": 19
+              },
+              "seasonYear": 2016,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21399",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143701,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari",
+                "english": "Kizumonogatari: Wound Tale",
+                "native": "傷物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143701-JltoJEa9GLAS.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143701-JltoJEa9GLAS.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143701-JltoJEa9GLAS.jpg",
+                "color": "#e4ae50"
+              },
+              "startDate": {
+                "year": 2008,
+                "month": 5,
+                "day": 7
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143701",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 101311,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 44893,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143703,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 181970,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SUMMARY",
+            "node": {
+              "id": 181970,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Kizumonogatari: Koyomi Vamp",
+                "english": "KIZUMONOGATARI -Koyomi Vamp-",
+                "native": "傷物語 -こよみヴァンプ-"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181970-dqNqPsJcBk5I.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181970-dqNqPsJcBk5I.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181970-dqNqPsJcBk5I.jpg",
+                "color": null
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 1,
+                "day": 12
+              },
+              "seasonYear": 2024,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/181970",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143701,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 9260,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21399,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 21400,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 20918,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Tsukimonogatari",
+        "english": "Tsukimonogatari",
+        "native": "憑物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20918-8Gp6nJpbjFgr.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20918-8Gp6nJpbjFgr.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20918-8Gp6nJpbjFgr.jpg",
+        "color": "#e4ae5d"
+      },
+      "startDate": {
+        "year": 2014,
+        "month": 12,
+        "day": 31
+      },
+      "seasonYear": 2014,
+      "episodes": 4,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/20918",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 74227,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Tsukimonogatari",
+                "english": "Tsukimonogatari: Possession Tale",
+                "native": "憑物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx74227-mjLz68FCTTKT.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx74227-mjLz68FCTTKT.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx74227-mjLz68FCTTKT.jpg",
+                "color": "#fe5093"
+              },
+              "startDate": {
+                "year": 2012,
+                "month": 9,
+                "day": 26
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/74227",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 99678,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143726,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "CHARACTER",
+            "node": {
+              "id": 99678,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Okitegami Kyouko no Bibouroku × Monogatari",
+                "english": null,
+                "native": "『掟上今日子の備忘録』×〈物語〉"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx99678-XzEKfKzm2Gz4.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx99678-XzEKfKzm2Gz4.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99678-XzEKfKzm2Gz4.jpg",
+                "color": "#284378"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 12,
+                "day": 31
+              },
+              "seasonYear": null,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/99678",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 97629,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 74227,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 21520,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Koyomimonogatari",
+                "english": "Koyomimonogatari",
+                "native": "暦物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21520-nZKCr7PZrv7e.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21520-nZKCr7PZrv7e.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21520-nZKCr7PZrv7e.png",
+                "color": "#d67886"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 9
+              },
+              "seasonYear": 2016,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21520",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 5081,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 11597,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 21745,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari (Ge)",
+                "english": "Owarimonogatari Second Season",
+                "native": "終物語（下）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21745-VrhhJjZNdBXV.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21745-VrhhJjZNdBXV.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21745-VrhhJjZNdBXV.png",
+                "color": "#5dbbe4"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 8,
+                "day": 12
+              },
+              "seasonYear": 2017,
+              "episodes": 7,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21745",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143747,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 21262,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari",
+                "english": "Owarimonogatari",
+                "native": "終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21262-jfbv9hvjymMW.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21262-jfbv9hvjymMW.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21262-jfbv9hvjymMW.jpg",
+                "color": "#1aa16b"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 10,
+                "day": 4
+              },
+              "seasonYear": 2015,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21262",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 17074,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143747,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 21745,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Owarimonogatari (Ge)",
+        "english": "Owarimonogatari Second Season",
+        "native": "終物語（下）"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21745-VrhhJjZNdBXV.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21745-VrhhJjZNdBXV.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21745-VrhhJjZNdBXV.png",
+        "color": "#5dbbe4"
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 8,
+        "day": 12
+      },
+      "seasonYear": 2017,
+      "episodes": 7,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/21745",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 100815,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Zoku Owarimonogatari",
+                "english": "Zoku Owarimonogatari",
+                "native": "続・終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100815-cZbnM9Bjth8W.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100815-cZbnM9Bjth8W.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100815-cZbnM9Bjth8W.png",
+                "color": "#a16b28"
+              },
+              "startDate": {
+                "year": 2019,
+                "month": 2,
+                "day": 27
+              },
+              "seasonYear": 2019,
+              "episodes": 6,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/100815",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20593,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 20918,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Tsukimonogatari",
+                "english": "Tsukimonogatari",
+                "native": "憑物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20918-8Gp6nJpbjFgr.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20918-8Gp6nJpbjFgr.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20918-8Gp6nJpbjFgr.jpg",
+                "color": "#e4ae5d"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 12,
+                "day": 31
+              },
+              "seasonYear": 2014,
+              "episodes": 4,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20918",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 74227,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 99678,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 21520,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143747,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari",
+                "english": "Owarimonogatari: End Tale",
+                "native": "終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143747-dxRIq37Odflm.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143747-dxRIq37Odflm.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143747-dxRIq37Odflm.jpg",
+                "color": "#e45d86"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 10,
+                "day": 21
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143747",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143743,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 21262,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 100815,
+      "type": "ANIME",
+      "format": "OVA",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Zoku Owarimonogatari",
+        "english": "Zoku Owarimonogatari",
+        "native": "続・終物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100815-cZbnM9Bjth8W.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100815-cZbnM9Bjth8W.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100815-cZbnM9Bjth8W.png",
+        "color": "#a16b28"
+      },
+      "startDate": {
+        "year": 2019,
+        "month": 2,
+        "day": 27
+      },
+      "seasonYear": 2019,
+      "episodes": 6,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/100815",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 20593,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Hanamonogatari",
+                "english": "Hanamonogatari",
+                "native": "花物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20593-ri6S0Qt3mFkv.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20593-ri6S0Qt3mFkv.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20593-ri6S0Qt3mFkv.jpg",
+                "color": "#e4865d"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 8,
+                "day": 16
+              },
+              "seasonYear": 2014,
+              "episodes": 5,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20593",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143721,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 21745,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Owarimonogatari (Ge)",
+                "english": "Owarimonogatari Second Season",
+                "native": "終物語（下）"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21745-VrhhJjZNdBXV.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21745-VrhhJjZNdBXV.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21745-VrhhJjZNdBXV.png",
+                "color": "#5dbbe4"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 8,
+                "day": 12
+              },
+              "seasonYear": 2017,
+              "episodes": 7,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21745",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 20918,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143747,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143749,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Zoku Owarimonogatari",
+                "english": "Zoku Owarimonogatari: End Tale (Cont.)",
+                "native": "続終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143749-jflD8YHd3lv4.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143749-jflD8YHd3lv4.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143749-jflD8YHd3lv4.jpg",
+                "color": "#f1bb5d"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 9,
+                "day": 17
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143749",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 96019,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143747,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 100995,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 173533,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Monogatari Series: Off & Monster Season",
+                "english": "MONOGATARI Series: OFF & MONSTER Season",
+                "native": "〈物語〉シリーズ オフ&モンスターシーズン"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx173533-9DN3nHtT2FBm.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173533-9DN3nHtT2FBm.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173533-9DN3nHtT2FBm.png",
+                "color": "#f17843"
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 7,
+                "day": 6
+              },
+              "seasonYear": 2024,
+              "episodes": 14,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/173533",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 96019,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 180332,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143763,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 100355,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 183478,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 195448,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 20593,
+      "type": "ANIME",
+      "format": "TV",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Hanamonogatari",
+        "english": "Hanamonogatari",
+        "native": "花物語"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20593-ri6S0Qt3mFkv.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20593-ri6S0Qt3mFkv.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20593-ri6S0Qt3mFkv.jpg",
+        "color": "#e4865d"
+      },
+      "startDate": {
+        "year": 2014,
+        "month": 8,
+        "day": 16
+      },
+      "seasonYear": 2014,
+      "episodes": 5,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/20593",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 100815,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Zoku Owarimonogatari",
+                "english": "Zoku Owarimonogatari",
+                "native": "続・終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100815-cZbnM9Bjth8W.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100815-cZbnM9Bjth8W.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100815-cZbnM9Bjth8W.png",
+                "color": "#a16b28"
+              },
+              "startDate": {
+                "year": 2019,
+                "month": 2,
+                "day": 27
+              },
+              "seasonYear": 2019,
+              "episodes": 6,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/100815",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20593,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143721,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Hanamonogatari",
+                "english": "Hanamonogatari: Flower Tale",
+                "native": "花物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143721-WGmbYhb5HYYM.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143721-WGmbYhb5HYYM.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143721-WGmbYhb5HYYM.jpg",
+                "color": "#f1d693"
+              },
+              "startDate": {
+                "year": 2011,
+                "month": 3,
+                "day": 29
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143721",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 20593,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143720,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143722,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 173533,
+      "type": "ANIME",
+      "format": "ONA",
+      "status": "FINISHED",
+      "title": {
+        "romaji": "Monogatari Series: Off & Monster Season",
+        "english": "MONOGATARI Series: OFF & MONSTER Season",
+        "native": "〈物語〉シリーズ オフ&モンスターシーズン"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx173533-9DN3nHtT2FBm.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173533-9DN3nHtT2FBm.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173533-9DN3nHtT2FBm.png",
+        "color": "#f17843"
+      },
+      "startDate": {
+        "year": 2024,
+        "month": 7,
+        "day": 6
+      },
+      "seasonYear": 2024,
+      "episodes": 14,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/173533",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 96019,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Orokamonogatari",
+                "english": null,
+                "native": "愚物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx96019-YkPag7iKMXiF.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx96019-YkPag7iKMXiF.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96019-YkPag7iKMXiF.jpg",
+                "color": "#ffd643"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 10,
+                "day": 5
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/96019",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 100815,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Zoku Owarimonogatari",
+                "english": "Zoku Owarimonogatari",
+                "native": "続・終物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100815-cZbnM9Bjth8W.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100815-cZbnM9Bjth8W.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100815-cZbnM9Bjth8W.png",
+                "color": "#a16b28"
+              },
+              "startDate": {
+                "year": 2019,
+                "month": 2,
+                "day": 27
+              },
+              "seasonYear": 2019,
+              "episodes": 6,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/100815",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20593,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 21745,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143749,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 180332,
+              "type": "ANIME",
+              "format": "SPECIAL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Monogatari Series: Off & Monster Season - Zankoku Douwa: Utsukushi-hime",
+                "english": "MONOGATARI Series: OFF & MONSTER Season - A Cruel Fairy Tale: The Beautiful Princess",
+                "native": "〈物語〉シリーズ オフ&モンスターシーズン 残酷童話 うつくし姫"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b180332-pbtkiF3TjfBQ.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b180332-pbtkiF3TjfBQ.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b180332-pbtkiF3TjfBQ.png",
+                "color": "#c98650"
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 8,
+                "day": 17
+              },
+              "seasonYear": 2024,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/180332",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143763,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Nademonogatari",
+                "english": null,
+                "native": "撫物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143763-irFbWNzeLCGA.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143763-irFbWNzeLCGA.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143763-irFbWNzeLCGA.jpg",
+                "color": "#f1506b"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 7,
+                "day": 27
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143763",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143764,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143762,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Wazamonogatari",
+                "english": null,
+                "native": "業物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143762-zOXyh6Hu597F.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143762-zOXyh6Hu597F.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143762-zOXyh6Hu597F.jpg",
+                "color": "#d6bb6b"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 13
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143762",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 96019,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143763,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 180332,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 195448,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 100355,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shinobumonogatari",
+                "english": null,
+                "native": "忍物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx100355-lHbqR36Ux6sU.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx100355-lHbqR36Ux6sU.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx100355-lHbqR36Ux6sU.png",
+                "color": "#1a6b6b"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 7,
+                "day": 20
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/100355",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 143764,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143775,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "CHARACTER",
+            "node": {
+              "id": 183478,
+              "type": "ANIME",
+              "format": "MUSIC",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "UNDEAD",
+                "english": "UNDEAD",
+                "native": "UNDEAD"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b183478-sIXraXhUlase.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b183478-sIXraXhUlase.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b183478-sIXraXhUlase.png",
+                "color": "#d6281a"
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 9,
+                "day": 14
+              },
+              "seasonYear": null,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/183478",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 195448,
+              "type": "ANIME",
+              "format": null,
+              "status": "NOT_YET_RELEASED",
+              "title": {
+                "romaji": "Monogatari Series: Off & Monster Season Shin Episode",
+                "english": null,
+                "native": "〈物語〉シリーズ オフ&モンスターシーズン 新エピソード"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195448-4lyZngLgWgbP.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195448-4lyZngLgWgbP.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195448-4lyZngLgWgbP.jpg",
+                "color": "#5de4f1"
+              },
+              "startDate": {
+                "year": 2026,
+                "month": null,
+                "day": null
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/195448",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 195448,
+      "type": "ANIME",
+      "format": null,
+      "status": "NOT_YET_RELEASED",
+      "title": {
+        "romaji": "Monogatari Series: Off & Monster Season Shin Episode",
+        "english": null,
+        "native": "〈物語〉シリーズ オフ&モンスターシーズン 新エピソード"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195448-4lyZngLgWgbP.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195448-4lyZngLgWgbP.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195448-4lyZngLgWgbP.jpg",
+        "color": "#5de4f1"
+      },
+      "startDate": {
+        "year": 2026,
+        "month": null,
+        "day": null
+      },
+      "seasonYear": null,
+      "episodes": null,
+      "isAdult": false,
+      "siteUrl": "https://anilist.co/anime/195448",
+      "relations": {
+        "edges": [
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 173533,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Monogatari Series: Off & Monster Season",
+                "english": "MONOGATARI Series: OFF & MONSTER Season",
+                "native": "〈物語〉シリーズ オフ&モンスターシーズン"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx173533-9DN3nHtT2FBm.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173533-9DN3nHtT2FBm.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173533-9DN3nHtT2FBm.png",
+                "color": "#f17843"
+              },
+              "startDate": {
+                "year": 2024,
+                "month": 7,
+                "day": 6
+              },
+              "seasonYear": 2024,
+              "episodes": 14,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/173533",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 96019,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 100815,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 180332,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143763,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 143762,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 100355,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 183478,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 195448,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 143762,
+              "type": "MANGA",
+              "format": "NOVEL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Wazamonogatari",
+                "english": null,
+                "native": "業物語"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx143762-zOXyh6Hu597F.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143762-zOXyh6Hu597F.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143762-zOXyh6Hu597F.jpg",
+                "color": "#d6bb6b"
+              },
+              "startDate": {
+                "year": 2016,
+                "month": 1,
+                "day": 13
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/143762",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 96019,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 143763,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 173533,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 180332,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 195448,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

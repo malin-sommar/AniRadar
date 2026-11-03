@@ -1,0 +1,2853 @@
+{
+  "data": {
+    "Media": {
+      "id": 16498,
+      "title": {
+        "romaji": "Shingeki no Kyojin",
+        "english": "Attack on Titan",
+        "native": "進撃の巨人"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx16498-buvcRTBx4NSm.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx16498-buvcRTBx4NSm.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+        "color": "#f1a143"
+      },
+      "format": "TV",
+      "status": "FINISHED",
+      "episodes": 25,
+      "season": "SPRING",
+      "seasonYear": 2013,
+      "averageScore": 85,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ],
+      "isAdult": false,
+      "nextAiringEpisode": null,
+      "type": "ANIME",
+      "idMal": 16498,
+      "siteUrl": "https://anilist.co/anime/16498",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+      "description": "<p>Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of titans.<br><br><br />\nFlash forward to the present and the city has not seen a titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.<br><br><br />\n(Source: MangaHelpers)</p>",
+      "duration": 24,
+      "source": "MANGA",
+      "countryOfOrigin": "JP",
+      "popularity": 1074293,
+      "favourites": 80310,
+      "startDate": {
+        "year": 2013,
+        "month": 4,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2013,
+        "month": 9,
+        "day": 28
+      },
+      "studios": {
+        "nodes": [
+          {
+            "id": 858,
+            "name": "WIT STUDIO",
+            "siteUrl": "https://anilist.co/studio/858"
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": 276,
+          "name": "Kaiju",
+          "rank": 93,
+          "category": "Theme-Fantasy",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 252,
+          "name": "Revenge",
+          "rank": 93,
+          "category": "Theme-Drama",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 85,
+          "name": "Tragedy",
+          "rank": 89,
+          "category": "Theme-Drama",
+          "isGeneralSpoiler": true,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 34,
+          "name": "Military",
+          "rank": 88,
+          "category": "Theme-Other-Organisations",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 99,
+          "name": "Henshin",
+          "rank": 88,
+          "category": "Theme-Fantasy",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 82,
+          "name": "Male Protagonist",
+          "rank": 86,
+          "category": "Cast-Main Cast",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 1228,
+          "name": "Primarily Teen Cast",
+          "rank": 86,
+          "category": "Cast-Main Cast",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 93,
+          "name": "Post-Apocalyptic",
+          "rank": 84,
+          "category": "Setting-Universe",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 143,
+          "name": "Survival",
+          "rank": 84,
+          "category": "Theme-Other",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 66,
+          "name": "Super Power",
+          "rank": 81,
+          "category": "Theme-Fantasy",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 365,
+          "name": "Memory Manipulation",
+          "rank": 77,
+          "category": "Theme-Other",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 94,
+          "name": "Gore",
+          "rank": 77,
+          "category": "Theme-Other",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 95,
+          "name": "Steampunk",
+          "rank": 77,
+          "category": "Theme-Fantasy",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 217,
+          "name": "Dystopian",
+          "rank": 77,
+          "category": "Setting-Time",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 43,
+          "name": "Swordplay",
+          "rank": 74,
+          "category": "Theme-Action",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 105,
+          "name": "Ensemble Cast",
+          "rank": 74,
+          "category": "Cast-Main Cast",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 870,
+          "name": "Cannibalism",
+          "rank": 69,
+          "category": "Theme-Other",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 310,
+          "name": "Espionage",
+          "rank": 68,
+          "category": "Theme-Action",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 1382,
+          "name": "Orphan",
+          "rank": 67,
+          "category": "Cast-Traits",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 56,
+          "name": "Shounen",
+          "rank": 63,
+          "category": "Demographic",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 779,
+          "name": "Kuudere",
+          "rank": 62,
+          "category": "Cast-Traits",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 1752,
+          "name": "Medieval",
+          "rank": 60,
+          "category": "Setting-Time",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 102,
+          "name": "Coming of Age",
+          "rank": 60,
+          "category": "Theme-Drama",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 240,
+          "name": "Amnesia",
+          "rank": 60,
+          "category": "Cast-Traits",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 153,
+          "name": "Time Skip",
+          "rank": 60,
+          "category": "Setting-Time",
+          "isGeneralSpoiler": true,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 1046,
+          "name": "Suicide",
+          "rank": 55,
+          "category": "Theme-Drama",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": true,
+          "isAdult": false
+        },
+        {
+          "id": 250,
+          "name": "Rural",
+          "rank": 50,
+          "category": "Setting-Scene",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 88,
+          "name": "Primarily Male Cast",
+          "rank": 33,
+          "category": "Cast-Main Cast",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        },
+        {
+          "id": 1052,
+          "name": "Adoption",
+          "rank": 31,
+          "category": "Theme-Other",
+          "isGeneralSpoiler": false,
+          "isMediaSpoiler": false,
+          "isAdult": false
+        }
+      ],
+      "trailer": {
+        "id": "LHtdKWJdif4\t",
+        "site": "youtube",
+        "thumbnail": "https://i.ytimg.com/vi/LHtdKWJdif4\t/hqdefault.jpg"
+      },
+      "externalLinks": [
+        {
+          "id": 8,
+          "site": "Crunchyroll",
+          "url": "http://www.crunchyroll.com/attack-on-titan",
+          "type": "STREAMING",
+          "language": null,
+          "color": "#F88B24",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/5-AWN2pVlluCOO.png",
+          "isDisabled": false
+        },
+        {
+          "id": 45,
+          "site": "Official Site",
+          "url": "http://shingeki.tv/",
+          "type": "INFO",
+          "language": "Japanese",
+          "color": null,
+          "icon": null,
+          "isDisabled": false
+        },
+        {
+          "id": 1377,
+          "site": "Hulu",
+          "url": "http://www.hulu.com/attack-on-titan",
+          "type": "STREAMING",
+          "language": null,
+          "color": "#1CE783",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/7-rM06PQyWONGC.png",
+          "isDisabled": false
+        },
+        {
+          "id": 21862,
+          "site": "Adult Swim",
+          "url": "https://www.adultswim.com/videos/attack-on-titan",
+          "type": "STREAMING",
+          "language": null,
+          "color": "#000000",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/28-W1L8AHW0O4xE.png",
+          "isDisabled": false
+        },
+        {
+          "id": 35627,
+          "site": "iQ",
+          "url": "https://www.iq.com/album/xq12ps94l5",
+          "type": "STREAMING",
+          "language": null,
+          "color": "#00CC36",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/122-EPBJ2E0oPt5C.png",
+          "isDisabled": false
+        },
+        {
+          "id": 46261,
+          "site": "Twitter",
+          "url": "https://twitter.com/anime_shingeki",
+          "type": "SOCIAL",
+          "language": "Japanese",
+          "color": "#000000",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/17-R0tMgOvwvhsS.png",
+          "isDisabled": false
+        },
+        {
+          "id": 168773,
+          "site": "YouTube",
+          "url": "https://youtube.com/@attackontitan_officialchannel",
+          "type": "STREAMING",
+          "language": null,
+          "color": "#FF0000",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/13-ZwR1Xwgtyrwa.png",
+          "isDisabled": false
+        },
+        {
+          "id": 169346,
+          "site": "Facebook",
+          "url": "https://www.facebook.com/AttackOnTitan",
+          "type": "SOCIAL",
+          "language": "English",
+          "color": "#4267B2",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/38-JvMCwgmWvF6Z.png",
+          "isDisabled": false
+        },
+        {
+          "id": 169347,
+          "site": "TikTok",
+          "url": "https://www.tiktok.com/@shingeki_anime_official",
+          "type": "SOCIAL",
+          "language": "Japanese",
+          "color": "#010101",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/196-o2g5cLUG6k5V.png",
+          "isDisabled": false
+        },
+        {
+          "id": 169348,
+          "site": "Instagram",
+          "url": "https://www.instagram.com/anime_shingeki_official?stkn=MWxxeWQ4M2Z4emlocA==",
+          "type": "SOCIAL",
+          "language": "Japanese",
+          "color": "#833AB4",
+          "icon": "https://s4.anilist.co/file/anilistcdn/link/icon/48-VFlxaXGaNqXk.png",
+          "isDisabled": false
+        }
+      ],
+      "airingSchedule": {
+        "nodes": []
+      },
+      "relations": {
+        "edges": [
+          {
+            "relationType": "SOURCE",
+            "node": {
+              "id": 53390,
+              "type": "MANGA",
+              "format": "MANGA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin",
+                "english": "Attack on Titan",
+                "native": "進撃の巨人"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx53390-1RsuABC34P9D.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx53390-1RsuABC34P9D.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
+                "color": "#d6431a"
+              },
+              "startDate": {
+                "year": 2009,
+                "month": 9,
+                "day": 9
+              },
+              "seasonYear": null,
+              "episodes": null,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/manga/53390",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SIDE_STORY",
+                    "node": {
+                      "id": 85199,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 20691,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 20692,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SPIN_OFF",
+                    "node": {
+                      "id": 66535,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SPIN_OFF",
+                    "node": {
+                      "id": 93313,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 100465,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 20958,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 99147,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 100232,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 85420,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "SPIN_OFF",
+                    "node": {
+                      "id": 89879,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 104578,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SPIN_OFF",
+                    "node": {
+                      "id": 106489,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 18397,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 110277,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 73999,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 131681,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 119113,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 146984,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ADAPTATION",
+                    "node": {
+                      "id": 162314,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "ALTERNATIVE",
+            "node": {
+              "id": 20691,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin Zenpen: Guren no Yumiya",
+                "english": "Attack on Titan Part I: Crimson Bow and Arrow",
+                "native": "劇場版「進撃の巨人」前編～紅蓮の弓矢～"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20691-dnv0rkpbgBDJ.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20691-dnv0rkpbgBDJ.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20691-dnv0rkpbgBDJ.png",
+                "color": "#e47835"
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 11,
+                "day": 22
+              },
+              "seasonYear": 2014,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20691",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 20692,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53390,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "ALTERNATIVE",
+            "node": {
+              "id": 20692,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa",
+                "english": "Attack on Titan Part II: Wings of Freedom",
+                "native": "劇場版「進撃の巨人」後編～自由の翼～"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20692-fSDEpfDtDg9u.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20692-fSDEpfDtDg9u.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20692-fSDEpfDtDg9u.png",
+                "color": "#e4a15d"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 6,
+                "day": 27
+              },
+              "seasonYear": 2015,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20692",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 20691,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53390,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 123078,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 100465,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SEQUEL",
+            "node": {
+              "id": 20958,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin Season 2",
+                "english": "Attack on Titan Season 2",
+                "native": "進撃の巨人 Season２"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20958-HuFJyr54Mmir.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20958-HuFJyr54Mmir.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20958-HuFJyr54Mmir.jpg",
+                "color": "#e47850"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 4,
+                "day": 1
+              },
+              "seasonYear": 2017,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20958",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PREQUEL",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 99147,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 100465,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53390,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "OTHER",
+                    "node": {
+                      "id": 110640,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SUMMARY",
+                    "node": {
+                      "id": 119113,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SPIN_OFF",
+            "node": {
+              "id": 21281,
+              "type": "ANIME",
+              "format": "TV",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki! Kyojin Chuugakkou",
+                "english": "Attack on Titan: Junior High",
+                "native": "進撃！巨人中学校"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b21281-GwCKcZii6fVf.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b21281-GwCKcZii6fVf.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b21281-GwCKcZii6fVf.jpg",
+                "color": "#e4d6ae"
+              },
+              "startDate": {
+                "year": 2015,
+                "month": 10,
+                "day": 4
+              },
+              "seasonYear": 2015,
+              "episodes": 12,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/21281",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 66535,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 18397,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin OVA",
+                "english": "Attack on Titan OVA",
+                "native": "進撃の巨人 OVA"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx18397-AnpwhLkSjYL1.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx18397-AnpwhLkSjYL1.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18397-AnpwhLkSjYL1.jpg",
+                "color": "#c9e4ae"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 12,
+                "day": 9
+              },
+              "seasonYear": 2013,
+              "episodes": 3,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/18397",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53390,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SUMMARY",
+            "node": {
+              "id": 119113,
+              "type": "ANIME",
+              "format": "MOVIE",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin: Chronicle",
+                "english": "Attack on Titan ~Chronicle~",
+                "native": "進撃の巨人 〜クロニクル〜"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx119113-IzVI5oZ0og8O.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119113-IzVI5oZ0og8O.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119113-IzVI5oZ0og8O.jpg",
+                "color": "#f1785d"
+              },
+              "startDate": {
+                "year": 2020,
+                "month": 7,
+                "day": 17
+              },
+              "seasonYear": 2020,
+              "episodes": 1,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/119113",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 20958,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 99147,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 104578,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 53390,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "PREQUEL",
+            "node": {
+              "id": 20811,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
+                "english": "Attack on Titan: No Regrets",
+                "native": "進撃の巨人 外伝 悔いなき選択"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20811-IvXLdxZkYNcP.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20811-IvXLdxZkYNcP.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20811-IvXLdxZkYNcP.jpg",
+                "color": null
+              },
+              "startDate": {
+                "year": 2014,
+                "month": 12,
+                "day": 9
+              },
+              "seasonYear": 2015,
+              "episodes": 2,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/20811",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SEQUEL",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 85199,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "SIDE_STORY",
+            "node": {
+              "id": 99634,
+              "type": "ANIME",
+              "format": "OVA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin: LOST GIRLS",
+                "english": "Attack on Titan: Lost Girls",
+                "native": "進撃の巨人 LOST GIRLS"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx99634-9u4hdvWwmC2s.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx99634-9u4hdvWwmC2s.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99634-9u4hdvWwmC2s.png",
+                "color": "#aed6ff"
+              },
+              "startDate": {
+                "year": 2017,
+                "month": 12,
+                "day": 8
+              },
+              "seasonYear": 2017,
+              "episodes": 3,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/99634",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "SOURCE",
+                    "node": {
+                      "id": 93313,
+                      "type": "MANGA"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 99147,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "ALTERNATIVE",
+                    "node": {
+                      "id": 95409,
+                      "type": "MANGA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "OTHER",
+            "node": {
+              "id": 19391,
+              "type": "ANIME",
+              "format": "SPECIAL",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Shingeki no Kyojin: Chimi Kyara Gekijou - Tondeke! Kunren Heidan",
+                "english": "Attack on Titan Picture Drama",
+                "native": "「進撃の巨人」ちみキャラ劇場\"とんでけ! 訓練兵団\""
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/19391.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/19391.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/19391.jpg",
+                "color": "#936b28"
+              },
+              "startDate": {
+                "year": 2013,
+                "month": 7,
+                "day": 17
+              },
+              "seasonYear": 2013,
+              "episodes": 9,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/19391",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "relationType": "CHARACTER",
+            "node": {
+              "id": 143391,
+              "type": "ANIME",
+              "format": "ONA",
+              "status": "FINISHED",
+              "title": {
+                "romaji": "Chiyuki no Fashion Check",
+                "english": null,
+                "native": "千雪のファッションチェック！"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143391-iFj8UKciDab3.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143391-iFj8UKciDab3.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143391-iFj8UKciDab3.png",
+                "color": "#e4f1ae"
+              },
+              "startDate": {
+                "year": 2020,
+                "month": 3,
+                "day": 8
+              },
+              "seasonYear": 2020,
+              "episodes": 9,
+              "isAdult": false,
+              "siteUrl": "https://anilist.co/anime/143391",
+              "relations": {
+                "edges": [
+                  {
+                    "relationType": "PARENT",
+                    "node": {
+                      "id": 111501,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 107201,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 105310,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 113813,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 108450,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 10800,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 101280,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 103572,
+                      "type": "ANIME"
+                    }
+                  },
+                  {
+                    "relationType": "CHARACTER",
+                    "node": {
+                      "id": 16498,
+                      "type": "ANIME"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "characters": {
+        "pageInfo": {
+          "hasNextPage": true
+        },
+        "edges": [
+          {
+            "id": 43184,
+            "role": "MAIN",
+            "node": {
+              "id": 40882,
+              "name": {
+                "full": "Eren Yeager",
+                "native": "エレン・イェーガー"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b40882-dsj7IP943WFF.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95672,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Yuuki Kaji",
+                  "native": "梶裕貴"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95672-T33YV7yCDKnL.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95672-T33YV7yCDKnL.png"
+                }
+              },
+              {
+                "id": 109757,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Won-Hyeong Choi",
+                  "native": "최원형"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n109757-J7IN2FNG6FKD.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n109757-J7IN2FNG6FKD.png"
+                }
+              },
+              {
+                "id": 95732,
+                "languageV2": "English",
+                "name": {
+                  "full": "Bryce Papenbrook",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/732.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/732.jpg"
+                }
+              },
+              {
+                "id": 137561,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Alessandro Campaiola",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n137561-rdMXsdya6WJS.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n137561-rdMXsdya6WJS.jpg"
+                }
+              },
+              {
+                "id": 116461,
+                "languageV2": "German",
+                "name": {
+                  "full": "Max Felder",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n116461-xc0OwQs5gClw.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n116461-xc0OwQs5gClw.jpg"
+                }
+              },
+              {
+                "id": 162288,
+                "languageV2": "French",
+                "name": {
+                  "full": "Bastien Bourlé",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n162288-yqr2S6BgqRuZ.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n162288-yqr2S6BgqRuZ.jpg"
+                }
+              },
+              {
+                "id": 182216,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Miguel Ángel Leal ",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n182216-NYnHyG9gPhEw.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n182216-NYnHyG9gPhEw.png"
+                }
+              },
+              {
+                "id": 153463,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Lucas Almeida",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n153463-MF7Z63vMJ47o.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n153463-MF7Z63vMJ47o.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 62758,
+            "role": "MAIN",
+            "node": {
+              "id": 40881,
+              "name": {
+                "full": "Mikasa Ackerman",
+                "native": "ミカサ・アッカーマン"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b40881-F3gr1PkreDvj.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 100142,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Yui Ishikawa",
+                  "native": "石川由依"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n100142-k6RP0HzXffUG.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n100142-k6RP0HzXffUG.png"
+                }
+              },
+              {
+                "id": 110291,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Chea-Eun Han",
+                  "native": "한채언"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/15291.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/15291.jpg"
+                }
+              },
+              {
+                "id": 96804,
+                "languageV2": "English",
+                "name": {
+                  "full": "Trina Nishimura",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n96804-0OKQgacznkZ4.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n96804-0OKQgacznkZ4.png"
+                }
+              },
+              {
+                "id": 104886,
+                "languageV2": "French",
+                "name": {
+                  "full": "Nathalie Bienaimé",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n104886-1XdG9QHBeeIE.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n104886-1XdG9QHBeeIE.jpg"
+                }
+              },
+              {
+                "id": 162285,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Elena Perino",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n162285-slcfFvmUkPe1.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n162285-slcfFvmUkPe1.png"
+                }
+              },
+              {
+                "id": 105701,
+                "languageV2": "German",
+                "name": {
+                  "full": "Nicole Hannak",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/10701.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/10701.jpg"
+                }
+              },
+              {
+                "id": 96662,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Ana Lobo",
+                  "native": "Ana Mylhán Lobo Peralta"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n96662-shb9mPUzkp2T.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n96662-shb9mPUzkp2T.png"
+                }
+              },
+              {
+                "id": 197179,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Mayara Stefane",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n197179-9BV32T8fBvC6.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n197179-9BV32T8fBvC6.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 18593,
+            "role": "MAIN",
+            "node": {
+              "id": 46494,
+              "name": {
+                "full": "Armin Arlert",
+                "native": "アルミン・アルレルト"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46494-g7xYYuBtYPnO.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95158,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Marina Inoue",
+                  "native": "井上麻里奈"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95158-OLhgs8zv5xsp.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95158-OLhgs8zv5xsp.jpg"
+                }
+              },
+              {
+                "id": 109929,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Seo-Yeong Kim",
+                  "native": "김서영"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/14929.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/14929.jpg"
+                }
+              },
+              {
+                "id": 96047,
+                "languageV2": "English",
+                "name": {
+                  "full": "Jessie James Grelle",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n96047-PAkCylpWEiK4.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n96047-PAkCylpWEiK4.jpg"
+                }
+              },
+              {
+                "id": 154493,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Gaia Bolognesi",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n154493-VqKkeF0N6GNZ.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n154493-VqKkeF0N6GNZ.png"
+                }
+              },
+              {
+                "id": 102303,
+                "languageV2": "French",
+                "name": {
+                  "full": "Adrien Solis",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/7303.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/7303.jpg"
+                }
+              },
+              {
+                "id": 119591,
+                "languageV2": "German",
+                "name": {
+                  "full": "Christian Zeiger",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n119591-Cqkp0MiISslJ.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n119591-Cqkp0MiISslJ.jpg"
+                }
+              },
+              {
+                "id": 182198,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Héctor Ireta de Alba",
+                  "native": "Héctor Cuevas Ireta de Alba"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n182198-MWWfG9lMVddi.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n182198-MWWfG9lMVddi.png"
+                }
+              },
+              {
+                "id": 197181,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Pedro Volpato",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n197181-GkqsoOPDUK9q.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n197181-GkqsoOPDUK9q.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 14525,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 45627,
+              "name": {
+                "full": "Levi",
+                "native": "リヴァイ"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b45627-CR68RyZmddGG.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95118,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Hiroshi Kamiya",
+                  "native": "神谷浩史"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95118-oOElrn1aSaiC.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95118-oOElrn1aSaiC.png"
+                }
+              },
+              {
+                "id": 109213,
+                "languageV2": "English",
+                "name": {
+                  "full": "Matthew Mercer",
+                  "native": "Matthew Christopher Miller"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n109213-mMlmuym6yRHQ.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n109213-mMlmuym6yRHQ.jpg"
+                }
+              },
+              {
+                "id": 155419,
+                "languageV2": "French",
+                "name": {
+                  "full": "Bruno Méyère",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n155419-VjhmmUgtLJxz.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n155419-VjhmmUgtLJxz.jpg"
+                }
+              },
+              {
+                "id": 95776,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Daniele Raffaeli",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/776.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/776.jpg"
+                }
+              },
+              {
+                "id": 100892,
+                "languageV2": "German",
+                "name": {
+                  "full": "Florian Halm",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/5892.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/5892.jpg"
+                }
+              },
+              {
+                "id": 190265,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Bruno Sangregório",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n190265-pQoQglTHMP4H.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n190265-pQoQglTHMP4H.jpg"
+                }
+              },
+              {
+                "id": 182237,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Alfredo Gabriel Basurto",
+                  "native": "Alfredo Gabriel Basurto Contreras"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n182237-scOnaYXrFlmO.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n182237-scOnaYXrFlmO.png"
+                }
+              }
+            ]
+          },
+          {
+            "id": 5780,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 45887,
+              "name": {
+                "full": "Sasha Blouse",
+                "native": "サシャ・ブラウス"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b45887-QPtJH0KwqthW.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95034,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Yuu Kobayashi",
+                  "native": "小林ゆう"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95034-AwobjrcmkMi9.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95034-AwobjrcmkMi9.png"
+                }
+              },
+              {
+                "id": 371846,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Sae-Bom Kang",
+                  "native": "강새봄"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n371846-tqCywrbkFDMM.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n371846-tqCywrbkFDMM.png"
+                }
+              },
+              {
+                "id": 114123,
+                "languageV2": "English",
+                "name": {
+                  "full": "Ashly Burch",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n114123-5c8l39OmgbcD.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n114123-5c8l39OmgbcD.png"
+                }
+              },
+              {
+                "id": 103464,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Valentina Favazza",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n103464-SHKSTy5Cg3QQ.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n103464-SHKSTy5Cg3QQ.png"
+                }
+              },
+              {
+                "id": 116893,
+                "languageV2": "French",
+                "name": {
+                  "full": "Marie Nonnenmacher",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/21893.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/21893.jpg"
+                }
+              },
+              {
+                "id": 135848,
+                "languageV2": "German",
+                "name": {
+                  "full": "Lina Rabea Mohr",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n135848-4wAMo64bxxfO.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n135848-4wAMo64bxxfO.png"
+                }
+              },
+              {
+                "id": 184400,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Jennifer Medel",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n184400-7hfzD7giOuSA.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n184400-7hfzD7giOuSA.jpg"
+                }
+              },
+              {
+                "id": 197407,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Ana Paula Cadamuro",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n197407-wh6w3EqXRDII.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n197407-wh6w3EqXRDII.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 64266,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46484,
+              "name": {
+                "full": "Reiner Braun",
+                "native": "ライナー・ブラウン"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46484-P6A2GjNQn49F.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 100626,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Yoshimasa Hosoya",
+                  "native": "細谷佳正"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n100626-bH8eZ0wv3HYX.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n100626-bH8eZ0wv3HYX.jpg"
+                }
+              },
+              {
+                "id": 371980,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Chang-Wook Kwon",
+                  "native": "권창욱"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n371980-D06J3cPvQN2v.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n371980-D06J3cPvQN2v.png"
+                }
+              },
+              {
+                "id": 95666,
+                "languageV2": "English",
+                "name": {
+                  "full": "Robert McCollum",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95666-er3JLtqV1TLy.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95666-er3JLtqV1TLy.jpg"
+                }
+              },
+              {
+                "id": 162284,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Andrea Mete",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n162284-XaCPIJTagNbl.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n162284-XaCPIJTagNbl.png"
+                }
+              },
+              {
+                "id": 162287,
+                "languageV2": "French",
+                "name": {
+                  "full": "Emmanuel Rausenberger",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n162287-JcleMEEJB507.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n162287-JcleMEEJB507.jpg"
+                }
+              },
+              {
+                "id": 135850,
+                "languageV2": "German",
+                "name": {
+                  "full": "Marios Gavrilis",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n135850-ozr10JLFwKxz.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n135850-ozr10JLFwKxz.png"
+                }
+              },
+              {
+                "id": 182554,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Alfonso Obregón",
+                  "native": "Alfonso Obregón Inclán"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n182554-YnvwrQGTSIjB.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n182554-YnvwrQGTSIjB.png"
+                }
+              },
+              {
+                "id": 185360,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Dláigelles Silva",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n185360-dhIVYZrnsP6q.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n185360-dhIVYZrnsP6q.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 31874,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46486,
+              "name": {
+                "full": "Connie Springer",
+                "native": "コニー・スプリンガー"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/n46486-izhPjzut6WCZ.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/n46486-izhPjzut6WCZ.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95356,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Hiro Shimono",
+                  "native": "下野紘"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95356-PFaZRlI9oJ56.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95356-PFaZRlI9oJ56.png"
+                }
+              },
+              {
+                "id": 109863,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Beom-Gi Hong",
+                  "native": "홍범기"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n109863-b7ZHFjR7zdis.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n109863-b7ZHFjR7zdis.png"
+                }
+              },
+              {
+                "id": 119609,
+                "languageV2": "English",
+                "name": {
+                  "full": "Clifford Chapin",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n119609-0LGmxEBb7PS9.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n119609-0LGmxEBb7PS9.jpg"
+                }
+              },
+              {
+                "id": 110567,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Gabriele Patriarca",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/15567.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/15567.jpg"
+                }
+              },
+              {
+                "id": 162286,
+                "languageV2": "French",
+                "name": {
+                  "full": "Grégory Laisné",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n162286-J0c6p9BOBza6.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n162286-J0c6p9BOBza6.jpg"
+                }
+              },
+              {
+                "id": 101923,
+                "languageV2": "German",
+                "name": {
+                  "full": "Julius Jellinek",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/6923.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/6923.jpg"
+                }
+              },
+              {
+                "id": 182230,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Alberto Bernal",
+                  "native": "Alberto Bernal García"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n182230-U2LIlKLHrRQZ.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n182230-U2LIlKLHrRQZ.png"
+                }
+              },
+              {
+                "id": 198076,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Diego Diniz",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n198076-JQySn3dIKufd.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n198076-JQySn3dIKufd.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 89391,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46488,
+              "name": {
+                "full": "Bertolt Hoover",
+                "native": "ベルトルト・フーバー"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46488-wm6HvkdkHoZu.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46488-wm6HvkdkHoZu.jpg"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 110005,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Tomohisa Hashizume",
+                  "native": "橋詰知久"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n110005-65qAMtTf7qOb.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n110005-65qAMtTf7qOb.png"
+                }
+              },
+              {
+                "id": 95379,
+                "languageV2": "English",
+                "name": {
+                  "full": "David Matranga",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95379-GMh9EncYDh5n.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95379-GMh9EncYDh5n.png"
+                }
+              },
+              {
+                "id": 100120,
+                "languageV2": "German",
+                "name": {
+                  "full": "Tim Knauer",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/5120.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/5120.jpg"
+                }
+              },
+              {
+                "id": 105028,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Yamil Atala",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/10028.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/10028.jpg"
+                }
+              },
+              {
+                "id": 199393,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Rodrigo Martim",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n199393-0w5yfnRefnGV.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n199393-0w5yfnRefnGV.jpg"
+                }
+              },
+              {
+                "id": 104910,
+                "languageV2": "French",
+                "name": {
+                  "full": "Arnaud Laurent",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/9910.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/9910.jpg"
+                }
+              },
+              {
+                "id": 139106,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Hansin",
+                  "native": "한신"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n139106-bzpLruNatRH1.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n139106-bzpLruNatRH1.png"
+                }
+              },
+              {
+                "id": 171959,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Jacopo Castagna",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n171959-ZqBHM1TCEZmP.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n171959-ZqBHM1TCEZmP.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 63234,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46490,
+              "name": {
+                "full": "Annie Leonhart",
+                "native": "アニ・レオンハート"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46490-tan274Ifc1Jf.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46490-tan274Ifc1Jf.jpg"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 100295,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Yuu Shimamura",
+                  "native": "嶋村侑"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n100295-SLfRq3RqJEoF.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n100295-SLfRq3RqJEoF.jpg"
+                }
+              },
+              {
+                "id": 102993,
+                "languageV2": "English",
+                "name": {
+                  "full": "Lauren Landa",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n102993-gxDKjC1EvJ4S.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n102993-gxDKjC1EvJ4S.jpg"
+                }
+              },
+              {
+                "id": 101135,
+                "languageV2": "German",
+                "name": {
+                  "full": "Marieke Oeffinger",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/6135.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/6135.jpg"
+                }
+              },
+              {
+                "id": 107400,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Georgina Sánchez",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n107400-peQnahDFhfOc.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n107400-peQnahDFhfOc.png"
+                }
+              },
+              {
+                "id": 197180,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Maitê Cunha",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n197180-Nwhc1jh6wPLo.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n197180-Nwhc1jh6wPLo.png"
+                }
+              },
+              {
+                "id": 165405,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Chiara Gioncardi",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n165405-iAgT8AvozYl6.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n165405-iAgT8AvozYl6.png"
+                }
+              }
+            ]
+          },
+          {
+            "id": 8329,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46492,
+              "name": {
+                "full": "Hannes",
+                "native": "ハンネス"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46492-5kRaMLDCVD0B.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46492-5kRaMLDCVD0B.jpg"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95063,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Keiji Fujiwara",
+                  "native": "藤原啓治"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95063-xAsEUzspuLMG.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95063-xAsEUzspuLMG.jpg"
+                }
+              },
+              {
+                "id": 104777,
+                "languageV2": "English",
+                "name": {
+                  "full": "David Wald",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n104777-BY20FOaaocrc.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n104777-BY20FOaaocrc.jpg"
+                }
+              },
+              {
+                "id": 145366,
+                "languageV2": "German",
+                "name": {
+                  "full": "Tim Moeseritz",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n145366-39sIVSK8g4iB.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n145366-39sIVSK8g4iB.jpg"
+                }
+              },
+              {
+                "id": 109485,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Thiago Zambrano",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n109485-pS7szXNmPvXd.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n109485-pS7szXNmPvXd.jpg"
+                }
+              },
+              {
+                "id": 191981,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Víctor Delgado",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n191981-fD8Rpk1ANG5D.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n191981-fD8Rpk1ANG5D.png"
+                }
+              },
+              {
+                "id": 141602,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Luigi Ferraro",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n141602-S8Mv1rHI1Hkf.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n141602-S8Mv1rHI1Hkf.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "id": 23767,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46496,
+              "name": {
+                "full": "Erwin Smith",
+                "native": "エルヴィン・スミス"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46496-Mu86MENd5wNB.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95212,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Daisuke Ono",
+                  "native": "小野大輔"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95212-wX1M4LJN96q2.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95212-wX1M4LJN96q2.png"
+                }
+              },
+              {
+                "id": 96602,
+                "languageV2": "English",
+                "name": {
+                  "full": "J. Michael Tatum",
+                  "native": "John Michael Tatum"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n96602-ztTfuo3nzu5t.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n96602-ztTfuo3nzu5t.png"
+                }
+              },
+              {
+                "id": 100130,
+                "languageV2": "German",
+                "name": {
+                  "full": "Peter Flechtner",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n100130-8uV5PEqiYW6k.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n100130-8uV5PEqiYW6k.jpg"
+                }
+              },
+              {
+                "id": 195092,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Guilherme Marques",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n195092-e5zNFTfGRO2F.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n195092-e5zNFTfGRO2F.jpg"
+                }
+              },
+              {
+                "id": 184397,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Octavio Rojas",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n184397-AVFS6OxXj0aI.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n184397-AVFS6OxXj0aI.jpg"
+                }
+              },
+              {
+                "id": 102603,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Alessandro Quarta",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n102603-mmqtewPxKjaG.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n102603-mmqtewPxKjaG.png"
+                }
+              }
+            ]
+          },
+          {
+            "id": 22477,
+            "role": "SUPPORTING",
+            "node": {
+              "id": 46498,
+              "name": {
+                "full": "Jean Kirstein",
+                "native": "ジャン・キルシュタイン"
+              },
+              "image": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/character/medium/b46498-ritqAj9FW6jX.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b46498-ritqAj9FW6jX.png"
+              }
+            },
+            "voiceActors": [
+              {
+                "id": 95196,
+                "languageV2": "Japanese",
+                "name": {
+                  "full": "Kishou Taniyama",
+                  "native": "谷山紀章"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n95196-t2vbxQMee0ci.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n95196-t2vbxQMee0ci.png"
+                }
+              },
+              {
+                "id": 109867,
+                "languageV2": "Korean",
+                "name": {
+                  "full": "Jang Kim",
+                  "native": "김장"
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n109867-jzBP3xSzYzPa.png",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n109867-jzBP3xSzYzPa.png"
+                }
+              },
+              {
+                "id": 95202,
+                "languageV2": "English",
+                "name": {
+                  "full": "Mike McFarland",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/202.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/202.jpg"
+                }
+              },
+              {
+                "id": 103757,
+                "languageV2": "German",
+                "name": {
+                  "full": "René Dawn-Claude",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/8757.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/8757.jpg"
+                }
+              },
+              {
+                "id": 190706,
+                "languageV2": "Spanish",
+                "name": {
+                  "full": "Gerardo Ortega",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n190706-PjIN2ssB6SyH.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n190706-PjIN2ssB6SyH.jpg"
+                }
+              },
+              {
+                "id": 197971,
+                "languageV2": "Portuguese",
+                "name": {
+                  "full": "Bernardo Berro",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/n197971-LdX2JCQ9tu7B.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/n197971-LdX2JCQ9tu7B.jpg"
+                }
+              },
+              {
+                "id": 101868,
+                "languageV2": "Italian",
+                "name": {
+                  "full": "Flavio Aquilone",
+                  "native": null
+                },
+                "image": {
+                  "medium": "https://s4.anilist.co/file/anilistcdn/staff/medium/6868.jpg",
+                  "large": "https://s4.anilist.co/file/anilistcdn/staff/large/6868.jpg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "recommendations": {
+        "nodes": [
+          {
+            "mediaRecommendation": {
+              "id": 101348,
+              "title": {
+                "romaji": "VINLAND SAGA",
+                "english": "Vinland Saga",
+                "native": "ヴィンランド・サガ"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101348-2fhDFPCuMNiz.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101348-2fhDFPCuMNiz.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101348-2fhDFPCuMNiz.jpg",
+                "color": "#f16b5d"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 24,
+              "season": "SUMMER",
+              "seasonYear": 2019,
+              "averageScore": 87,
+              "genres": [
+                "Action",
+                "Adventure",
+                "Drama"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 101759,
+              "title": {
+                "romaji": "Yakusoku no Neverland",
+                "english": "The Promised Neverland",
+                "native": "約束のネバーランド"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101759-8UR7r9MNVpz2.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101759-8UR7r9MNVpz2.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101759-8UR7r9MNVpz2.jpg",
+                "color": "#e4ae50"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "WINTER",
+              "seasonYear": 2019,
+              "averageScore": 83,
+              "genres": [
+                "Drama",
+                "Fantasy",
+                "Horror",
+                "Mystery",
+                "Psychological",
+                "Thriller"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 116589,
+              "title": {
+                "romaji": "86: Eighty Six",
+                "english": "86 EIGHTY-SIX",
+                "native": "86－エイティシックス－"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116589-KawXHB6sApFt.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116589-KawXHB6sApFt.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116589-KawXHB6sApFt.jpg",
+                "color": "#bbd6f1"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 11,
+              "season": "SPRING",
+              "seasonYear": 2021,
+              "averageScore": 83,
+              "genres": [
+                "Action",
+                "Drama",
+                "Mecha",
+                "Sci-Fi"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 21196,
+              "title": {
+                "romaji": "Koutetsujou no Kabaneri",
+                "english": "Kabaneri of the Iron Fortress",
+                "native": "甲鉄城のカバネリ"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21196-2PfPfIDrxKki.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21196-2PfPfIDrxKki.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21196-2PfPfIDrxKki.jpg",
+                "color": "#e48650"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "SPRING",
+              "seasonYear": 2016,
+              "averageScore": 71,
+              "genres": [
+                "Action",
+                "Drama",
+                "Fantasy",
+                "Horror",
+                "Supernatural"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 20829,
+              "title": {
+                "romaji": "Owari no Seraph",
+                "english": "Seraph of the End: Vampire Reign",
+                "native": "終わりのセラフ"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20829-pgsXVjrfyI5V.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20829-pgsXVjrfyI5V.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20829-pgsXVjrfyI5V.png",
+                "color": "#e4a15d"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "SPRING",
+              "seasonYear": 2015,
+              "averageScore": 73,
+              "genres": [
+                "Action",
+                "Drama",
+                "Fantasy",
+                "Mystery",
+                "Supernatural"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 131586,
+              "title": {
+                "romaji": "86: Eighty Six Part 2",
+                "english": "86 EIGHTY-SIX Part 2",
+                "native": "86－エイティシックス－ 第2クール"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131586-JhC0wcBi09EZ.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131586-JhC0wcBi09EZ.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
+                "color": "#e4501a"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "FALL",
+              "seasonYear": 2021,
+              "averageScore": 87,
+              "genres": [
+                "Action",
+                "Drama",
+                "Mecha",
+                "Sci-Fi"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 153288,
+              "title": {
+                "romaji": "Kaijuu 8-gou",
+                "english": "Kaiju No. 8",
+                "native": "怪獣８号"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153288-25FBfFJzEQ5O.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153288-25FBfFJzEQ5O.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153288-25FBfFJzEQ5O.jpg",
+                "color": "#f1e4ae"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "SPRING",
+              "seasonYear": 2024,
+              "averageScore": 81,
+              "genres": [
+                "Action",
+                "Sci-Fi"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 5114,
+              "title": {
+                "romaji": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST",
+                "english": "Fullmetal Alchemist: Brotherhood",
+                "native": "鋼の錬金術師 FULLMETAL ALCHEMIST"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5114-nSWCgQlmOMtj.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5114-nSWCgQlmOMtj.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg",
+                "color": "#e4c993"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 64,
+              "season": "SPRING",
+              "seasonYear": 2009,
+              "averageScore": 90,
+              "genres": [
+                "Action",
+                "Adventure",
+                "Drama",
+                "Fantasy"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 110353,
+              "title": {
+                "romaji": "Deca-Dence",
+                "english": "DECA-DENCE",
+                "native": "デカダンス"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110353-XGYSsii7qJeK.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110353-XGYSsii7qJeK.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110353-XGYSsii7qJeK.png",
+                "color": "#50aee4"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "SUMMER",
+              "seasonYear": 2020,
+              "averageScore": 71,
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 20623,
+              "title": {
+                "romaji": "Kiseijuu: Sei no Kakuritsu",
+                "english": "Parasyte -the maxim-",
+                "native": "寄生獣 セイの格率"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20623-dUARfggnNDOe.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20623-dUARfggnNDOe.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20623-dUARfggnNDOe.jpg",
+                "color": "#285086"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 24,
+              "season": "FALL",
+              "seasonYear": 2014,
+              "averageScore": 81,
+              "genres": [
+                "Action",
+                "Drama",
+                "Horror",
+                "Psychological",
+                "Sci-Fi"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 127230,
+              "title": {
+                "romaji": "Chainsaw Man",
+                "english": "Chainsaw Man",
+                "native": "チェンソーマン"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127230-DdP4vAdssLoz.png",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127230-DdP4vAdssLoz.png",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+                "color": "#6b1a1a"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "FALL",
+              "seasonYear": 2022,
+              "averageScore": 83,
+              "genres": [
+                "Action",
+                "Drama",
+                "Horror",
+                "Supernatural"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          },
+          {
+            "mediaRecommendation": {
+              "id": 20993,
+              "title": {
+                "romaji": "Owari no Seraph: Nagoya Kessen-hen",
+                "english": "Seraph of the End: Battle in Nagoya",
+                "native": "終わりのセラフ　名古屋決戦編"
+              },
+              "coverImage": {
+                "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20993-c34UTma2bCcv.jpg",
+                "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20993-c34UTma2bCcv.jpg",
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20993-c34UTma2bCcv.jpg",
+                "color": "#f1bb5d"
+              },
+              "format": "TV",
+              "status": "FINISHED",
+              "episodes": 12,
+              "season": "FALL",
+              "seasonYear": 2015,
+              "averageScore": 75,
+              "genres": [
+                "Action",
+                "Drama",
+                "Fantasy",
+                "Supernatural"
+              ],
+              "isAdult": false,
+              "nextAiringEpisode": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

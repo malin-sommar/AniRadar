@@ -1,14 +1,19 @@
 /**
- * Same-origin image proxy for AniList's CDN. Only image files under AniList's
- * media folders are allowed, so this can't be used to fetch anything else.
- * The CDN caches every image for a year (AniList file names change when the
- * image does).
+ * Same-origin image proxy for AniList's CDN and YouTube trailer thumbnails.
+ * Only image files under AniList's media folders and YouTube's thumbnail
+ * paths are allowed, so this can't be used to fetch anything else. The CDN
+ * caches every image for a year (AniList file names change when the image
+ * does; a video's thumbnail rarely does).
  */
 
 const UPSTREAMS: Record<string, { origin: string; allowedPath: RegExp }> = {
   anilist: {
     origin: "https://s4.anilist.co/",
     allowedPath: /^file\/anilistcdn\/[\w/.-]+\.(?:jpe?g|png|gif|webp|avif)$/i,
+  },
+  youtube: {
+    origin: "https://i.ytimg.com/",
+    allowedPath: /^vi\/[\w-]{6,20}\/(?:hq|mq|sd|maxres)?default\.jpg$/,
   },
 }
 

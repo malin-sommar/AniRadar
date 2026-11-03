@@ -10,6 +10,7 @@ export type CacheClass =
   | "browse"
   | "seasonal"
   | "relations"
+  | "mal"
 
 export interface CachePolicy {
   /** Seconds the data counts as fresh. */
@@ -38,6 +39,8 @@ export const CACHE_POLICIES: Record<CacheClass, CachePolicy> = {
   seasonal: { freshSeconds: 6 * HOUR, staleSeconds: DAY, persist: true },
   /** Relations, season chains and characters. */
   relations: { freshSeconds: DAY, staleSeconds: 7 * DAY, persist: true },
+  /** MyAnimeList score via Jikan (server only). */
+  mal: { freshSeconds: DAY, staleSeconds: 7 * DAY, persist: false },
 }
 
 /** Profile for Next's `cacheLife()`. */
@@ -55,6 +58,13 @@ export function cacheLifeProfile(policy: CachePolicy) {
  * Next.js renders it at request time instead of baking it into a prerender.
  */
 export const FAILURE_CACHE_LIFE = { stale: 30, revalidate: 30, expire: 120 }
+
+/**
+ * Lifetime for an upstream failure returned as data from a `'use cache'`
+ * function: a few seconds, which spares the upstream a burst of retries
+ * while keeping the error out of prerendered pages.
+ */
+export const ERROR_CACHE_LIFE = { stale: 0, revalidate: 1, expire: 5 }
 
 /** `Cache-Control` for CDN-cached proxy responses. */
 export function cdnCacheControl(policy: CachePolicy): string {

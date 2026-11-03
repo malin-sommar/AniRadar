@@ -9,6 +9,8 @@ describe("parseServerEnv", () => {
       ANILIST_REQUESTS_PER_MINUTE: 25,
       ANILIST_MAX_REQUESTS_PER_MINUTE: 76,
       ANILIST_TIMEOUT_MS: 10_000,
+      JIKAN_API_URL: "https://api.jikan.moe/v4",
+      JIKAN_TIMEOUT_MS: 4000,
       KITSU_API_URL: "https://kitsu.io/api/edge",
       KITSU_TIMEOUT_MS: 3000,
     })
@@ -34,7 +36,7 @@ describe("parseServerEnv", () => {
     expect(() =>
       parseServerEnv({
         ANILIST_API_URL: "not a url",
-        ANILIST_REQUESTS_PER_MINUTE: "500",
+        ANILIST_REQUESTS_PER_MINUTE: "5000",
       }),
     ).toThrow(
       /ANILIST_API_URL[\s\S]*ANILIST_REQUESTS_PER_MINUTE|ANILIST_REQUESTS_PER_MINUTE[\s\S]*ANILIST_API_URL/,

@@ -4,7 +4,7 @@ import {
   parseAsInteger,
   parseAsString,
   parseAsStringLiteral,
-} from "nuqs"
+} from "nuqs/server"
 
 import {
   FORMATS,

@@ -1,0 +1,15 @@
+# "Show all" characters on the detail page, page by page.
+query AnimeCharacters($id: Int!, $page: Int = 1, $perPage: Int = 25) {
+  Media(id: $id, type: ANIME) {
+    id
+    characters(page: $page, perPage: $perPage, sort: [ROLE, RELEVANCE, ID]) {
+      pageInfo {
+        hasNextPage
+        currentPage
+      }
+      edges {
+        ...CharacterEdge
+      }
+    }
+  }
+}
