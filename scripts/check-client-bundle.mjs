@@ -12,8 +12,24 @@ const PATTERNS = [
   { name: "service_role JWT", regex: /"role"\s*:\s*"service_role"/ },
 ]
 
+/** Variables from .env.local too, so a local build is checked against them. */
+async function localEnv() {
+  try {
+    const text = await readFile(".env.local", "utf8")
+    return Object.fromEntries(
+      text
+        .split(/\r?\n/)
+        .map((line) => /^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/.exec(line))
+        .filter(Boolean)
+        .map(([, key, value]) => [key, value.replace(/^["']|["']$/g, "")]),
+    )
+  } catch {
+    return {}
+  }
+}
+
 // The values of server-only variables that look secret must never appear.
-const secretValues = Object.entries(process.env)
+const secretValues = Object.entries({ ...(await localEnv()), ...process.env })
   .filter(
     ([key, value]) =>
       !key.startsWith("NEXT_PUBLIC_") &&

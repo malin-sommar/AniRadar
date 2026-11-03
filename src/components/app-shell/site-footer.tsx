@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function SiteFooter() {
   return (
     <footer className="mx-auto w-full max-w-7xl px-4 pt-6 pb-28 text-xs text-muted-foreground sm:px-6 md:pb-8">
@@ -14,7 +16,15 @@ export function SiteFooter() {
           </a>
           . AniRadar is not affiliated with AniList.
         </p>
-        <p>AniRadar · personal project</p>
+        <p className="flex gap-3">
+          <Link href="/about" className="underline-offset-4 hover:underline">
+            About
+          </Link>
+          <Link href="/privacy" className="underline-offset-4 hover:underline">
+            Privacy
+          </Link>
+          <span>AniRadar · personal project</span>
+        </p>
       </div>
     </footer>
   )

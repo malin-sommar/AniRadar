@@ -52,7 +52,16 @@ function subscribe(listener: () => void) {
   }
 }
 
-export function setPreferences(changes: Partial<Preferences>) {
+/** While signed in: saves changes to the profile too (see ProfileSync). */
+let saveToProfile: ((changes: Partial<Preferences>) => void) | null = null
+
+export function setProfileSync(
+  save: ((changes: Partial<Preferences>) => void) | null,
+) {
+  saveToProfile = save
+}
+
+function store(changes: Partial<Preferences>) {
   const raw = JSON.stringify({ ...getSnapshot(), ...changes })
   try {
     localStorage.setItem(PREFERENCES_STORAGE_KEY, raw)
@@ -60,6 +69,16 @@ export function setPreferences(changes: Partial<Preferences>) {
     memoryRaw = raw
   }
   notify()
+}
+
+export function setPreferences(changes: Partial<Preferences>) {
+  store(changes)
+  saveToProfile?.(changes)
+}
+
+/** Applies settings loaded from the profile, without saving them back. */
+export function applyProfilePreferences(preferences: Preferences) {
+  store(preferences)
 }
 
 /**

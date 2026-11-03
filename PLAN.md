@@ -525,7 +525,7 @@ revoke all on public.entry_prefs from anon;
 ## 9. Sign-in & AniList connection
 
 **Sign-in.** Supabase Auth with cookie sessions via `@supabase/ssr`. The session is refreshed in `proxy.ts`, which replaced `middleware.ts` in Next 16.
-- **Email:** a single email contains both a magic link and a 6-digit code. An installed web app on iPhone doesn't share cookies with Safari, so a magic link would sign you in to Safari, not the app. Typing the code works everywhere.
+- **Email:** a single email contains both a magic link and a code (8 digits on the hosted project). The link carries a one-time token hash (`/auth/confirm`), so it works in any browser. An installed web app on iPhone doesn't share cookies with Safari, so a magic link would sign you in to Safari, not the app. Typing the code works everywhere.
 - **Google and Discord OAuth** with minimal scopes, and a PKCE code exchange at `/auth/callback`.
 - **Sign out**, plus "Sign out on all devices". Server code always verifies the session and never trusts unverified cookie data.
 
@@ -897,7 +897,7 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 | 1 | Browse & search | M | done, in review |
 | 2 | Detail page | L | done, in review |
 | 2b | Series view: one card per series, series-first detail page | S | done, in review |
-| 3 | Accounts & AniList connection | L | not started |
+| 3 | Accounts & AniList connection | L | done, in review |
 | 4 | My list, ratings, smart status, streaming filter | L | not started |
 | 5 | Home dashboard & "New for you" (notifications step 1) | M | not started |
 | 6 | Schedule, seasons & calendar (notifications step 2) | M | not started |
@@ -1121,6 +1121,7 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 | 2026-11-03 | 2 Detail page | done, in review | `/anime/[id]` with hero, airing countdown, streaming links, seasons in order, characters and voice actors, tags, trailer, recommendations, link previews; MAL score via Jikan. Details below. |
 | 2026-11-03 | Planning | decided | Series first (Q9): search, browse, follow and notifications per series; seasons inside the series page. New Phase 2b for the parts that don't need an account. |
 | 2026-11-03 | 2b Series view | done, in review | One card per series in search, browse and the overlay; lone sequels say what they continue; the detail page leads with the series' seasons and a summary. Details below. |
+| 2026-11-04 | 3 Accounts & AniList | done, in review | Sign-in with email code, Google and Discord; Connect AniList with an encrypted token; settings on your profile; download and delete your data; privacy and about pages; schema v1 with RLS tests. Details below. |
 
 ### Phase 0 notes
 
@@ -1247,6 +1248,31 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 - **The series card counts only the seasons among the results.** A search that matches 5 of 6 seasons says "5 seasons"; the series page always has the full chain.
 - **Average scores and episode totals cover the main story** (TV, ONA, films) as far as it has aired; upcoming seasons don't count towards episodes.
 - **Kitsu's partial matches can rank first** in the overlay and on page 1 (e.g. "Attack on Skytree" second for "attack on titan"); grouping keeps each series where its best result was.
+
+### Phase 3 notes
+
+**What's in place**
+- **Database (schema v1)**, in `supabase/migrations`:
+  - `profiles` (created by a trigger on sign-up; only the settings columns can be changed from the app), `anilist_connections` (you can read yours; only the server writes it) and `private.anilist_tokens` (not reachable through the Data API at all; the server uses three functions granted to `service_role` only).
+  - RLS on every table, and 24 pgTAP tests (`supabase/tests/database`): the guard test that every table has RLS, A/B isolation, column limits, anon sees nothing, the token functions are server-only, and deleting a user leaves no rows anywhere. They run in CI (`database` job), which starts a local Supabase in Docker.
+- **Sign-in** (`src/server`, `src/app/login`, `src/app/auth`): email (a code, plus a link), Google and Discord, sign out and sign out on all devices. Everything runs on the server (server actions and route handlers), so the browser never talks to Supabase and the CSP stays `connect-src 'self'`. `proxy.ts` refreshes the session, but only on `/me`, `/login`, `/auth/*` and `/api/me/*`, so browsing stays static and cacheable.
+- **Connect AniList:** a random `state` in a 10-minute httpOnly cookie tied to your user ID; the code is exchanged on the server with the client secret; `Viewer` gives your name and score format; the token is encrypted (AES-256-GCM, `ANILIST_TOKEN_KEY`) into the private table. One AniList account can be connected to one AniRadar account. Disconnect deletes both and points to AniList's Apps settings. Me warns 14 days before the connection expires.
+- **Me page:** account, AniList, "Download my data" (`/api/me/export`, read with your own session so RLS guarantees it's only yours; no token), "Delete my account" (type DELETE, needs a sign-in within 24 h; deletes the auth user so every row cascades, then clears localStorage, IndexedDB and caches on the device). Title language and adult content are saved to your profile while you're signed in.
+- **`/privacy`** (controller, what's stored and why, legal basis, processors, retention, rights, IMY) and **`/about`** (sources, credits, disclaimers), linked in the footer.
+- **Tests:** 191 unit tests (token encryption, OAuth state, env validation); 70 e2e tests (signed-out pages, export refuses visitors, privacy page axe); 24 database tests in CI. The bundle scan now also checks the values in `.env.local`.
+- **Tried by you on the dev project:** email code and link, Google, Discord and Connect AniList all work.
+
+**Deviations and findings**
+- **Schema v1 only has Phase 3's tables.** `entry_prefs`, `series_prefs`, `feed_events`, `calendar_feeds` and `push_subscriptions` come with the phases that use them, each with its RLS and tests (rule 4).
+- **No browser Supabase client.** Sign-in, sessions and data all go through AniRadar's server, which keeps the CSP tight and the publishable key out of the bundle (it's only read on the server despite its `NEXT_PUBLIC_` name).
+- **Email sign-in needs custom SMTP** to edit templates (a change on Supabase's side). It sends through your Gmail with an app password for now (about 500 a day); the privacy page says so. Brevo with your own domain is the better choice before the app goes public.
+- **Email links use a token hash** (`/auth/confirm`), not PKCE, so they work in any browser; Google and Discord still use PKCE (`/auth/callback`). New users get Supabase's "Confirm sign up" template, everyone else "Magic link"; both carry the code and the link.
+- **Codes are 8 digits** on the hosted project; the form accepts 6 to 10.
+- **The Supabase CLI targets the local stack by default** in v3: use `pnpm supabase db push --remote` and `pnpm db:types` (which uses `--remote`).
+- **Database tests only run in CI**, since there's no Docker here. Their first run is on this phase's pull request.
+- **The Supabase client reads the clock when it starts**, which Cache Components forbids while prerendering, so `createUserClient` calls `connection()` first.
+- **Settings sync happens on Me:** signing in loads your profile's title language and adult setting onto the device, and changes made there are saved back.
+- **Still to do for production:** a second Supabase project (prod), an "AniRadar" AniList client with the production redirect URL, and the environment variables in Vercel. That comes with the first deploy.
 
 ---
 
