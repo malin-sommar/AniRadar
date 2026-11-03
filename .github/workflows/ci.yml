@@ -60,3 +60,19 @@ jobs:
           name: playwright-report
           path: playwright-report
           retention-days: 7
+
+  database:
+    name: Database (RLS tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # A local Supabase (Docker) with every migration applied, then the
+      # pgTAP tests in supabase/tests.
+      - run: pnpm supabase db start
+      - run: pnpm supabase test db

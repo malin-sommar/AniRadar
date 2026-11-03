@@ -59,7 +59,8 @@ export function SearchOverlay() {
     function onKeyDown(event: KeyboardEvent) {
       const shortcut =
         (event.key === "/" && !isTyping(event.target)) ||
-        (event.key.toLowerCase() === "k" && (event.metaKey || event.ctrlKey))
+        // Autofill and password managers send key events without a key.
+        (event.key?.toLowerCase() === "k" && (event.metaKey || event.ctrlKey))
       if (!shortcut) return
       event.preventDefault()
       setOpen(true)

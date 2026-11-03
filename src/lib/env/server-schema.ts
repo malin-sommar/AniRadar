@@ -2,7 +2,30 @@ import { z } from "zod"
 
 const unset = (value: unknown) => (value === "" ? undefined : value)
 
+/** 32 random bytes, base64 (AES-256 key). */
+const aesKey = z
+  .string()
+  .refine(
+    (value) => Buffer.from(value, "base64").length === 32,
+    "must be 32 random bytes in base64",
+  )
+
 const serverEnvSchema = z.object({
+  // Accounts (Phase 3). All optional: without them the app runs without
+  // sign-in (e.g. in CI and end-to-end tests). Read on the server only.
+  NEXT_PUBLIC_SUPABASE_URL: z.preprocess(unset, z.url().optional()),
+  NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z.preprocess(
+    unset,
+    z.string().min(20).optional(),
+  ),
+  /** Bypasses row-level security: server code only. */
+  SUPABASE_SECRET_KEY: z.preprocess(unset, z.string().min(20).optional()),
+  ANILIST_CLIENT_ID: z.preprocess(unset, z.string().regex(/^\d+$/).optional()),
+  ANILIST_CLIENT_SECRET: z.preprocess(unset, z.string().min(10).optional()),
+  ANILIST_REDIRECT_URI: z.preprocess(unset, z.url().optional()),
+  /** Encrypts AniList tokens at rest (AES-256-GCM). */
+  ANILIST_TOKEN_KEY: z.preprocess(unset, aesKey.optional()),
+
   /** Points at a mock server in end-to-end tests. */
   ANILIST_API_URL: z.preprocess(
     unset,

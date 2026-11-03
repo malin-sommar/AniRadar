@@ -70,6 +70,7 @@ const eslintConfig = defineConfig([
     "test-results/**",
     "next-env.d.ts",
     "src/lib/anilist/gql/**",
+    "src/lib/supabase/database.types.ts",
   ]),
 ])
 

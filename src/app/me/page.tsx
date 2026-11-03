@@ -1,8 +1,11 @@
-import { LogInIcon } from "lucide-react"
 import type { Metadata } from "next"
+import { Suspense } from "react"
 
-import { EmptyState } from "@/components/empty-state"
 import { ThemePicker } from "@/components/theme/theme-toggle"
+import {
+  AccountSection,
+  AccountSkeleton,
+} from "@/features/settings/account-section"
 import {
   AdultContentSetting,
   TitleLanguagePicker,
@@ -10,10 +13,23 @@ import {
 
 export const metadata: Metadata = { title: "Me" }
 
-export default function MePage() {
+async function Account({ searchParams }: PageProps<"/me">) {
+  const { anilist } = await searchParams
+  return (
+    <AccountSection
+      anilistStatus={typeof anilist === "string" ? anilist : undefined}
+    />
+  )
+}
+
+export default function MePage(props: PageProps<"/me">) {
   return (
     <div className="mx-auto max-w-2xl space-y-8">
       <h1 className="text-2xl font-semibold tracking-tight">Me</h1>
+
+      <Suspense fallback={<AccountSkeleton />}>
+        <Account {...props} />
+      </Suspense>
 
       <section
         aria-labelledby="appearance-title"
@@ -24,8 +40,8 @@ export default function MePage() {
             Appearance
           </h2>
           <p className="text-sm text-muted-foreground">
-            Saved on this device. After you sign in (coming soon), they follow
-            your account.
+            Saved on this device, and to your account while you&apos;re signed
+            in.
           </p>
         </div>
         <div className="space-y-2">
@@ -50,13 +66,6 @@ export default function MePage() {
         </h2>
         <AdultContentSetting />
       </section>
-
-      <EmptyState
-        icon={LogInIcon}
-        tag="Coming in Phase 3"
-        title="Sign in & connect AniList"
-        description="Sign in with email, Google or Discord, then connect your AniList account to track your shows."
-      />
     </div>
   )
 }

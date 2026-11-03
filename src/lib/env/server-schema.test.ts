@@ -4,7 +4,7 @@ import { parseServerEnv } from "./server-schema"
 
 describe("parseServerEnv", () => {
   it("fills in safe defaults", () => {
-    expect(parseServerEnv({})).toEqual({
+    expect(parseServerEnv({})).toMatchObject({
       ANILIST_API_URL: "https://graphql.anilist.co",
       ANILIST_REQUESTS_PER_MINUTE: 25,
       ANILIST_MAX_REQUESTS_PER_MINUTE: 76,
@@ -14,6 +14,24 @@ describe("parseServerEnv", () => {
       KITSU_API_URL: "https://kitsu.io/api/edge",
       KITSU_TIMEOUT_MS: 3000,
     })
+  })
+
+  it("leaves accounts off when their variables are missing", () => {
+    const env = parseServerEnv({})
+    expect(env.NEXT_PUBLIC_SUPABASE_URL).toBeUndefined()
+    expect(env.ANILIST_TOKEN_KEY).toBeUndefined()
+  })
+
+  it("rejects a token key that isn't 32 bytes", () => {
+    expect(() =>
+      parseServerEnv({
+        ANILIST_TOKEN_KEY: Buffer.alloc(16).toString("base64"),
+      }),
+    ).toThrow(/ANILIST_TOKEN_KEY/)
+    expect(
+      parseServerEnv({ ANILIST_TOKEN_KEY: Buffer.alloc(32).toString("base64") })
+        .ANILIST_TOKEN_KEY,
+    ).toBeDefined()
   })
 
   it("treats empty values as unset", () => {

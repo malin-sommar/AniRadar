@@ -15,7 +15,8 @@ A mobile-first PWA companion for AniList: find anime, track it in your AniList a
 - **Vitest 5** + Testing Library + **MSW 3**; **Playwright 1.64** + axe
 - **ESLint 9** (flat config, `eslint-config-next`) + **Prettier 3**. Not ESLint 10: eslint-plugin-react, -import and -jsx-a11y don't support it yet.
 - **pnpm 10.34** through corepack, Node ≥ 22. Not pnpm 12: corepack 0.34 can't run it.
-- Coming later: Supabase (EU, Stockholm) for accounts, Vercel (`arn1`) for hosting.
+- **Supabase** (EU, Stockholm) for accounts, through `@supabase/ssr` on the server only; Supabase CLI 3 as a dev dependency.
+- Coming later: Vercel (`arn1`) for hosting.
 
 ## Commands
 
@@ -32,7 +33,11 @@ A mobile-first PWA companion for AniList: find anime, track it in your AniList a
 | `pnpm schema:fetch`                               | Re-downloads AniList's schema (1 request); run `pnpm codegen` after                                                        |
 | `pnpm fixtures:record [Name]`                     | Re-records `tests/fixtures/anilist/` (1 request per fixture, more per franchise; name fixtures to record only those)       |
 | `pnpm icons`                                      | Regenerates the app icons (`scripts/generate-icons.mjs`)                                                                   |
-| `pnpm check:bundle`                               | Scans the client build for secrets (after `pnpm build`)                                                                    |
+| `pnpm check:bundle`                               | Scans the client build for secrets (after `pnpm build`), including the values in `.env.local`                              |
+| `pnpm supabase migration new <name>`              | Creates a migration in `supabase/migrations`                                                                               |
+| `pnpm supabase db push --remote`                  | Applies migrations to the linked dev project (asks for the database password; run it yourself, not Claude)                 |
+| `pnpm db:types`                                   | Regenerates `src/lib/supabase/database.types.ts` from the linked project (after `db push`)                                 |
+| `pnpm test:db`                                    | pgTAP tests in `supabase/tests` against a local Supabase (needs Docker; CI runs them)                                      |
 
 First-time setup: `corepack install --global pnpm@10.34.9`, `pnpm install`, `pnpm exec playwright install chromium`. Copy `.env.example` to `.env.local` only if you need to change a default.
 
@@ -56,7 +61,9 @@ src/
     sanitize.ts AniList HTML reduced to a safe allowlist (server only)
     env/        Zod-validated env (client, server)
     query/      TanStack Query client and IndexedDB persister
-  server/       server-only code from Phase 3 on (secrets, tokens, jobs)
+  server/       server-only code: Supabase clients, session, sign-in and account actions, AniList OAuth, token encryption
+  proxy.ts      refreshes the Supabase session on /me, /login, /auth/*, /api/me/* only
+supabase/       config.toml, migrations/, tests/database/ (pgTAP)
 tests/          setup, msw/, e2e/, live/, fixtures/
 scripts/        schema, fixtures, icons, bundle check
 ```
@@ -97,7 +104,7 @@ scripts/        schema, fixtures, icons, bundle check
 
 1. Business rules go in pure, tested functions in `src/domain`, not in components.
 2. Zod validates every external input: route params, REST/RSS responses, env vars.
-3. Secrets live only in server code (`import "server-only"`), never in `NEXT_PUBLIC_*`.
+3. Secrets live only in server code (`import "server-only"`), never in `NEXT_PUBLIC_*`. Supabase is only called from the server (`src/server`): no browser Supabase client, so the CSP keeps `connect-src 'self'`.
 4. Every new database table (Phase 3+) ships with RLS, policies and pgTAP tests in the same change.
 5. Mobile first: check 375 px and 1280 px. Dark mode is the default. Colours come from tokens in `globals.css`. Each anime's `coverImage.color` drives its accent.
 6. Accessibility is part of done: keyboard, labels, contrast; the axe test must pass.

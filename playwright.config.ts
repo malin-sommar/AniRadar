@@ -44,6 +44,15 @@ export default defineConfig({
         // The mock has no rate limit; parallel tests would queue at 25/min.
         ANILIST_REQUESTS_PER_MINUTE: "600",
         ANILIST_MAX_REQUESTS_PER_MINUTE: "600",
+        // No accounts: empty values override .env.local, so tests never
+        // reach a real Supabase project or AniList client.
+        NEXT_PUBLIC_SUPABASE_URL: "",
+        NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "",
+        SUPABASE_SECRET_KEY: "",
+        ANILIST_CLIENT_ID: "",
+        ANILIST_CLIENT_SECRET: "",
+        ANILIST_REDIRECT_URI: "",
+        ANILIST_TOKEN_KEY: "",
         NEXT_PUBLIC_SITE_URL: `http://127.0.0.1:${PORT}`,
       },
     },

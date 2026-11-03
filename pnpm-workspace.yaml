@@ -6,3 +6,7 @@ ignoredBuiltDependencies:
   - esbuild
   - sharp
   - unrs-resolver
+
+# The Supabase CLI downloads its binary in an install script.
+onlyBuiltDependencies:
+  - supabase
