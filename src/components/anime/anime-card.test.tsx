@@ -89,6 +89,29 @@ describe("AnimeCard", () => {
     )
   })
 
+  it("shows the title in the chosen language", () => {
+    localStorage.setItem(
+      "aniradar-preferences",
+      JSON.stringify({ titleLanguage: "native" }),
+    )
+    renderCard({
+      title: {
+        english: "Frieren",
+        romaji: "Sousou no Frieren",
+        native: "葬送のフリーレン",
+      },
+    })
+    expect(
+      screen.getByRole("heading", { name: "葬送のフリーレン" }),
+    ).toBeInTheDocument()
+    localStorage.removeItem("aniradar-preferences")
+  })
+
+  it("marks adult entries", () => {
+    renderCard({ isAdult: true })
+    expect(screen.getByText("18+")).toBeInTheDocument()
+  })
+
   it("leaves out badges it has no data for", () => {
     renderCard({ averageScore: null, nextAiringEpisode: null })
     expect(screen.queryByText(/average score/)).not.toBeInTheDocument()

@@ -36,6 +36,7 @@ export default defineConfig({
       env: {
         NEXT_DIST_DIR: ".next-e2e",
         ANILIST_API_URL: `http://127.0.0.1:${MOCK_ANILIST_PORT}/graphql`,
+        KITSU_API_URL: `http://127.0.0.1:${MOCK_ANILIST_PORT}/kitsu`,
         NEXT_PUBLIC_SITE_URL: `http://127.0.0.1:${PORT}`,
       },
     },

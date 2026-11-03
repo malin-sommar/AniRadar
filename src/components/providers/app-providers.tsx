@@ -1,6 +1,7 @@
 "use client"
 
 import { SerwistProvider } from "@serwist/turbopack/react"
+import { NuqsAdapter } from "nuqs/adapters/next/app"
 import type { ReactNode } from "react"
 
 import { QueryProvider } from "./query-provider"
@@ -22,7 +23,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
       cacheOnNavigation={false}
       reloadOnOnline={false}
     >
-      <QueryProvider>{children}</QueryProvider>
+      <NuqsAdapter>
+        <QueryProvider>{children}</QueryProvider>
+      </NuqsAdapter>
     </SerwistProvider>
   )
 }

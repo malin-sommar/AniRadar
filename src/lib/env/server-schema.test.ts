@@ -9,6 +9,8 @@ describe("parseServerEnv", () => {
       ANILIST_REQUESTS_PER_MINUTE: 25,
       ANILIST_MAX_REQUESTS_PER_MINUTE: 76,
       ANILIST_TIMEOUT_MS: 10_000,
+      KITSU_API_URL: "https://kitsu.io/api/edge",
+      KITSU_TIMEOUT_MS: 3000,
     })
   })
 

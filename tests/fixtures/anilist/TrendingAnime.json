@@ -7,70 +7,6 @@
       },
       "media": [
         {
-          "id": 209219,
-          "title": {
-            "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-            "english": "So What's Wrong with Getting Reborn as a Goblin?",
-            "native": "転生ゴブリンだけど質問ある？"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg",
-            "color": "#a1c950"
-          },
-          "format": "ONA",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 65,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Drama",
-            "Fantasy",
-            "Romance"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794229200,
-            "episode": 7
-          },
-          "bannerImage": null
-        },
-        {
-          "id": 207191,
-          "title": {
-            "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
-            "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
-            "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg",
-            "color": "#aed6e4"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": 12,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 72,
-          "genres": [
-            "Fantasy",
-            "Romance"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794227400,
-            "episode": 6
-          },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg"
-        },
-        {
           "id": 212888,
           "title": {
             "romaji": "Tempal: Item no Chikara",
@@ -101,38 +37,6 @@
             "episode": 7
           },
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg"
-        },
-        {
-          "id": 195604,
-          "title": {
-            "romaji": "Black Clover 2nd Season",
-            "english": "Black Clover Season 2",
-            "native": "ブラッククローバー 第2期"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
-            "color": "#f1a143"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 87,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Fantasy"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794060000,
-            "episode": 6
-          },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg"
         },
         {
           "id": 21,
@@ -196,6 +100,40 @@
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg"
         },
         {
+          "id": 209219,
+          "title": {
+            "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+            "english": "So What's Wrong with Getting Reborn as a Goblin?",
+            "native": "転生ゴブリンだけど質問ある？"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg",
+            "color": "#a1c950"
+          },
+          "format": "ONA",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 65,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Romance"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794229200,
+            "episode": 7
+          },
+          "bannerImage": null
+        },
+        {
           "id": 97940,
           "title": {
             "romaji": "Black Clover",
@@ -223,6 +161,68 @@
           "isAdult": false,
           "nextAiringEpisode": null,
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg"
+        },
+        {
+          "id": 195604,
+          "title": {
+            "romaji": "Black Clover 2nd Season",
+            "english": "Black Clover Season 2",
+            "native": "ブラッククローバー 第2期"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
+            "color": "#f1a143"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 87,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794060000,
+            "episode": 6
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg"
+        },
+        {
+          "id": 207191,
+          "title": {
+            "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
+            "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+            "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg",
+            "color": "#aed6e4"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": 12,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 72,
+          "genres": [
+            "Fantasy",
+            "Romance"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794227400,
+            "episode": 6
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg"
         },
         {
           "id": 195516,
@@ -255,6 +255,65 @@
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg"
         },
         {
+          "id": 269,
+          "title": {
+            "romaji": "BLEACH",
+            "english": "Bleach",
+            "native": "BLEACH"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+            "color": "#f1a150"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 366,
+          "season": "FALL",
+          "seasonYear": 2004,
+          "averageScore": 79,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null,
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg"
+        },
+        {
+          "id": 191656,
+          "title": {
+            "romaji": "Seitokai ni mo Ana wa Aru!",
+            "english": "Even the Student Council Has Its Holes!",
+            "native": "生徒会にも穴はある！"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+            "color": "#5dbbe4"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": 12,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 73,
+          "genres": [
+            "Comedy",
+            "Ecchi",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794065400,
+            "episode": 6
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg"
+        },
+        {
           "id": 205896,
           "title": {
             "romaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
@@ -285,120 +344,35 @@
           "bannerImage": null
         },
         {
-          "id": 206814,
+          "id": 1735,
           "title": {
-            "romaji": "Dragon Ball Super: Beerus",
-            "english": "Dragon Ball Super: Beerus",
-            "native": "ドラゴンボール超 ビルス"
+            "romaji": "NARUTO: Shippuuden",
+            "english": "Naruto: Shippuden",
+            "native": "NARUTO -ナルト- 疾風伝"
           },
           "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206814-PVVzRbf1IQpe.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-PVVzRbf1IQpe.jpg",
-            "color": "#e48643"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 81,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Sci-Fi"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794147360,
-            "episode": 5
-          },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206814-ARuwrZJAGONN.jpg"
-        },
-        {
-          "id": 219282,
-          "title": {
-            "romaji": "Bocchi the Rock!: Hoshi no Ashiato",
-            "english": null,
-            "native": "ぼっち・ざ・ろっく！星のあしあと"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx219282-GGsicK5XZMBy.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219282-GGsicK5XZMBy.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219282-GGsicK5XZMBy.jpg",
-            "color": "#f1d6ae"
-          },
-          "format": "MOVIE",
-          "status": "NOT_YET_RELEASED",
-          "episodes": 1,
-          "season": null,
-          "seasonYear": null,
-          "averageScore": null,
-          "genres": [
-            "Music",
-            "Slice of Life"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": null,
-          "bannerImage": null
-        },
-        {
-          "id": 185756,
-          "title": {
-            "romaji": "Tensei Kizoku, Kantei Skill de Nariagaru 3rd Season",
-            "english": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
-            "native": "転生貴族、鑑定スキルで成り上がる 第3期"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185756-xPCl0RyQ7fXD.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-xPCl0RyQ7fXD.jpg",
-            "color": "#d6f1c9"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 69,
-          "genres": [
-            "Adventure",
-            "Fantasy"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794148200,
-            "episode": 7
-          },
-          "bannerImage": null
-        },
-        {
-          "id": 269,
-          "title": {
-            "romaji": "BLEACH",
-            "english": "Bleach",
-            "native": "BLEACH"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
-            "color": "#f1a150"
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+            "color": "#e4865d"
           },
           "format": "TV",
           "status": "FINISHED",
-          "episodes": 366,
-          "season": "FALL",
-          "seasonYear": 2004,
-          "averageScore": 79,
+          "episodes": 500,
+          "season": "WINTER",
+          "seasonYear": 2007,
+          "averageScore": 82,
           "genres": [
             "Action",
             "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
             "Supernatural"
           ],
           "isAdult": false,
           "nextAiringEpisode": null,
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg"
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg"
         },
         {
           "id": 186541,
@@ -435,35 +409,211 @@
           "bannerImage": null
         },
         {
-          "id": 191656,
+          "id": 185756,
           "title": {
-            "romaji": "Seitokai ni mo Ana wa Aru!",
-            "english": "Even the Student Council Has Its Holes!",
-            "native": "生徒会にも穴はある！"
+            "romaji": "Tensei Kizoku, Kantei Skill de Nariagaru 3rd Season",
+            "english": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+            "native": "転生貴族、鑑定スキルで成り上がる 第3期"
           },
           "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
-            "color": "#5dbbe4"
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185756-xPCl0RyQ7fXD.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-xPCl0RyQ7fXD.jpg",
+            "color": "#d6f1c9"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 69,
+          "genres": [
+            "Adventure",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794148200,
+            "episode": 7
+          },
+          "bannerImage": null
+        },
+        {
+          "id": 206814,
+          "title": {
+            "romaji": "Dragon Ball Super: Beerus",
+            "english": "Dragon Ball Super: Beerus",
+            "native": "ドラゴンボール超 ビルス"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206814-PVVzRbf1IQpe.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-PVVzRbf1IQpe.jpg",
+            "color": "#e48643"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 81,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794147360,
+            "episode": 5
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206814-ARuwrZJAGONN.jpg"
+        },
+        {
+          "id": 180136,
+          "title": {
+            "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+            "english": "The Exiled Heavy Knight Knows How to Game the System",
+            "native": "追放された転生重騎士はゲーム知識で無双する"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg",
+            "color": "#50c9fe"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": 26,
+          "season": "SUMMER",
+          "seasonYear": 2026,
+          "averageScore": 67,
+          "genres": [
+            "Action",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1793892360,
+            "episode": 19
+          },
+          "bannerImage": null
+        },
+        {
+          "id": 205909,
+          "title": {
+            "romaji": "Hotaru no Yomeiri",
+            "english": "Firefly Wedding",
+            "native": "ホタルの嫁入り"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg",
+            "color": "#aebb35"
           },
           "format": "TV",
           "status": "RELEASING",
           "episodes": 12,
           "season": "FALL",
           "seasonYear": 2026,
-          "averageScore": 73,
+          "averageScore": 75,
           "genres": [
-            "Comedy",
-            "Ecchi",
-            "Slice of Life"
+            "Drama",
+            "Romance"
           ],
           "isAdult": false,
           "nextAiringEpisode": {
-            "airingAt": 1794065400,
+            "airingAt": 1793975400,
+            "episode": 5
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg"
+        },
+        {
+          "id": 185874,
+          "title": {
+            "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
+            "english": "BLEACH: Thousand-Year Blood War - The Calamity",
+            "native": "BLEACH 千年血戦篇-禍進譚-"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
+            "color": null
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "season": "SUMMER",
+          "seasonYear": 2026,
+          "averageScore": 88,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Supernatural"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null,
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg"
+        },
+        {
+          "id": 219282,
+          "title": {
+            "romaji": "Bocchi the Rock!: Hoshi no Ashiato",
+            "english": null,
+            "native": "ぼっち・ざ・ろっく！星のあしあと"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx219282-GGsicK5XZMBy.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219282-GGsicK5XZMBy.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219282-GGsicK5XZMBy.jpg",
+            "color": "#f1d6ae"
+          },
+          "format": "MOVIE",
+          "status": "NOT_YET_RELEASED",
+          "episodes": 1,
+          "season": null,
+          "seasonYear": null,
+          "averageScore": null,
+          "genres": [
+            "Music",
+            "Slice of Life"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null,
+          "bannerImage": null
+        },
+        {
+          "id": 202250,
+          "title": {
+            "romaji": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
+            "english": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
+            "native": "貸した魔力は【リボ払い】で強制徴収"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202250-mpm2cvr92Au2.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202250-mpm2cvr92Au2.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg",
+            "color": "#bbe45d"
+          },
+          "format": "TV",
+          "status": "RELEASING",
+          "episodes": null,
+          "season": "FALL",
+          "seasonYear": 2026,
+          "averageScore": 61,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": {
+            "airingAt": 1794069000,
             "episode": 6
           },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg"
+          "bannerImage": null
         },
         {
           "id": 191788,
@@ -493,6 +643,33 @@
             "episode": 6
           },
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191788-tyhsHpXeF26X.jpg"
+        },
+        {
+          "id": 176301,
+          "title": {
+            "romaji": "Kusuriya no Hitorigoto 2nd Season",
+            "english": "The Apothecary Diaries Season 2",
+            "native": "薬屋のひとりごと 第2期"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176301-TIGmldLffQGX.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176301-TIGmldLffQGX.jpg",
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176301-TIGmldLffQGX.jpg",
+            "color": "#e4bb50"
+          },
+          "format": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "season": "WINTER",
+          "seasonYear": 2025,
+          "averageScore": 88,
+          "genres": [
+            "Drama",
+            "Mystery"
+          ],
+          "isAdult": false,
+          "nextAiringEpisode": null,
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176301-GkuTF1YTT6b2.jpg"
         },
         {
           "id": 208025,
@@ -525,67 +702,6 @@
             "episode": 6
           },
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg"
-        },
-        {
-          "id": 1735,
-          "title": {
-            "romaji": "NARUTO: Shippuuden",
-            "english": "Naruto: Shippuden",
-            "native": "NARUTO -ナルト- 疾風伝"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
-            "color": "#e4865d"
-          },
-          "format": "TV",
-          "status": "FINISHED",
-          "episodes": 500,
-          "season": "WINTER",
-          "seasonYear": 2007,
-          "averageScore": 82,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Drama",
-            "Fantasy",
-            "Supernatural"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": null,
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg"
-        },
-        {
-          "id": 205909,
-          "title": {
-            "romaji": "Hotaru no Yomeiri",
-            "english": "Firefly Wedding",
-            "native": "ホタルの嫁入り"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg",
-            "color": "#aebb35"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": 12,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 75,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1793975400,
-            "episode": 5
-          },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg"
         },
         {
           "id": 210482,
@@ -621,95 +737,6 @@
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg"
         },
         {
-          "id": 202250,
-          "title": {
-            "romaji": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
-            "english": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
-            "native": "貸した魔力は【リボ払い】で強制徴収"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202250-mpm2cvr92Au2.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202250-mpm2cvr92Au2.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg",
-            "color": "#bbe45d"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 61,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794069000,
-            "episode": 6
-          },
-          "bannerImage": null
-        },
-        {
-          "id": 185874,
-          "title": {
-            "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
-            "english": "BLEACH: Thousand-Year Blood War - The Calamity",
-            "native": "BLEACH 千年血戦篇-禍進譚-"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
-            "color": null
-          },
-          "format": "TV",
-          "status": "FINISHED",
-          "episodes": 10,
-          "season": "SUMMER",
-          "seasonYear": 2026,
-          "averageScore": 88,
-          "genres": [
-            "Action",
-            "Adventure",
-            "Supernatural"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": null,
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg"
-        },
-        {
-          "id": 180136,
-          "title": {
-            "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-            "english": "The Exiled Heavy Knight Knows How to Game the System",
-            "native": "追放された転生重騎士はゲーム知識で無双する"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg",
-            "color": "#50c9fe"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": 26,
-          "season": "SUMMER",
-          "seasonYear": 2026,
-          "averageScore": 67,
-          "genres": [
-            "Action",
-            "Fantasy"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1793892360,
-            "episode": 19
-          },
-          "bannerImage": null
-        },
-        {
           "id": 20,
           "title": {
             "romaji": "NARUTO",
@@ -739,37 +766,6 @@
           "isAdult": false,
           "nextAiringEpisode": null,
           "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg"
-        },
-        {
-          "id": 209872,
-          "title": {
-            "romaji": "Ranma 1/2 (2024) 3rd Season",
-            "english": "Ranma1/2 (2024) Season 3",
-            "native": "らんま1/2 (2024) 第3期"
-          },
-          "coverImage": {
-            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
-            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209872-RBeVPqwejHFp.jpg",
-            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209872-RBeVPqwejHFp.jpg",
-            "color": "#e4bb5d"
-          },
-          "format": "TV",
-          "status": "RELEASING",
-          "episodes": null,
-          "season": "FALL",
-          "seasonYear": 2026,
-          "averageScore": 78,
-          "genres": [
-            "Action",
-            "Comedy",
-            "Romance"
-          ],
-          "isAdult": false,
-          "nextAiringEpisode": {
-            "airingAt": 1794066960,
-            "episode": 6
-          },
-          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209872-Qczb4k9Mw0pq.jpg"
         }
       ]
     }

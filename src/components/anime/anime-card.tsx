@@ -1,9 +1,12 @@
+"use client"
+
 import { StarIcon } from "lucide-react"
 import Link from "next/link"
 import type { CSSProperties } from "react"
 
 import { Skeleton } from "@/components/ui/skeleton"
-import { displayTitle, mediaMeta } from "@/domain/media"
+import { mediaMeta } from "@/domain/media"
+import { useDisplayTitle } from "@/hooks/use-preferences"
 import type { MediaCardFragment } from "@/lib/anilist/gql/graphql"
 import { cn } from "@/lib/utils"
 
@@ -40,7 +43,7 @@ export function AnimeCard({
   media: MediaCardFragment
   priority?: boolean
 }) {
-  const title = displayTitle(media.title)
+  const title = useDisplayTitle(media.title)
   const meta = mediaMeta(media)
   const accent = {
     "--cover": media.coverImage?.color ?? "var(--primary)",
@@ -61,6 +64,12 @@ export function AnimeCard({
             priority={priority}
             className="transition-transform duration-500 group-hover:scale-[1.04]"
           />
+          {media.isAdult ? (
+            <span className="absolute top-2 left-2 rounded-full bg-destructive px-2 py-0.5 text-[11px] font-semibold text-white">
+              18+
+              <span className="sr-only"> adult content</span>
+            </span>
+          ) : null}
           {media.averageScore ? (
             <span className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full bg-background/80 px-2 py-0.5 text-[11px] font-semibold backdrop-blur">
               <StarIcon

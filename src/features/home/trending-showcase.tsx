@@ -11,15 +11,18 @@ import { EmptyState } from "@/components/empty-state"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { isPresent } from "@/domain/media"
+import { usePreferences } from "@/hooks/use-preferences"
 import { useAniListQuery } from "@/lib/anilist/hooks"
 
 import { TrendingHero } from "./trending-hero"
-import { TRENDING_VARIABLES } from "./trending-variables"
+import { trendingVariables } from "./trending-variables"
 
 export function TrendingShowcase() {
+  const { showAdult } = usePreferences()
   const { data, isPending, isError, isFetching, refetch } = useAniListQuery(
     "TrendingAnime",
-    TRENDING_VARIABLES,
+    trendingVariables(showAdult),
+    { keepPrevious: true },
   )
   const media = (data?.Page?.media ?? []).filter(isPresent)
 

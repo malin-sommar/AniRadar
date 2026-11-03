@@ -1,9 +1,5 @@
 # Home: "Trending now". bannerImage feeds the hero at the top of the page.
-query TrendingAnime(
-  $page: Int = 1
-  $perPage: Int = 25
-  $isAdult: Boolean = false
-) {
+query TrendingAnime($page: Int = 1, $perPage: Int = 25, $isAdult: Boolean) {
   Page(page: $page, perPage: $perPage) {
     pageInfo {
       hasNextPage
