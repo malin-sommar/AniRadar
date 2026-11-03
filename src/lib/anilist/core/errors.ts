@@ -78,8 +78,47 @@ export class AniListError extends Error {
   }
 }
 
+/**
+ * Also recognises AniListErrors from another copy of this module: code in
+ * `'use cache'` scopes can run with its own module instances, where
+ * `instanceof` fails.
+ */
 export function isAniListError(value: unknown): value is AniListError {
-  return value instanceof AniListError
+  return (
+    value instanceof AniListError ||
+    (value instanceof Error &&
+      value.name === "AniListError" &&
+      isErrorKind((value as { kind?: unknown }).kind))
+  )
+}
+
+/** An AniListError as plain data, so it can cross a `'use cache'` boundary. */
+export interface AniListErrorData {
+  kind: AniListErrorKind
+  message: string
+  status?: number
+  retryAfterMs?: number
+  errors?: GraphQLErrorItem[]
+  source: "upstream" | "queue"
+}
+
+export function toAniListErrorData(error: AniListError): AniListErrorData {
+  return {
+    kind: error.kind,
+    message: error.message,
+    status: error.status,
+    retryAfterMs: error.retryAfterMs,
+    errors: error.errors,
+    source: error.source,
+  }
+}
+
+export function fromAniListErrorData({
+  kind,
+  message,
+  ...options
+}: AniListErrorData): AniListError {
+  return new AniListError(kind, message, options)
 }
 
 export function isErrorKind(value: unknown): value is AniListErrorKind {

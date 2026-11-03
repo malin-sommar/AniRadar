@@ -13,6 +13,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : "list",
+  // Detail pages render a lot on the server; with many workers in parallel,
+  // the default 5 s can run out on slower machines.
+  expect: { timeout: 10_000 },
   use: {
     baseURL: `http://127.0.0.1:${PORT}`,
     trace: "retain-on-failure",
@@ -37,6 +40,10 @@ export default defineConfig({
         NEXT_DIST_DIR: ".next-e2e",
         ANILIST_API_URL: `http://127.0.0.1:${MOCK_ANILIST_PORT}/graphql`,
         KITSU_API_URL: `http://127.0.0.1:${MOCK_ANILIST_PORT}/kitsu`,
+        JIKAN_API_URL: `http://127.0.0.1:${MOCK_ANILIST_PORT}/jikan`,
+        // The mock has no rate limit; parallel tests would queue at 25/min.
+        ANILIST_REQUESTS_PER_MINUTE: "600",
+        ANILIST_MAX_REQUESTS_PER_MINUTE: "600",
         NEXT_PUBLIC_SITE_URL: `http://127.0.0.1:${PORT}`,
       },
     },

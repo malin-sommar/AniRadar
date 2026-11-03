@@ -25,3 +25,80 @@ fragment MediaCard on Media {
     episode
   }
 }
+
+# One entry in a franchise's season chain (seasons, movies, specials).
+fragment SeasonNode on Media {
+  id
+  type
+  format
+  status
+  title {
+    romaji
+    english
+    native
+  }
+  coverImage {
+    medium
+    large
+    extraLarge
+    color
+  }
+  startDate {
+    year
+    month
+    day
+  }
+  seasonYear
+  episodes
+  isAdult
+  siteUrl
+}
+
+# A related entry plus the IDs of its own relations, so the season chain can
+# be walked two steps per request.
+fragment RelatedSeason on MediaEdge {
+  relationType(version: 2)
+  node {
+    ...SeasonNode
+    relations {
+      edges {
+        relationType(version: 2)
+        node {
+          id
+          type
+        }
+      }
+    }
+  }
+}
+
+# A character with their voice actors in every language. (Aliasing
+# voiceActors(language: …) twice returns the same list for both aliases, so
+# the app picks Japanese and English from this one list.)
+fragment CharacterEdge on CharacterEdge {
+  id
+  role
+  node {
+    id
+    name {
+      full
+      native
+    }
+    image {
+      medium
+      large
+    }
+  }
+  voiceActors(sort: [RELEVANCE, ID]) {
+    id
+    languageV2
+    name {
+      full
+      native
+    }
+    image {
+      medium
+      large
+    }
+  }
+}

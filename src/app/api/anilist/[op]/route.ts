@@ -8,7 +8,7 @@ import {
   type AniListErrorKind,
 } from "@/lib/anilist/core/errors"
 import {
-  cachePolicyFor,
+  cachePolicyForData,
   isOperationName,
   operations,
 } from "@/lib/anilist/registry"
@@ -89,7 +89,11 @@ export async function GET(
     const data = await getAniList(op, parsed.data)
     return Response.json(
       { data },
-      { headers: { "Cache-Control": cdnCacheControl(cachePolicyFor(op)) } },
+      {
+        headers: {
+          "Cache-Control": cdnCacheControl(cachePolicyForData(op, data)),
+        },
+      },
     )
   } catch (error) {
     if (isAniListError(error)) return fromAniListError(error)

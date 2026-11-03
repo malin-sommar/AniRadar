@@ -65,7 +65,7 @@ export function AnimeCard({
             className="transition-transform duration-500 group-hover:scale-[1.04]"
           />
           {media.isAdult ? (
-            <span className="absolute top-2 left-2 rounded-full bg-destructive px-2 py-0.5 text-[11px] font-semibold text-white">
+            <span className="absolute top-2 left-2 rounded-full bg-destructive px-2 py-0.5 text-[11px] font-semibold text-background">
               18+
               <span className="sr-only"> adult content</span>
             </span>

@@ -10,12 +10,19 @@ import {
   type AniListTransport,
   type RequestOptions,
 } from "./core/client"
+import {
+  fromAniListErrorData,
+  isAniListError,
+  toAniListErrorData,
+  type AniListErrorData,
+} from "./core/errors"
 import { RateLimiter } from "./core/limiter"
 import { canonicalize } from "./core/stable-stringify"
 import { createStats, recordEvent, type AniListStats } from "./core/stats"
-import { cacheLifeProfile } from "./cache-policy"
+import { ERROR_CACHE_LIFE, cacheLifeProfile } from "./cache-policy"
 import {
   cachePolicyFor,
+  cachePolicyForData,
   documentFor,
   type OperationData,
   type OperationName,
@@ -78,28 +85,50 @@ export function requestAniList<N extends OperationName>(
   )
 }
 
+type CachedResult = { data: unknown } | { error: AniListErrorData }
+
+// Errors thrown inside `'use cache'` lose their class on the way out, so
+// AniList errors come back as data and are rebuilt in getAniList.
 async function cachedAniList(
   name: OperationName,
   variables: Record<string, unknown>,
-) {
+): Promise<CachedResult> {
   "use cache"
-  cacheLife(cacheLifeProfile(cachePolicyFor(name)))
   cacheTag("anilist", `anilist:${name}`)
-  return requestAniList(name, variables as OperationVariables<OperationName>)
+  try {
+    const data = await requestAniList(
+      name,
+      variables as OperationVariables<OperationName>,
+    )
+    // Set after the response, since some operations cache by what came back.
+    cacheLife(cacheLifeProfile(cachePolicyForData(name, data)))
+    return { data }
+  } catch (error) {
+    if (!isAniListError(error)) throw error
+    // "Not found" is a stable answer, cached like data.
+    cacheLife(
+      error.notFound
+        ? cacheLifeProfile(cachePolicyFor(name))
+        : ERROR_CACHE_LIFE,
+    )
+    return { error: toAniListErrorData(error) }
+  }
 }
 
 /**
  * Cached AniList call for server components and the /api/anilist proxy.
  * Entries live as long as the operation's cache policy says.
  */
-export function getAniList<N extends OperationName>(
+export async function getAniList<N extends OperationName>(
   name: N,
   variables: OperationVariables<N>,
 ): Promise<OperationData<N>> {
   state().stats.lookups++
   // Sorted keys, so the same variables in a different order share an entry.
   const key = canonicalize(variables) as Record<string, unknown>
-  return cachedAniList(name, key) as Promise<OperationData<N>>
+  const result = await cachedAniList(name, key)
+  if ("error" in result) throw fromAniListErrorData(result.error)
+  return result.data as OperationData<N>
 }
 
 export function getServerAniListSnapshot() {

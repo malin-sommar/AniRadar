@@ -1,0 +1,85 @@
+# The detail page's main content, in one request. The season chain beyond
+# two steps (SeasonChain), more characters (AnimeCharacters) and the MAL
+# score (Jikan) load separately.
+query AnimeDetail($id: Int!) {
+  Media(id: $id, type: ANIME) {
+    ...MediaCard
+    type
+    idMal
+    siteUrl
+    bannerImage
+    description(asHtml: true)
+    duration
+    source(version: 3)
+    countryOfOrigin
+    popularity
+    favourites
+    startDate {
+      year
+      month
+      day
+    }
+    endDate {
+      year
+      month
+      day
+    }
+    studios(isMain: true) {
+      nodes {
+        id
+        name
+        siteUrl
+      }
+    }
+    tags {
+      id
+      name
+      rank
+      category
+      isGeneralSpoiler
+      isMediaSpoiler
+      isAdult
+    }
+    trailer {
+      id
+      site
+      thumbnail
+    }
+    externalLinks {
+      id
+      site
+      url
+      type
+      language
+      color
+      icon
+      isDisabled
+    }
+    airingSchedule(notYetAired: true, perPage: 6) {
+      nodes {
+        episode
+        airingAt
+      }
+    }
+    relations {
+      edges {
+        ...RelatedSeason
+      }
+    }
+    characters(page: 1, perPage: 12, sort: [ROLE, RELEVANCE, ID]) {
+      pageInfo {
+        hasNextPage
+      }
+      edges {
+        ...CharacterEdge
+      }
+    }
+    recommendations(perPage: 12, sort: [RATING_DESC, ID]) {
+      nodes {
+        mediaRecommendation {
+          ...MediaCard
+        }
+      }
+    }
+  }
+}

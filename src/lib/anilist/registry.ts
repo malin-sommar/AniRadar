@@ -7,16 +7,25 @@ import {
   type CachePolicy,
 } from "./cache-policy"
 import {
+  AnimeCharactersDocument,
+  AnimeDetailDocument,
   BrowseAnimeDocument,
   GenresAndTagsDocument,
   SearchAnimeDocument,
+  SeasonChainDocument,
   TrendingAnimeDocument,
+  type AnimeCharactersQuery,
+  type AnimeCharactersQueryVariables,
+  type AnimeDetailQuery,
+  type AnimeDetailQueryVariables,
   type BrowseAnimeQuery,
   type BrowseAnimeQueryVariables,
   type GenresAndTagsQuery,
   type GenresAndTagsQueryVariables,
   type SearchAnimeQuery,
   type SearchAnimeQueryVariables,
+  type SeasonChainQuery,
+  type SeasonChainQueryVariables,
   type TrendingAnimeQuery,
   type TrendingAnimeQueryVariables,
   type TypedDocumentString,
@@ -28,6 +37,8 @@ export interface OperationDefinition<TData, TVariables> {
   /** Validates variables arriving at the proxy. Strict: unknown keys are rejected. */
   variables: z.ZodType<TVariables>
   cache: CacheClass
+  /** Picks a different cache class from the response, e.g. shorter for airing shows. */
+  cacheFor?: (data: TData) => CacheClass
 }
 
 function defineOperation<TData, TVariables>(
@@ -37,6 +48,7 @@ function defineOperation<TData, TVariables>(
 }
 
 const page = z.int().min(1).max(500).nullish()
+const mediaId = z.int().min(1).max(10_000_000)
 const perPage = z.int().min(1).max(50).nullish()
 /**
  * `false` hides adult entries; leaving it out shows everything (opt-in
@@ -125,6 +137,32 @@ export const operations = {
     variables: z.strictObject({}),
     cache: "static",
   }),
+  AnimeDetail: defineOperation<AnimeDetailQuery, AnimeDetailQueryVariables>({
+    name: "AnimeDetail",
+    document: AnimeDetailDocument,
+    variables: z.strictObject({ id: mediaId }),
+    cache: "detail",
+    // The countdown and episode schedule must stay fresh while a show airs.
+    cacheFor: (data) =>
+      data.Media?.status === "RELEASING" || data.Media?.nextAiringEpisode
+        ? "airing"
+        : "detail",
+  }),
+  SeasonChain: defineOperation<SeasonChainQuery, SeasonChainQueryVariables>({
+    name: "SeasonChain",
+    document: SeasonChainDocument,
+    variables: z.strictObject({ ids: z.array(mediaId).min(1).max(50) }),
+    cache: "relations",
+  }),
+  AnimeCharacters: defineOperation<
+    AnimeCharactersQuery,
+    AnimeCharactersQueryVariables
+  >({
+    name: "AnimeCharacters",
+    document: AnimeCharactersDocument,
+    variables: z.strictObject({ id: mediaId, page, perPage }),
+    cache: "relations",
+  }),
 }
 
 export type OperationName = keyof typeof operations
@@ -143,6 +181,20 @@ export function isOperationName(name: string): name is OperationName {
 
 export function cachePolicyFor(name: OperationName): CachePolicy {
   return CACHE_POLICIES[operations[name].cache]
+}
+
+/** The cache policy for one response (see `cacheFor`). */
+export function cachePolicyForData<N extends OperationName>(
+  name: N,
+  data: OperationData<N>,
+): CachePolicy {
+  // Each entry's `cacheFor` takes its own data type; TypeScript can't link
+  // the two through the name, hence the narrow cast.
+  const { cache, cacheFor } = operations[name] as {
+    cache: CacheClass
+    cacheFor?: (data: OperationData<N>) => CacheClass
+  }
+  return CACHE_POLICIES[cacheFor?.(data) ?? cache]
 }
 
 /** What the request core needs: the operation name and its query text. */

@@ -1,6 +1,17 @@
 import { describe, expect, it } from "vitest"
 
-import { displayTitle, formatCountdown, formatLabel, mediaMeta } from "./media"
+import {
+  airedLabel,
+  displayTitle,
+  episodesLabel,
+  formatCountdown,
+  formatDuration,
+  formatFuzzyDate,
+  formatLabel,
+  mediaMeta,
+  seasonLabel,
+  sourceLabel,
+} from "./media"
 
 describe("displayTitle", () => {
   const title = {
@@ -68,5 +79,43 @@ describe("formatCountdown", () => {
     [6 * 86400 + 3600, "in 6d"],
   ])("%i seconds → %s", (seconds, expected) => {
     expect(formatCountdown(seconds)).toBe(expected)
+  })
+})
+
+describe("detail facts", () => {
+  it("describes episodes and their length", () => {
+    expect(episodesLabel({ episodes: 12, duration: 24 })).toBe("12 × 24 min")
+    expect(episodesLabel({ episodes: 1, duration: 110 })).toBe("1 h 50 min")
+    expect(episodesLabel({ episodes: 25, duration: null })).toBe("25 episodes")
+    expect(episodesLabel({ episodes: null, duration: 24 })).toBe(
+      "24 min per episode",
+    )
+    expect(episodesLabel({ episodes: null, duration: null })).toBeUndefined()
+  })
+
+  it("formats dates as precisely as AniList knows them", () => {
+    expect(formatFuzzyDate({ year: 2026, month: 1, day: 7 })).toBe("7 Jan 2026")
+    expect(formatFuzzyDate({ year: 2026, month: 1, day: null })).toBe(
+      "Jan 2026",
+    )
+    expect(formatFuzzyDate({ year: 2026, month: null, day: null })).toBe("2026")
+    expect(
+      formatFuzzyDate({ year: null, month: null, day: null }),
+    ).toBeUndefined()
+  })
+
+  it("shows the airing period", () => {
+    const start = { year: 2026, month: 1, day: 7 }
+    const end = { year: 2026, month: 3, day: 25 }
+    expect(airedLabel(start, end, "FINISHED")).toBe("7 Jan 2026 – 25 Mar 2026")
+    expect(airedLabel(start, null, "RELEASING")).toBe("7 Jan 2026 – now")
+    expect(airedLabel(start, start, "FINISHED")).toBe("7 Jan 2026")
+  })
+
+  it("names seasons and sources", () => {
+    expect(seasonLabel("WINTER", 2026)).toBe("Winter 2026")
+    expect(seasonLabel("WINTER", null)).toBeUndefined()
+    expect(sourceLabel("LIGHT_NOVEL")).toBe("Light novel")
+    expect(formatDuration(60)).toBe("1 h")
   })
 })

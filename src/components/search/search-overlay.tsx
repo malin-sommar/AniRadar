@@ -235,7 +235,7 @@ function SearchResult({
         ) : null}
       </span>
       {media.isAdult ? (
-        <span className="ml-auto shrink-0 rounded-full bg-destructive px-1.5 text-[11px] font-semibold text-white">
+        <span className="ml-auto shrink-0 rounded-full bg-destructive px-1.5 text-[11px] font-semibold text-background">
           18+
         </span>
       ) : null}

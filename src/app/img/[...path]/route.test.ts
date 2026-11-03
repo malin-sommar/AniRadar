@@ -45,9 +45,22 @@ describe("GET /img/[...path]", () => {
       "anilist/file/anilistcdn/media/anime/notes.txt",
     ],
     ["path traversal", "anilist/file/anilistcdn/../../secret.jpg"],
-  ])("refuses %s without contacting AniList", async (_label, path) => {
+    ["a YouTube page instead of a thumbnail", "youtube/watch/LHtdKWJdif4.jpg"],
+  ])("refuses %s without contacting upstream", async (_label, path) => {
     // No MSW handler: any upstream request would fail the test.
     expect((await call(path)).status).toBe(404)
+  })
+
+  it("proxies YouTube trailer thumbnails", async () => {
+    server.use(
+      http.get("https://i.ytimg.com/vi/LHtdKWJdif4/hqdefault.jpg", () =>
+        HttpResponse.arrayBuffer(new Uint8Array([0xff, 0xd8]).buffer, {
+          headers: { "Content-Type": "image/jpeg" },
+        }),
+      ),
+    )
+    const response = await call("youtube/vi/LHtdKWJdif4/hqdefault.jpg")
+    expect(response.status).toBe(200)
   })
 
   it("passes through a missing image as 404", async () => {

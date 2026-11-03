@@ -1,26 +1,107 @@
-import { TvIcon } from "lucide-react"
 import type { Metadata } from "next"
-import Link from "next/link"
+import { notFound } from "next/navigation"
+import { connection } from "next/server"
+import { Suspense } from "react"
 
-import { EmptyState } from "@/components/empty-state"
-import { Button } from "@/components/ui/button"
+import { displayTitle } from "@/domain/media"
+import { parseAnimeId } from "@/domain/detail"
+import { AnimeDetailView } from "@/features/anime/anime-detail"
+import { DetailError } from "@/features/anime/detail-error"
+import { DetailSkeleton } from "@/features/anime/detail-skeleton"
+import { getAnimeDetail, type AnimeDetail } from "@/features/anime/load"
+import { MalScoreChip } from "@/features/anime/mal-score"
+import { ScoreChipSkeleton } from "@/features/anime/score-chip"
+import {
+  SeasonsSection,
+  SeasonsSkeleton,
+} from "@/features/anime/seasons-section"
+import { imageSrc } from "@/lib/images"
+import { descriptionText } from "@/lib/sanitize"
 
-export const metadata: Metadata = { title: "Anime" }
+/**
+ * One real ID, so the build produces the page's shell. Every other anime
+ * renders on its first visit (the shell shows at once) and is then cached
+ * like a static page, for as long as its data stays fresh.
+ */
+export function generateStaticParams() {
+  return [{ id: "16498" }]
+}
 
-// Placeholder so cards have somewhere to link. Phase 2 builds the real
-// detail page (and adds the title slug to the URL).
-export default function AnimePage() {
+async function detailOrNull(id: number): Promise<AnimeDetail | null> {
+  try {
+    return await getAnimeDetail(id)
+  } catch {
+    return null
+  }
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/anime/[id]">): Promise<Metadata> {
+  const id = parseAnimeId((await params).id)
+  const media = id === null ? null : await detailOrNull(id)
+  if (!media) return { title: "Anime" }
+
+  const title = displayTitle(media.title)
+  const description = descriptionText(media.description) || undefined
+  const image =
+    imageSrc(media.bannerImage) ?? imageSrc(media.coverImage?.extraLarge)
+  return {
+    title,
+    description,
+    alternates: { canonical: `/anime/${media.id}` },
+    openGraph: {
+      type: "video.tv_show",
+      title,
+      description,
+      images: image ? [{ url: image }] : undefined,
+    },
+    twitter: {
+      card: media.bannerImage ? "summary_large_image" : "summary",
+      title,
+      description,
+    },
+    // Adult entries stay out of link previews and search engines.
+    robots: media.isAdult ? { index: false, follow: false } : undefined,
+  }
+}
+
+async function AnimeDetailRoute({ params }: PageProps<"/anime/[id]">) {
+  const id = parseAnimeId((await params).id)
+  if (id === null) notFound()
+
+  let media: AnimeDetail | null
+  try {
+    media = await getAnimeDetail(id)
+  } catch (error) {
+    console.warn(`[anime/${id}] AniList is unavailable:`, error)
+    // Render this one at request time, so the error is never cached.
+    await connection()
+    return <DetailError />
+  }
+  if (!media) notFound()
+
   return (
-    <EmptyState
-      icon={TvIcon}
-      tag="Coming in Phase 2"
-      title="Anime details"
-      description="Banner, synopsis, characters and voice actors, where to stream, all seasons in order and the next-episode countdown."
-      className="mt-10"
-    >
-      <Button asChild variant="secondary">
-        <Link href="/">Back to Home</Link>
-      </Button>
-    </EmptyState>
+    <AnimeDetailView
+      media={media}
+      malScore={
+        <Suspense fallback={<ScoreChipSkeleton />}>
+          <MalScoreChip id={id} />
+        </Suspense>
+      }
+      seasons={
+        <Suspense fallback={<SeasonsSkeleton />}>
+          <SeasonsSection id={id} />
+        </Suspense>
+      }
+    />
+  )
+}
+
+export default function AnimePage(props: PageProps<"/anime/[id]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <AnimeDetailRoute {...props} />
+    </Suspense>
   )
 }

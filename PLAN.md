@@ -854,7 +854,7 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 |---|---|---|---|
 | 0 | Foundation: setup, API layer, caching, app shell | M | done, in review |
 | 1 | Browse & search | M | done, in review |
-| 2 | Detail page | L | not started |
+| 2 | Detail page | L | done, in review |
 | 3 | Accounts & AniList connection | L | not started |
 | 4 | My list, ratings, smart status, streaming filter | L | not started |
 | 5 | Home dashboard & "New for you" (notifications step 1) | M | not started |
@@ -1062,6 +1062,7 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 | 2026-11-02 | Planning | decided | Privacy contact: Malin Sommar, malinsommar1997@gmail.com. Assumptions confirmed; adult content gets an opt-in setting (off by default). All questions answered. |
 | 2026-11-02 | 0 Foundation | done, in review | App shell, AniList layer, caching, image proxy, PWA basics, tests and CI. Details below. |
 | 2026-11-03 | 1 Browse & search | done, in review | `/browse` with filters, sort, URL state and infinite scroll; search overlay; final card; title language and adult content settings. Details below. |
+| 2026-11-03 | 2 Detail page | done, in review | `/anime/[id]` with hero, airing countdown, streaming links, seasons in order, characters and voice actors, tags, trailer, recommendations, link previews; MAL score via Jikan. Details below. |
 
 ### Phase 0 notes
 
@@ -1138,6 +1139,40 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 - **Tags in the URL that are spoilers stay**, because someone chose them; they're just never offered in the picker. Unknown or hidden (adult) genres and tags in the URL are dropped.
 - **Results aren't prerendered.** They depend on the URL and the device settings, so the page prerenders the shell and genre/tag lists and the browser loads the results. A popular first page could be prerendered later if it feels slow.
 - **Saved settings apply after hydration**, so a non-default title language can show English titles for a moment on first load. This goes away when settings move to the profile and the server knows them.
+
+### Phase 2 notes
+
+**What's in place**
+- **`/anime/[id]`**, built from one cached AniList call (`AnimeDetail`), shared by the page, its metadata, the MAL chip and the season chain:
+  - **Hero:** banner (or the cover blurred into one), cover, titles in your title language with the others underneath, AniList score, MAL score, status, 18+ badge. Track, Rate and the bell are shown but disabled until Phases 4–5.
+  - **Airing:** live countdown (every second during the last hour) and the next episodes in your time zone. When an episode airs, the countdown moves on to the next one without a reload.
+  - **Synopsis:** sanitized on the server (sanitize-html, small allowlist; spoiler spans dropped; links open in a new tab without a referrer). Long ones fold behind "Read more".
+  - **Where to watch:** AniList's streaming links with brand colour and icon, "availability varies by region".
+  - **Seasons & related:** the prequel/sequel chain in start-date order with the current entry marked; side stories and specials (first 6, then "Show all"); source material linking to AniList. Upcoming entries show "Jan 2027" or "2027".
+  - **Characters & voice actors:** 12 first, main characters first, Japanese and English voice actor side by side; "Show all characters" pages through the rest (25 per page).
+  - **Details:** format, episodes × length, status, season (links to Browse), aired dates, studio, source, popularity, genres (link to Browse), links to AniList and MyAnimeList.
+  - **Tags** by relevance; spoiler tags behind a toggle; adult tags only with adult content on.
+  - **Trailer:** a thumbnail through our image proxy; the YouTube no-cookie player loads only when you press play. Dailymotion trailers link out.
+  - **"If you like this":** AniList's top 12 recommendations as cards.
+  - **Link previews:** title, description and banner or cover image (Open Graph and Twitter). Adult entries are `noindex`.
+  - Adult entries show a notice instead of the page until adult content is switched on.
+  - A skeleton that mirrors the layout; "Couldn't load this anime" with "Try again" when AniList is down; the not-found page for unknown IDs.
+- **Season chain:** walked two steps per request (each entry comes with its relations' relations), at most 4 requests, each batch cached for a day. Attack on Titan (9 entries) and Monogatari (14) are recorded as fixtures, and the ordering tests run on them.
+- **Caching:** the detail entry lasts 6 h, or 15 min while a show is airing (the cache class is picked from the response). Every other anime renders on its first visit (the shell shows at once, the content about a second later) and is then served like a static page.
+- **MAL score (Jikan):** its own limiter (50/min, one at a time), cached for a day, a 4 s timeout, and after a failure Jikan is left alone for 5 minutes. The chip streams in separately and is left out when there's no score.
+- **Tests:** 168 unit and component tests; 58 e2e tests (the detail page on phone and desktop, including the airing countdown, spoiler toggle, trailer on tap, a bare show, not-found and axe). Manual live tests now cover AniList, Kitsu and Jikan.
+
+**Deviations and findings**
+- **Jikan couldn't be reached from this machine.** `api.jikan.moe` timed out at the connection level (even outside the sandbox) while `jikan.moe` and MyAnimeList loaded, so it's either down or blocked on this network. The MAL chip is therefore untested against the real API: its fixture follows Jikan's documented shape, and `pnpm test:live` checks the real one. If Jikan stays unreachable from Vercel too, the official MAL API (it needs a client ID from you) is the fallback (§6).
+- **Errors from `'use cache'` functions** lose their class on the way out, and an error thrown inside one fails a prerender even when it's caught outside. This was already breaking the Phase 0 proxy: every AniList error became a 500, and rate limits lost their Retry-After. AniList, Kitsu and Jikan calls now return failures as data from the cache. "Not found" is cached like data; other failures for 5 seconds, which keeps them out of prerendered pages. `isAniListError` also recognises errors from another copy of the module.
+- **AniList's voice actor aliases are broken:** asking for `voiceActors(language: JAPANESE)` and `(language: ENGLISH)` under two aliases returns the same list for both. The app fetches all voice actors with their language and picks Japanese and English itself.
+- **Old `http://` streaming links** (e.g. Crunchyroll, Hulu) are upgraded to https instead of dropped.
+- **Some AniList trailer IDs carry stray whitespace** (Attack on Titan's has a tab), so they're trimmed and validated.
+- **Not-found pages return HTTP 200** for anime IDs, because the page has already started streaming when AniList says "not found". They carry `noindex`, so search engines ignore them.
+- **One Piece's detail response is large** (about 150 KB, since its many films and specials each carry their own relations). It stays on the server and is cached; the browser only gets what the page shows.
+- **Prefetching is safe:** cards prefetch only the detail page's shell, never its data, so a browse page doesn't trigger AniList calls.
+- **The e2e server's AniList limit is raised to 600/min** (mock only; the real limit stays at 25/min), and assertions get 10 s instead of 5 s, since detail pages render a lot on the server when many tests run at once.
+- **Left for Phase 8:** the cover-to-detail animation (View Transitions) and accent colours adjusted in OKLCH for contrast. The cover colour is used for decoration only, never for text.
 
 ---
 

@@ -15,6 +15,14 @@ const serverOnlyImports = {
         "Server-only. Use the browser client (@/lib/anilist/browser) or a server component.",
     },
     {
+      name: "@/lib/jikan/server",
+      message: "Server-only. Fetch the MAL score in a server component.",
+    },
+    {
+      name: "@/lib/sanitize",
+      message: "Server-only. Sanitize HTML in a server component.",
+    },
+    {
       name: "@/lib/kitsu/server",
       message: "Server-only. Use the /api/title-matches route.",
     },
