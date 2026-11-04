@@ -10,8 +10,11 @@ import {
   setProfileSync,
 } from "@/hooks/use-preferences"
 import type { Preferences } from "@/lib/preferences"
+import { KNOWN_SERVICES } from "@/domain/streaming"
+import { cn } from "@/lib/utils"
 import {
   deleteAccount,
+  saveMyServices,
   savePreferences,
   type DeleteState,
 } from "@/server/account-actions"
@@ -27,6 +30,62 @@ export function ProfileSync({ profile }: { profile: Preferences }) {
     return () => setProfileSync(null)
   }, [profile])
   return null
+}
+
+/** Toggles for your streaming services; each change is saved right away. */
+export function MyServicesPicker({ initial }: { initial: string[] }) {
+  const [services, setServices] = useState(initial)
+  const [failed, setFailed] = useState(false)
+  // Services saved earlier that the list below doesn't know stay chosen.
+  const options = [
+    ...KNOWN_SERVICES,
+    ...initial.filter(
+      (s) => !(KNOWN_SERVICES as readonly string[]).includes(s),
+    ),
+  ]
+
+  function toggle(service: string) {
+    const next = services.includes(service)
+      ? services.filter((s) => s !== service)
+      : [...services, service]
+    setServices(next)
+    void saveMyServices(next).then((saved) => setFailed(!saved))
+  }
+
+  return (
+    <div className="space-y-2">
+      <div
+        role="group"
+        aria-label="My services"
+        className="flex flex-wrap gap-2"
+      >
+        {options.map((service) => {
+          const on = services.includes(service)
+          return (
+            <button
+              key={service}
+              type="button"
+              aria-pressed={on}
+              onClick={() => toggle(service)}
+              className={cn(
+                "inline-flex h-8 items-center rounded-full border px-3 text-sm transition-colors focus-visible:ring-3 focus-visible:ring-ring/60 focus-visible:outline-none",
+                on
+                  ? "border-primary bg-primary/15 font-medium"
+                  : "hover:bg-accent",
+              )}
+            >
+              {service}
+            </button>
+          )
+        })}
+      </div>
+      {failed ? (
+        <p role="alert" className="text-sm text-destructive">
+          Couldn&apos;t save that. Try again.
+        </p>
+      ) : null}
+    </div>
+  )
 }
 
 /** Wipes everything AniRadar keeps on this device. */

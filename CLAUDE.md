@@ -80,6 +80,7 @@ scripts/        schema, fixtures, icons, bundle check
   - To prefetch for the client, use a `'use cache'` component that makes exactly one `cacheLife` call: `cacheLifeProfile(policy)` on success, `FAILURE_CACHE_LIFE` when AniList failed, so the section renders at request time instead. Then hand the data over with `aniListQueryKey` and `HydrationBoundary`.
   - `src/features/home/trending-section.tsx` is the reference.
 - **Client components:** call `useAniListQuery(name, variables)` from `@/lib/anilist/hooks`. It goes through `/api/anilist/[op]`.
+- **A user's own data** (their list): operations marked `exposed: false` in the registry run only on the server, with `requestAniList(name, variables, { token })` (never `getAniList`, never shared). The token comes from `getAniListAccess` in `src/server/anilist-user.ts`.
 - **Detail pages:** `getAnimeDetail(id)` (`src/features/anime/load.ts`) is the one cached `AnimeDetail` call; the page, its metadata, the MAL chip and the season chain all share it. An operation can pick its cache class from the response (`cacheFor` in the registry).
 - **Freshness** for every layer (TanStack, CDN, Next cache) lives in one table: `src/lib/anilist/cache-policy.ts`.
 - **Series:** browse and search results are grouped into series with `groupIntoSeries` (`src/domain/series.ts`), using the `SeriesLinks` fragment; add it to any new operation whose results are shown as cards. PLAN.md §10.0 explains the model.

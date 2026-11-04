@@ -19,6 +19,8 @@ export interface TransportRequest {
   query: string
   variables: Record<string, unknown>
   signal?: AbortSignal
+  /** A user's AniList token, for their own list (server only). */
+  token?: string
 }
 
 /** Sends one request. Server: straight to AniList. Browser: to our proxy. */
@@ -51,6 +53,8 @@ export type AniListClientEvent =
 export interface RequestOptions {
   priority?: Priority
   signal?: AbortSignal
+  /** Sends the request as this AniList user (server only, never shared). */
+  token?: string
 }
 
 export interface AniListClient {
@@ -91,7 +95,7 @@ export function createAniListClient({
   async function execute<TData>(
     { operationName, query }: AniListDocument,
     variables: Record<string, unknown>,
-    { priority = "interactive", signal }: RequestOptions,
+    { priority = "interactive", signal, token }: RequestOptions,
   ): Promise<TData> {
     for (let attempt = 0; ; attempt++) {
       if (now() < circuitOpenUntil) {
@@ -112,7 +116,7 @@ export function createAniListClient({
           () => {
             startedAt = now()
             onEvent?.({ type: "request", operationName, at: startedAt })
-            return transport({ operationName, query, variables, signal })
+            return transport({ operationName, query, variables, signal, token })
           },
           { priority, signal },
         )
@@ -170,8 +174,10 @@ export function createAniListClient({
     options: RequestOptions = {},
   ): Promise<TData> {
     // Cancellable requests aren't shared: aborting one caller mustn't
-    // cancel another's.
-    if (options.signal) return execute<TData>(document, variables, options)
+    // cancel another's. Nor are a user's own: their answer is theirs alone.
+    if (options.signal || options.token) {
+      return execute<TData>(document, variables, options)
+    }
 
     const key = `${document.operationName}:${stableStringify(variables)}`
     const existing = inflight.get(key)

@@ -223,6 +223,23 @@ describe("AniList client", () => {
     expect(transport).toHaveBeenCalledTimes(1)
   })
 
+  it("sends a user's token and never shares their requests", async () => {
+    const { client, transport, requests } = setup([
+      respond(200, { data: { viewer: "a" } }),
+      respond(200, { data: { viewer: "b" } }),
+    ])
+    const [a, b] = await Promise.all([
+      client.request(document, {}, { token: "token-a" }),
+      client.request(document, {}, { token: "token-b" }),
+    ])
+    expect([a, b]).toEqual([{ viewer: "a" }, { viewer: "b" }])
+    expect(transport).toHaveBeenCalledTimes(2)
+    expect(requests.map((request) => request.token)).toEqual([
+      "token-a",
+      "token-b",
+    ])
+  })
+
   it("doesn't share cancellable requests", async () => {
     const { client, transport } = setup([
       respond(200, { data: { n: 1 } }),
