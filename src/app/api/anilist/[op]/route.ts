@@ -9,7 +9,7 @@ import {
 } from "@/lib/anilist/core/errors"
 import {
   cachePolicyForData,
-  isOperationName,
+  isPublicOperation,
   operations,
 } from "@/lib/anilist/registry"
 import { getAniList } from "@/lib/anilist/server"
@@ -64,7 +64,7 @@ export async function GET(
   ctx: RouteContext<"/api/anilist/[op]">,
 ) {
   const { op } = await ctx.params
-  if (!isOperationName(op)) return errorResponse(404, "Unknown operation")
+  if (!isPublicOperation(op)) return errorResponse(404, "Unknown operation")
 
   const raw = request.nextUrl.searchParams.get("v") ?? "{}"
   if (raw.length > MAX_VARIABLES_LENGTH)

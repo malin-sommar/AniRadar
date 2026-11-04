@@ -9,6 +9,7 @@ import {
 import {
   AnimeCharactersDocument,
   AnimeDetailDocument,
+  MyAnimeListDocument,
   BrowseAnimeDocument,
   GenresAndTagsDocument,
   SearchAnimeDocument,
@@ -22,6 +23,8 @@ import {
   type BrowseAnimeQueryVariables,
   type GenresAndTagsQuery,
   type GenresAndTagsQueryVariables,
+  type MyAnimeListQuery,
+  type MyAnimeListQueryVariables,
   type SearchAnimeQuery,
   type SearchAnimeQueryVariables,
   type SeasonChainQuery,
@@ -39,6 +42,11 @@ export interface OperationDefinition<TData, TVariables> {
   cache: CacheClass
   /** Picks a different cache class from the response, e.g. shorter for airing shows. */
   cacheFor?: (data: TData) => CacheClass
+  /**
+   * False for operations that run only on the server with a user's token
+   * (their own list). The browser proxy refuses them.
+   */
+  exposed?: false
 }
 
 function defineOperation<TData, TVariables>(
@@ -163,6 +171,17 @@ export const operations = {
     variables: z.strictObject({ id: mediaId, page, perPage }),
     cache: "relations",
   }),
+  MyAnimeList: defineOperation<MyAnimeListQuery, MyAnimeListQueryVariables>({
+    name: "MyAnimeList",
+    document: MyAnimeListDocument,
+    variables: z.strictObject({
+      userId: z.int().min(1),
+      chunk: z.int().min(1).max(20).nullish(),
+    }),
+    // Never in a shared cache: it's read fresh with your token each time.
+    cache: "airing",
+    exposed: false,
+  }),
 }
 
 export type OperationName = keyof typeof operations
@@ -177,6 +196,13 @@ export type OperationVariables<N extends OperationName> = VariablesOf<
 
 export function isOperationName(name: string): name is OperationName {
   return Object.hasOwn(operations, name)
+}
+
+/** Operations the browser may run through /api/anilist (not users' lists). */
+export function isPublicOperation(name: string): name is OperationName {
+  if (!isOperationName(name)) return false
+  const { exposed } = operations[name] as { exposed?: false }
+  return exposed !== false
 }
 
 export function cachePolicyFor(name: OperationName): CachePolicy {

@@ -44,6 +44,7 @@ export type Database = {
       profiles: {
         Row: {
           created_at: string
+          my_services: string[]
           show_adult: boolean
           timezone: string | null
           title_language: string
@@ -52,6 +53,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          my_services?: string[]
           show_adult?: boolean
           timezone?: string | null
           title_language?: string
@@ -60,6 +62,7 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          my_services?: string[]
           show_adult?: boolean
           timezone?: string | null
           title_language?: string

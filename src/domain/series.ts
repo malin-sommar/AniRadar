@@ -71,7 +71,9 @@ const SEASON_ORDER: Record<MediaSeason, number> = {
   FALL: 4,
 }
 
-function startKey(item: SeriesItem): number[] {
+function startKey(
+  item: Pick<SeriesItem, "id" | "startDate" | "season" | "seasonYear">,
+): number[] {
   const year =
     item.startDate?.year ?? item.seasonYear ?? Number.MAX_SAFE_INTEGER
   const month =
@@ -80,7 +82,11 @@ function startKey(item: SeriesItem): number[] {
   return [year, month, item.startDate?.day ?? 32, item.id]
 }
 
-function compareStart(a: SeriesItem, b: SeriesItem): number {
+/** Earliest first: start date, then season and year, then ID. */
+export function compareStart(
+  a: Pick<SeriesItem, "id" | "startDate" | "season" | "seasonYear">,
+  b: Pick<SeriesItem, "id" | "startDate" | "season" | "seasonYear">,
+): number {
   const [ka, kb] = [startKey(a), startKey(b)]
   for (let index = 0; index < ka.length; index++) {
     const diff = (ka[index] as number) - (kb[index] as number)

@@ -1,18 +1,22 @@
-import { ListVideoIcon } from "lucide-react"
 import type { Metadata } from "next"
+import { Suspense } from "react"
 
-import { EmptyState } from "@/components/empty-state"
+import { ListSkeleton, ListView } from "@/features/list/list-view"
 
-export const metadata: Metadata = { title: "My List" }
+export const metadata: Metadata = {
+  title: "My List",
+  robots: { index: false },
+}
 
+/** Your AniList list. The list itself loads in the browser (it's yours). */
 export default function ListPage() {
   return (
-    <EmptyState
-      icon={ListVideoIcon}
-      tag="Coming in Phase 4"
-      title="Your list"
-      description="Once you sign in and connect AniList, your list shows up here: Watching, Awaiting new episodes, Want to watch and more."
-      className="mt-10"
-    />
+    <div className="space-y-4">
+      <h1 className="text-2xl font-semibold tracking-tight">Your list</h1>
+      {/* The filters come from the URL, which is only known in the browser. */}
+      <Suspense fallback={<ListSkeleton />}>
+        <ListView />
+      </Suspense>
+    </div>
   )
 }

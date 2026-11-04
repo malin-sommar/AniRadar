@@ -28,6 +28,12 @@ beforeEach(() => {
 })
 
 describe("GET /api/anilist/[op]", () => {
+  it("refuses server-only operations such as a user's list", async () => {
+    const response = await call("MyAnimeList", JSON.stringify({ userId: 1 }))
+    expect(response.status).toBe(404)
+    expect(mockedGetAniList).not.toHaveBeenCalled()
+  })
+
   it("rejects operations that aren't on the allowlist", async () => {
     const response = await call("Viewer", "{}")
     expect(response.status).toBe(404)

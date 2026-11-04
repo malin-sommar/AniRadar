@@ -4,7 +4,7 @@ begin;
 create extension if not exists pgtap with schema extensions;
 set search_path = public, extensions;
 
-select plan(24);
+select plan(26);
 
 -- Two users. The sign-up trigger gives each a profile.
 insert into auth.users (id, email, aud, role)
@@ -74,6 +74,19 @@ select is(
    where user_id = '11111111-1111-1111-1111-111111111111'),
   'romaji',
   'the change was saved');
+
+select lives_ok(
+  $$update public.profiles set my_services = array['Crunchyroll', 'Netflix']
+    where user_id = '11111111-1111-1111-1111-111111111111'$$,
+  'A can choose their streaming services');
+
+select throws_ok(
+  $$update public.profiles
+    set my_services = array_fill('X'::text, array[31])
+    where user_id = '11111111-1111-1111-1111-111111111111'$$,
+  '23514',
+  null,
+  'at most 30 streaming services');
 
 update public.profiles set show_adult = true
   where user_id = '22222222-2222-2222-2222-222222222222';

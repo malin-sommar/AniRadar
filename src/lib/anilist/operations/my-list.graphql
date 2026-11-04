@@ -1,0 +1,35 @@
+# Your AniList anime list (server only, sent with your token; never through
+# the public proxy). Custom lists are left out so nothing shows twice; big
+# lists come in chunks.
+query MyAnimeList($userId: Int!, $chunk: Int = 1) {
+  MediaListCollection(
+    userId: $userId
+    type: ANIME
+    forceSingleCompletedList: true
+    chunk: $chunk
+    perChunk: 500
+  ) {
+    hasNextChunk
+    lists {
+      isCustomList
+      entries {
+        id
+        mediaId
+        status
+        progress
+        score(format: POINT_10_DECIMAL)
+        repeat
+        updatedAt
+        media {
+          ...MediaCard
+          ...SeriesLinks
+          externalLinks {
+            site
+            type
+            isDisabled
+          }
+        }
+      }
+    }
+  }
+}

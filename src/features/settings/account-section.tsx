@@ -11,7 +11,7 @@ import { signOut } from "@/server/auth-actions"
 import { getCurrentUser } from "@/server/session"
 import { accountsEnabled, createUserClient } from "@/server/supabase"
 
-import { DeleteAccount, ProfileSync } from "./account-panels"
+import { DeleteAccount, MyServicesPicker, ProfileSync } from "./account-panels"
 
 /** Remind you this long before the AniList connection expires. */
 const EXPIRY_WARNING_DAYS = 14
@@ -108,7 +108,7 @@ export async function AccountSection({
   const [{ data: profile }, { data: connection }] = await Promise.all([
     supabase
       .from("profiles")
-      .select("title_language, show_adult")
+      .select("title_language, show_adult, my_services")
       .eq("user_id", user.id)
       .maybeSingle(),
     supabase
@@ -232,6 +232,14 @@ export async function AccountSection({
             )}
           </>
         )}
+      </Card>
+
+      <Card id="services-title" title="Streaming">
+        <p className="text-sm text-muted-foreground">
+          The services you use. Your list can then show only what&apos;s on them
+          (AniList&apos;s links aren&apos;t per country, so it&apos;s a guide).
+        </p>
+        <MyServicesPicker initial={profile?.my_services ?? []} />
       </Card>
 
       <Card id="data-title" title="Your data">

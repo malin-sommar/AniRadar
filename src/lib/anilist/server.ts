@@ -42,11 +42,16 @@ const upstreamTransport: AniListTransport = async ({
   query,
   variables,
   signal,
+  token,
 }) => {
   const timeout = AbortSignal.timeout(serverEnv.ANILIST_TIMEOUT_MS)
   const response = await fetch(serverEnv.ANILIST_API_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
     body: JSON.stringify({ query, variables }),
     signal: signal ? AbortSignal.any([signal, timeout]) : timeout,
   })

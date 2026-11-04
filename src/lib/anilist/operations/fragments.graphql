@@ -26,9 +26,10 @@ fragment MediaCard on Media {
   }
 }
 
-# Relation links on browse and search results, so seasons of one series can
-# be grouped into one card (and a lone sequel labelled with what it
-# continues) without extra requests.
+# Relation links on browse, search and list results, so seasons of one
+# series can be grouped into one card (and a lone sequel labelled with what
+# it continues) without extra requests. A related entry's status and start
+# tell the list when a sequel is announced.
 fragment SeriesLinks on Media {
   startDate {
     year
@@ -42,6 +43,11 @@ fragment SeriesLinks on Media {
         id
         type
         format
+        status
+        startDate {
+          year
+          month
+        }
         title {
           romaji
           english

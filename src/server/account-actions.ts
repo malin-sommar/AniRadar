@@ -41,6 +41,21 @@ export async function savePreferences(input: unknown): Promise<boolean> {
   return !error
 }
 
+const servicesSchema = z.array(z.string().trim().min(1).max(40)).max(30)
+
+/** Saves your streaming services (for the list's "On my services"). */
+export async function saveMyServices(input: unknown): Promise<boolean> {
+  const parsed = servicesSchema.safeParse(input)
+  const user = await getCurrentUser()
+  if (!parsed.success || !user) return false
+  const supabase = await createUserClient()
+  const { error } = await supabase
+    .from("profiles")
+    .update({ my_services: [...new Set(parsed.data)] })
+    .eq("user_id", user.id)
+  return !error
+}
+
 export type DeleteState =
   { status: "idle" | "deleted" } | { status: "error"; message: string }
 

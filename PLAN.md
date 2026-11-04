@@ -898,7 +898,8 @@ I changed your suggested order in one place: **accounts and the AniList connecti
 | 2 | Detail page | L | done, in review |
 | 2b | Series view: one card per series, series-first detail page | S | done, in review |
 | 3 | Accounts & AniList connection | L | done, in review |
-| 4 | My list, ratings, smart status, streaming filter | L | not started |
+| 4a | My list (reading): series rows, smart status, tabs, sorting, streaming filter | M | done, in review |
+| 4b | Tracking (writing): edits, "Where are you?", ratings, series settings, offline queue | L | not started |
 | 5 | Home dashboard & "New for you" (notifications step 1) | M | not started |
 | 6 | Schedule, seasons & calendar (notifications step 2) | M | not started |
 | 7 | News | S | not started |
@@ -988,6 +989,8 @@ Added after Phase 2 (Q9): the series-first parts that don't need an account.
   I'll provide a step-by-step guide.
 
 ### Phase 4 — My list, ratings, smart status, streaming filter
+
+Split in two (like 2 and 2b): **4a** reads your list (series rows, smart status, tabs, sorting, search, streaming filter, My services); **4b** writes to it (everything that changes your AniList list, ratings, `series_prefs`, the offline queue).
 
 - **Data:** `/api/me/list` to read; creating, updating and deleting entries through AniList; optimistic updates; bundled +1 taps; and the offline queue.
 - **`/list`:** tabs, sorting, search, the streaming filter and "My services".
@@ -1122,6 +1125,7 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 | 2026-11-03 | Planning | decided | Series first (Q9): search, browse, follow and notifications per series; seasons inside the series page. New Phase 2b for the parts that don't need an account. |
 | 2026-11-03 | 2b Series view | done, in review | One card per series in search, browse and the overlay; lone sequels say what they continue; the detail page leads with the series' seasons and a summary. Details below. |
 | 2026-11-04 | 3 Accounts & AniList | done, in review | Sign-in with email code, Google and Discord; Connect AniList with an encrypted token; settings on your profile; download and delete your data; privacy and about pages; schema v1 with RLS tests. Details below. |
+| 2026-11-04 | 4a My list (reading) | done, in review | `/list`: your AniList list per series with smart status, tabs, search, sorting, streaming chips and "On my services". Details below. |
 
 ### Phase 0 notes
 
@@ -1273,6 +1277,25 @@ tests/          e2e/ (Playwright), fixtures/ (recorded API responses)
 - **The Supabase client reads the clock when it starts**, which Cache Components forbids while prerendering, so `createUserClient` calls `connection()` first.
 - **Settings sync happens on Me:** signing in loads your profile's title language and adult setting onto the device, and changes made there are saved back.
 - **Still to do for production:** a second Supabase project (prod), an "AniRadar" AniList client with the production redirect URL, and the environment variables in Vercel. That comes with the first deploy.
+
+### Phase 4a notes
+
+**What's in place**
+- **`/api/me/list`** reads your list from AniList with your token (`MyAnimeList`, chunks of 500, custom lists left out). It's never cached on the server or by the browser's HTTP cache (`private, no-store`). Series are grouped on the server, where the relations are, and the browser gets compact rows (about 1 KB per entry: card fields, sequels, streaming services). The answer says plainly when you're signed out, not connected, need to reconnect, or AniList is busy.
+- **Authenticated AniList requests:** the core client can send a user's token (`RequestOptions.token`). Such requests are never shared with another caller, and `MyAnimeList` is marked `exposed: false`, so the public `/api/anilist` proxy refuses it (tested).
+- **A revoked token** (HTTP 401 / "Invalid token") marks the connection expired, and the list and Me ask you to reconnect.
+- **Smart status** (`src/domain/smart-status.ts`, table-driven tests): Awaiting while caught up on an airing show (with the next episode), Awaiting when a completed show has an announced sequel that isn't on your list or is only in Want to watch, "Season 2 is out" once it airs, Completed when the last episode of a finished show is watched (written to AniList in 4b). Unknown aired counts change nothing.
+- **Series rows** (`src/domain/my-list.ts`): one row per series, named after its first season on your list; the status comes from the latest season you've started. Your average season score, the next episode of any season, and the seasons on request with their own status and progress.
+- **`/list`:** tabs with counts, search across every title, sorting (last updated, title, next airing, your score, newest), streaming chips with counts (OR), and "On my services". All in the URL. Saved on the device (IndexedDB) for instant loads and offline use, refreshed when you open or return to the page; if AniList is busy, the saved list shows with a note.
+- **My services:** a Streaming card on Me; saved to `profiles.my_services` (new migration, column grant, 2 new database tests). Streaming site names are normalized (`src/domain/streaming.ts`).
+- **Tests:** 226 unit and component tests (including the list page with a mocked `/api/me/list`), 70 e2e, 26 database tests in CI.
+- **Tried with your real list** in the dev project: 3 series, statuses and "Season 2 is out" as expected, phone width fine.
+
+**Deviations and findings**
+- **The list is grouped by links between your own entries.** A series whose seasons on your list aren't directly linked (a gap in the middle) shows as two rows until 4b's "Where are you?" fills the gap or the chain is walked.
+- **No relation data reaches the browser;** grouping and sequels are worked out on the server, and smart status (which depends on the time) in the browser.
+- **The saved list renders after hydration,** because the device's copy can be ready before React hydrates and would otherwise differ from the server's skeleton.
+- **The Supabase CLI hung once** on `migration new` (the file was created anyway); migrations can also simply be written by hand with a timestamped name.
 
 ---
 
